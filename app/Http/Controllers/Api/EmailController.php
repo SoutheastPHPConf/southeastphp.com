@@ -22,7 +22,7 @@ class EmailController extends Controller
 
     public function store(EmailRequest $request) : Int
     {
-        dd($request);
+        dd($request->getEmail());
 
         $email = new Email();
         $email->email = $request->getEmail();
