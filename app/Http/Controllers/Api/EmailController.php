@@ -2,7 +2,6 @@
 
 namespace SoutheastPhp\Http\Controllers\Api;
 
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use SoutheastPhp\Http\Controllers\Controller;
 use SoutheastPhp\Http\Requests\Api\EmailRequest;
@@ -22,8 +21,6 @@ class EmailController extends Controller
 
     public function store(EmailRequest $request) : Int
     {
-        dd($request->getEmail());
-
         $email = new Email();
         $email->email = $request->getEmail();
         $email->active = 1;
