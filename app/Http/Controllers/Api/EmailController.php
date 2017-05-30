@@ -22,6 +22,8 @@ class EmailController extends Controller
 
     public function store(EmailRequest $request) : Int
     {
+        dd($request);
+
         $email = new Email();
         $email->email = $request->getEmail();
         $email->active = 1;
