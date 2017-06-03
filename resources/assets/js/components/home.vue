@@ -40,6 +40,10 @@
         <p class="text-center">Thanks for submitting your email! We will send out periodic emails to keep you up to date with our progress!</p>
       </div>
 
+      <div class="alert alert-danger" role="alert" v-if="flashErrorBanner">
+        <p class="text-center">We had trouble saving your email, please try again soon!</p>
+      </div>
+
       <h1 class="text-center">Southeast PHP</h1>
       <h3 class="text-center">Welcome to Nashville!</h3>
       <p class="text-center">A community conference taking place in the heart of Music City! Coming in August 2018.</p>
