@@ -86,6 +86,7 @@
         axios.post('api/email', {email: this.email}).then((response) => {
           if (response.status === 200) {
             this.flashSuccessBanner = true;
+            this.email = '';
 
             setTimeout(() =>  {
               this.flashSuccessBanner = false;
