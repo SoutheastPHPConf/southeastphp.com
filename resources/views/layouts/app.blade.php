@@ -78,8 +78,7 @@
                 {{--</div>--}}
             {{--</div>--}}
         {{--</nav>--}}
-
-        @yield('content')
+        <router-view></router-view>
     </div>
 
     <!-- Scripts -->
