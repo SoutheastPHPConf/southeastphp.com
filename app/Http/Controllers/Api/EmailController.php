@@ -3,9 +3,11 @@
 namespace SoutheastPhp\Http\Controllers\Api;
 
 use Illuminate\Http\Response;
+use SoutheastPhp\Api\EmailTransformer;
 use SoutheastPhp\Http\Controllers\Controller;
 use SoutheastPhp\Http\Requests\Api\EmailRequest;
 use SoutheastPhp\Models\Email;
+use Spatie\Fractal\Fractal;
 
 class EmailController extends Controller
 {
@@ -17,6 +19,15 @@ class EmailController extends Controller
     public function __construct(Response $response)
     {
         $this->response = $response;
+    }
+
+    public function index()
+    {
+        $emailList = Email::all();
+
+        $emails = fractal($emailList)->transformWith(new EmailTransformer())->toArray();
+
+        return $this->response->setContent($emails);
     }
 
     public function store(EmailRequest $request) : Int
