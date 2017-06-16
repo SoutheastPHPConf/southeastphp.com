@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router';
 import Home from './components/home.vue';
 import About from './components/about.vue';
+import CallForPapers from './components/call-for-papers.vue';
 import EmailSignups from './components/admin/signups.vue';
 
 const routes = [
@@ -13,6 +14,11 @@ const routes = [
     path: '/about',
     component: About,
     name: 'About',
+  },
+  {
+    path: '/cfp',
+    component: CallForPapers,
+    name: 'CallForPapers',
   },
   {
     path: '/admin/emails',
