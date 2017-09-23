@@ -1,4 +1,4 @@
-<style lang='scss'>
+<style lang='scss' scoped>
   img.bg {
     /* Set rules to fill background */
     min-height: 100%;

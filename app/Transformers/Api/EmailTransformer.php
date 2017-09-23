@@ -6,7 +6,7 @@
  * Time: 9:06 PM
  */
 
-namespace SoutheastPhp\Api;
+namespace SoutheastPhp\Transformers\Api;
 
 use League\Fractal\TransformerAbstract;
 use Carbon\Carbon;
