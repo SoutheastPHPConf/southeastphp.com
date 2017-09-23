@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
                             <p v-html="organizer.about"></p>
-                            <p class="small" v-if="organizer.name === 'Ben Ramsey'">Photo credit to Anna Falina</p>
+                            <p class="small" v-if="organizer.name === 'Ben Ramsey'">Photo credit to <a href="https://twitter.com/afalina">Anna Falina</a></p>
                         </div>
                     </div>
                 </div>
