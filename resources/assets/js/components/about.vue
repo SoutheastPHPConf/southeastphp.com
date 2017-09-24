@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="">About SoutheastPHP Conf <br><small>{{ tagline }}</small></h1>
+                    <h1 class="">About Southeast PHP Conf <br><small>{{ tagline }}</small></h1>
                 </div>
                 <div class="col-xs-12">
                     <h2>The organizers</h2>
