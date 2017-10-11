@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router';
 import Home from './components/home.vue';
 import About from './components/about.vue';
+import Organizers from './components/organizers.vue';
 import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
 import Nashville from './components/nashville.vue';
@@ -15,6 +16,11 @@ const routes = [
   },
   {
     path: '/about',
+    component: About,
+    name: 'About',
+  },
+  {
+    path: '/about/organizers',
     component: About,
     name: 'About',
   },
