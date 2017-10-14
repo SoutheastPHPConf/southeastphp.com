@@ -16,6 +16,11 @@
             color: #c0c0c0;
         }
     }
+    .speaker-image {
+        display: block;
+        margin: 10px auto;
+        border-radius: 6px;
+    }
 </style>
 <template>
     <div>
@@ -49,6 +54,30 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center cfp">Speakers</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-4" v-for="speaker in speakers.data">
+                   <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h3 class="panel-title">{{ speaker.name }}</h3>
+                      </div>
+                      <div class="panel-body">
+                          <div class="col-xs-12">
+                              <img :src="speaker.image" class="speaker-image">
+                          </div>
+                          <h2 class="text-center"><a :href="speaker.detail_link" target="_blank">{{ speaker.session_name}}</a></h2>
+                          <p>{{ speaker.session_info}}</p>
+                          <p><a :href="speaker.twitter"><i class="fa fa-twitter" v-if="speaker.twitter" area-hidden="true"></i>@{{ speaker.twitter }}</a></p>
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -75,15 +104,28 @@
           'https://medium.com/@karen_meep/how-to-start-speaking-in-tech-conferences-f64a9f3a84a6',
           'http://speaking-easy.com/',
           'https://sendgrid.com/blog/write-speaking-proposal-tech-conference/'
-        ]
+        ],
+        speakers: [],
       };
     },
 
     computed: {
       countdown() {
         const now = moment();
-        const cfp = moment('02-01-2018');
+        const cfp = moment('2018-02-01T06:00:00.000Z');
         return now.to(cfp);
+      }
+    },
+
+    created() {
+      this.getSpeakersList();
+    },
+
+    methods: {
+      getSpeakersList() {
+        axios.get('/api/speakers').then(response => {
+            this.speakers = response.data;
+        })
       }
     }
   }
