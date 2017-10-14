@@ -20,6 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('emails', ['uses' => 'Api\EmailController@index']);
 Route::post('email', ['uses' => 'Api\EmailController@store']);
 Route::get('nashville', ['uses' => 'Api\NashvilleController@index']);
+Route::get('speakers', ['uses' => 'Api\SpeakerController@index']);
 
 /**
  * Organizers Routes
