@@ -21,8 +21,8 @@ const routes = [
   },
   {
     path: '/about/organizers',
-    component: About,
-    name: 'About',
+    component: Organizers,
+    name: 'Organizers',
   },
   {
     path: '/code-of-conduct',
