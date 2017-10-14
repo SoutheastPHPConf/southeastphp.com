@@ -1,5 +1,8 @@
 import VueRouter from 'vue-router';
 import Home from './components/home.vue';
+import Login from './components/auth/login.vue';
+import TermsOfService from './components/terms-of-service.vue';
+import PrivacyPolicy from './components/privacy-policy.vue';
 import About from './components/about.vue';
 import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
@@ -12,6 +15,21 @@ const routes = [
     path: '/',
     component: Home,
     name: 'Home',
+  },
+  {
+    path: '/login',
+    component: Login,
+    name: 'Login',
+  },
+  {
+    path: '/terms-of-service',
+    component: TermsOfService,
+    name: 'TermsOfService',
+  },
+  {
+    path: '/privacy-policy',
+    component: PrivacyPolicy,
+    name: 'PrivacyPolicy',
   },
   {
     path: '/about',
