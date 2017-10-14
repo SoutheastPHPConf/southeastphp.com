@@ -36,9 +36,4 @@ class SponsorsController extends Controller
 
         return $this->response->setStatusCode(200)->setContent(fractal($sponsors, $this->transformer)->toArray());
     }
-
-    public function levels()
-    {
-
-    }
 }
