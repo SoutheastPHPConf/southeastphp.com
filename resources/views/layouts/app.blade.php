@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'SoutheastPHP') }}</title>
 
     <!-- Styles -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//use.fontawesome.com/8213b5e9ce.js"></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->

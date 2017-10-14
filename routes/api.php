@@ -25,3 +25,6 @@ Route::get('nashville', ['uses' => 'Api\NashvilleController@index']);
  * Organizers Routes
  */
 Route::get('organizers', ['uses' => 'Api\OrganizersController@index']);
+
+Route::get('login/facebook', ['uses' => 'Api\Auth\FacebookController@facebookLogin']);
+Route::get('login/facebook/callback', ['uses' => 'Api\Auth\FacebookController@handleFacebookCallback']);
