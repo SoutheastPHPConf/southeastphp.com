@@ -25,3 +25,9 @@ Route::get('nashville', ['uses' => 'Api\NashvilleController@index']);
  * Organizers Routes
  */
 Route::get('organizers', ['uses' => 'Api\OrganizersController@index']);
+
+/**
+ * Sponsor Routes
+ */
+Route::get('sponsors', ['uses' => 'Api\SponsorsController@index']);
+Route::get('sponsors/levels', ['uses' => 'Api\SponsorLevelsController@index']);

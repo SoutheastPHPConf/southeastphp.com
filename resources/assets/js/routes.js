@@ -5,6 +5,7 @@ import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
 import Nashville from './components/nashville.vue';
 import Speakers from './components/speakers.vue';
+import Sponsors from './components/sponsors.vue';
 import EmailSignups from './components/admin/signups.vue';
 
 const routes = [
@@ -37,6 +38,11 @@ const routes = [
     path: '/speakers',
     component: Speakers,
     name: 'Speakers',
+  },
+  {
+      path: '/sponsors',
+      component: Sponsors,
+      name: 'Sponsors',
   },
   {
     path: '/admin/emails',
