@@ -178,6 +178,7 @@ return [
         SoutheastPhp\Providers\RouteServiceProvider::class,
 
         Spatie\Fractal\FractalServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
 
     ],
 
