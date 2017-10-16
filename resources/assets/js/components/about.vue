@@ -1,14 +1,6 @@
 <style lang='scss' scoped>
-    .container {
+    div.container {
         padding-top: 7rem;
-    }
-
-    .ramsey {
-        height: 10rem;
-    }
-
-    a.twitter {
-        color: #00aced;
     }
 </style>
 <template>
@@ -16,28 +8,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="">About Southeast PHP Conf <br><small>{{ tagline }}</small></h1>
-                </div>
-                <div class="col-xs-12">
-                    <h2>The organizers</h2>
-                </div>
-                <div class="col-xs-12 col-md-4" v-for="organizer in organizers.data">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <img :src="organizer.image" class="img-responsive img-rounded ramsey">
-                        </div>
-                        <div class="col-xs-12 col-md-8">
-                            <h2>{{ organizer.name }}</h2>
-                            <a class="twitter" :href="organizer.twitterLink"><i class="fa fa-twitter"></i> @{{ organizer.twitter }}</a>
-                            <p><i class="fa fa-envelope"> {{ organizer.email }}</i></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <p v-html="organizer.about"></p>
-                            <p class="small" v-if="organizer.name === 'Ben Ramsey'">Photo credit to <a href="https://twitter.com/afilina">Anna Filina</a></p>
-                        </div>
-                    </div>
+                    <h2>About Southeast PHP</h2>
+                    <p>Southeast PHP is a multi-track PHP conference providing developers at any stage in their careers a chance to learn something new and contribute to the community.</p>
+                    <p>As organizers of Nashville PHP, we realized there was a lack of regional PHP Conferences in the Southeast United States. We aim to start our conference in 2018, and plan to move it to other cities within the southeast to better serve developers in various areas.</p>
+                    <p>Some cities we aim to take Southeast PHP to:</p>
+                    <ul>
+                        <li>Raleigh, NC</li>
+                        <li>Greenville, SC</li>
+                        <li>Charleston, SC</li>
+                        <li>Birmingham, AL</li>
+                        <li>Little Rock, AK</li>
+                    </ul>
+                    <p>And as many more as we can make happen!</p>
+                    <hr>
+                    <h3>When and Where</h3>
+                    <p>Southeast PHP will take place in the last week of August, 2018. It is a great time to visit Nashville and really take in the beauty of the city.</p>
+                    <p>Our venue is the <a href="https://hotelpreston.com">Hotel Preston</a>, that sits in between the airport (BNA) and downtown Nashville. We picked this location for ease of access and its hip feel.</p>
+                    <p>To see more of what you can do while in Nashville, you can visit the <a href="/#/nashville">Nashville</a> page for things to check out!</p>
                 </div>
             </div>
         </div>
@@ -45,53 +32,6 @@
 </template>
 <script>
   import axios from 'axios';
-  import { sample } from 'lodash';
 
-  export default {
-    data() {
-      return {
-        title: 'About the SoutheastPHP Conference Organizers',
-        about: {
-          'whySouthEastPHP': '',
-        },
-        taglines: [
-          'A Conference for the PHP Community',
-          'Cause we\'ve all heard Matt rave about Hot Chicken',
-          'We love music',
-          'We didn\'t have enough stuff to do already',
-          'We just wanted to see our friends',
-          'Cause why not?',
-          'Tired of going without hot chicken at other conferences',
-          'We wanna show off our sweet traffic problems',
-          'It\'s the only way we can get people to spend time with us',
-          'The more we get together,the more we Unexpected T_PAAMAYIM_NEKUDOTAYIM',
-        ],
-        organizers: [],
-      }
-    },
-
-    created() {
-      this.getOrganizers();
-    },
-
-    computed: {
-      tagline() {
-        return sample(this.taglines);
-      },
-    },
-
-    methods: {
-      getOrganizers() {
-        axios.get('/api/organizers').then(response => {
-          this.organizers = response.data;
-        }).catch(error => {
-          console.error(error);
-        });
-      },
-    },
-
-    components: {
-
-    }
-  };
+  export default {};
 </script>

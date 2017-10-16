@@ -4,10 +4,12 @@ import Login from './components/auth/login.vue';
 import TermsOfService from './components/terms-of-service.vue';
 import PrivacyPolicy from './components/privacy-policy.vue';
 import About from './components/about.vue';
+import Organizers from './components/organizers.vue';
 import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
 import Nashville from './components/nashville.vue';
 import Speakers from './components/speakers.vue';
+import Sponsors from './components/sponsors.vue';
 import EmailSignups from './components/admin/signups.vue';
 
 const routes = [
@@ -37,6 +39,11 @@ const routes = [
     name: 'About',
   },
   {
+    path: '/about/organizers',
+    component: Organizers,
+    name: 'Organizers',
+  },
+  {
     path: '/code-of-conduct',
     component: CodeOfConduct,
     name: 'CodeOfConduct',
@@ -55,6 +62,11 @@ const routes = [
     path: '/speakers',
     component: Speakers,
     name: 'Speakers',
+  },
+  {
+      path: '/sponsors',
+      component: Sponsors,
+      name: 'Sponsors',
   },
   {
     path: '/admin/emails',
