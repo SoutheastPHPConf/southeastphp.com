@@ -5,7 +5,7 @@
 
     .facebook {
         color: #fff;
-        background-color: #00aced;
+        background-color: #3b5998;
         margin-left: 1.5rem;
     }
 
@@ -49,24 +49,36 @@
                     </div>
                 </div>
             </div>
+
+            <modal v-if="showFacebookLogin">
+                <h3 slot="header">Login to Facebook</h3>
+                <p slot="body">In order to connect with Facebook, we need your permission to connect! You know the drill.</p>
+                <div slot="footer">
+                    <a :href="link"><button class="facebook btn">Connect With Facebook</button></a>
+                </div>
+            </modal>
+
         </div>
     </div>
 </template>
 <script>
   import axios from 'axios';
+  import modal from '../modal.vue';
 
   export default {
     data() {
       return {
         email: '',
         password: '',
+        link: '',
+        showFacebookLogin: false,
       };
     },
 
     methods: {
       submitLoginForm() {
         axios.post('/api/auth/login', {email: this.email, password: this.password}).then(response => {
-
+            console.log('hello world');
         }).catch(error => {
           console.error(error);
         });
@@ -74,7 +86,8 @@
 
       facebookLogin() {
         axios.get('/api/login/facebook').then(response => {
-
+            this.link = response.data.data.link;
+            this.showFacebookLogin = true;
         }).catch(error => {
           console.error(error);
         })
@@ -87,6 +100,10 @@
       githubLogin() {
 
       },
+    },
+
+    components: {
+      modal,
     }
   };
 </script>

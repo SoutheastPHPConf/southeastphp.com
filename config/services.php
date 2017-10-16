@@ -35,18 +35,18 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
     'facebook' => [
-        'client_id' => 'your-github-app-id',
-        'client_secret' => 'your-github-app-secret',
-        'redirect' => 'http://your-callback-url',
+        'client_id' => env('FACEBOOK_APP_ID'),
+        'client_secret' => env('FACEBOOK_APP_SECRET'),
+        'redirect' => env('APP_URL') . env('FACEBOOK_APP_CALLBACK'),
     ],
     'twitter' => [
-        'client_id' => 'your-github-app-id',
-        'client_secret' => 'your-github-app-secret',
-        'redirect' => 'http://your-callback-url',
+        'client_id' => env(''),
+        'client_secret' => env(''),
+        'redirect' => env(''),
     ],
     'github' => [
-        'client_id' => 'your-github-app-id',
-        'client_secret' => 'your-github-app-secret',
-        'redirect' => 'http://your-callback-url',
+        'client_id' => env(''),
+        'client_secret' => env(''),
+        'redirect' => env(''),
     ],
 ];
