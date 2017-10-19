@@ -14,7 +14,8 @@ Please follow [Homestead installation process](laravel-homestead-install) and in
 If using shared Homestead, please remember to configure own database for the project, or use `DB_PREFIX` environment variable in the `.env` file.
 
 Database configuration has been changed to use `DB_PREFIX`.
-We have already set up a default prefix `sephpco__` for you in the .env.example file.
+We have already set up a default prefix `sephpco__` for you in the `.env.example` file.
+If you do not want database table prefixing, just set `DB_PREFIX` empty, or remove it from your `.env` file.
 
 ### First steps
 
