@@ -22,7 +22,7 @@ If you do not want database table prefixing, just set `DB_PREFIX` empty, or remo
 Clone the repository to your preferred directory. Some people use `Code`, some use `dev`, it does not really matter, but you should know where the folder is located because we need the full directory path later.
 
 You should start by cloning the repository to that directory:
-``` bash 
+``` bash
 git clone https://github.com/SoutheastPHPConf/southeastphp.co.git
 ```
 
@@ -30,10 +30,10 @@ git clone https://github.com/SoutheastPHPConf/southeastphp.co.git
 
 _This guide assumes you have already successfully installed shared Homestead on your machine and can SSH into it._
 
-1. Configure the Homestead.yml file
+1. Configure the shared Homestead.yml file
     - Map the domain `southeastphp.co.app` to your cloned repository public path
 2. Add the domain to `/etc/hosts` with sudo access
-    - `192.168.10.10  southeastphp.co.app` as in Homestead.yml `ip` and the domain
+    - `192.168.10.10  southeastphp.co.app` as in Homestead.yml `ip` and the domain you chose
     - Or use [cogitatio/vagrant-hostsupdater](laravel-hostsupdater) or similar to automate this
 3. In another terminal window change to project directory and run `vagrant up` (or `homestead up` if you set up the shortcut alias) to start the Vagrant Homestead instance
     - If the box is already running, run provisioning to apply your changes:
@@ -71,11 +71,11 @@ _This guide assumes you have already installed Homestead and skipped the "Config
 
 ## Setting up the application
 
-1. SSH into your newly created Homestead box with `vagrant ssh`
+1. SSH into your newly created Homestead box with `vagrant ssh` (or `homestead ssh` if you set up the shell shortcut/alias)
 2. CD into your project directory
     - this would be the one you set in `Homestead.yml` sites section `to:` path
 3. Check 
-3. Run the following installation and configuration commands to set up keys and migrations
+4. Run the following installation and configuration commands to set up keys and migrations
     ``` bash
     npm install
     cp .env.example .env
@@ -84,7 +84,7 @@ _This guide assumes you have already installed Homestead and skipped the "Config
     php artisan passport:install
     npm run dev
     ```
-4. Visit the domain in Homestead.yml in your browser and you should see the site!
+5. Visit the domain in Homestead.yml in your browser and you should see the site!
 
 Now your environment is ready for development work.
 
