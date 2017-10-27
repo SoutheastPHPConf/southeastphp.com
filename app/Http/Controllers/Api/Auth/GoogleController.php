@@ -6,11 +6,10 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 use SoutheastPhp\Http\Controllers\Controller;
-use SoutheastPhp\Models\SocialAccount;
 use SoutheastPhp\Transformers\Api\SocialAuthLink;
 use SoutheastPhp\User;
 
-class FacebookController extends Controller
+class GoogleController extends Controller
 {
     /**
      * @var Response
@@ -28,37 +27,37 @@ class FacebookController extends Controller
         $this->transformer = $transformer;
     }
 
-    public function facebookLogin()
+    public function googleLogin()
     {
-        $link = Socialite::driver('facebook')->stateless()->redirect()->getTargetUrl();
+        $link = Socialite::driver('google')->stateless()->redirect()->getTargetUrl();
 
         return $this->response->setContent(fractal($link)->transformWith($this->transformer)->toArray());
     }
 
-    public function handleFacebookCallback()
+    public function handleGoogleCallback()
     {
-        $facebook = Socialite::driver('facebook')->stateless()->user();
+        $google = Socialite::driver('google')->stateless()->user();
 
-        $user = User::findByEmail($facebook->getEmail());
+        $user = User::findByEmail($google->getEmail());
 
         if (is_null($user)) {
             unset($user);
 
             $user = new User();
-            $user->name = $facebook->getEmail();
-            $user->email = $facebook->getEmail();
-            $user->first_name = preg_split("/[\s]+/", $facebook->getName())[0];
-            $user->last_name = preg_split("/[\s]+/", $facebook->getName())[1];
-            $user->image_link = $facebook->getAvatar();
+            $user->name = $google->getEmail();
+            $user->email = $google->getEmail();
+            $user->first_name = preg_split("/[\s]+/", $google->getName())[0];
+            $user->last_name = preg_split("/[\s]+/", $google->getName())[1];
+            $user->image_link = $google->getAvatar();
 
             $user->save();
 
             $user->socialAccount()->save(new SocialAccount([
-                'token' => $facebook->token,
-                'refresh_token' => $facebook->refreshToken,
-                'token_ttl' => $facebook->expiresIn,
+                'token' => $google->token,
+                'refresh_token' => $google->refreshToken,
+                'token_ttl' => $google->expiresIn,
                 'secret' => null,
-                'facebook_id' => $facebook->getId(),
+                'facebook_id' => $google->getId(),
                 'google_id' => null,
                 'twitter_id' => null,
             ]));
