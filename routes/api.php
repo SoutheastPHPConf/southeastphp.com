@@ -27,6 +27,8 @@ Route::get('speakers', ['uses' => 'Api\SpeakerController@index']);
  */
 Route::get('organizers', ['uses' => 'Api\OrganizersController@index']);
 
+Route::get('login/facebook', ['uses' => 'Api\Auth\FacebookController@facebookLogin']);
+Route::get('login/facebook/callback', ['uses' => 'Api\Auth\FacebookController@handleFacebookCallback']);
 /**
  * Sponsor Routes
  */

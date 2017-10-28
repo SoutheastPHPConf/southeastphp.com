@@ -34,5 +34,19 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-
+    'facebook' => [
+        'client_id' => env('FACEBOOK_APP_ID'),
+        'client_secret' => env('FACEBOOK_APP_SECRET'),
+        'redirect' => env('APP_URL') . env('FACEBOOK_APP_CALLBACK'),
+    ],
+    'twitter' => [
+        'client_id' => env(''),
+        'client_secret' => env(''),
+        'redirect' => env(''),
+    ],
+    'github' => [
+        'client_id' => env(''),
+        'client_secret' => env(''),
+        'redirect' => env(''),
+    ],
 ];

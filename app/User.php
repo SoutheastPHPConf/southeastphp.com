@@ -2,8 +2,10 @@
 
 namespace SoutheastPhp;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use SoutheastPhp\Models\SocialAccount;
 use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
@@ -30,4 +32,19 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public static function findByEmail(string $email)
+    {
+        return User::byEmail($email)->first();
+    }
+
+    public function scopeByEmail(Builder $query, string $email)
+    {
+        return $query->where('email', $email);
+    }
+
+    public function socialAccount()
+    {
+        return $this->hasOne(SocialAccount::class, 'user_id', 'id');
+    }
 }
