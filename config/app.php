@@ -181,6 +181,8 @@ return [
         Spatie\Fractal\FractalServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
 
+        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
+
     ],
 
     /*
@@ -231,6 +233,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
 
     ],
 

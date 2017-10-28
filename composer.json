@@ -14,7 +14,9 @@
         "laravel/passport": "^4.0",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
+        "league/commonmark": "^0.15.7",
         "league/csv": "^8.2",
+        "sentry/sentry-laravel": "^0.8.0",
         "spatie/laravel-fractal": "^4.0",
         "spatie/laravel-sitemap": "^2.4"
     },
