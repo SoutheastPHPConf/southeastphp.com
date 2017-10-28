@@ -3,6 +3,11 @@ language: php
 php:
   - 7.1
   - 7.2
+  - nightly
+
+allow_failures:
+  - 7.2
+  - nightly
 
 before_script:
   - mysql -e 'CREATE DATABASE southeastphp_test;'
@@ -17,3 +22,7 @@ script:
 
 services:
   - mysql
+
+after_success:
+  curl -s "https://forge.laravel.com/servers/137357/sites/423802/deploy/http?token=XFxiCGREI4SgW2HKuxXWlbpwhqTLSq61mKat3h5S"
+  echo 'all tests pass'
