@@ -10,9 +10,7 @@ before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
   - php artisan migrate
-
-before_install:
-
+  - php artisan key:generate
 
 script:
   - phpunit
