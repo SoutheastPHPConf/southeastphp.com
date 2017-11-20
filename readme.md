@@ -1,4 +1,4 @@
-# SOUTHEASTPHP.CO
+# SOUTHEASTPHP.COM
 
 This is a community conferencing application developed with [Laravel 5.4](laravel-54-docs) and [Vue.js](vuejs).
 
@@ -23,7 +23,7 @@ Clone the repository to your preferred directory. Some people use `Code`, some u
 
 You should start by cloning the repository to that directory:
 ``` bash
-git clone https://github.com/SoutheastPHPConf/southeastphp.co.git
+git clone https://github.com/SoutheastPHPConf/southeastphp.com.git
 ```
 
 #### Using _shared_ Homestead installation
@@ -45,7 +45,7 @@ _This guide assumes you have already installed Homestead and skipped the "Config
 
 1. CD into the folder you just cloned
     ``` bash
-    cd southeastphp.co
+    cd southeastphp.com
     ```
 2. Run composer install to install all php dependencies
     ``` bash
