@@ -11,7 +11,7 @@
                 <div class="col-xs-12">
                     <h1>Reporting Guidelines</h1>
                     <hr>
-                    <p>If you believe someone is violating the code of conduct we ask that you report it to the Southeast PHP Conference Code of Conduct response team by emailing <a href="mailto:conduct@southeastphp.com">conduct@southeastphp.com</a>.</p>
+                    <p>If you believe someone is violating the code of conduct we ask that you report it to the Southeast PHP Conference Code of Conduct response team by emailing <a href="mailto:conduct@southeastphp.com">conduct@southeastphp.com</a> or sending an SMS to +1 615-645-3161</p>
                     <p><b>All reports will be kept confidential</b>. In some cases we may determine that a public statement will need to be made. If that's the case, the identities of all victims, reporters, and the accused will remain confidential unless those individuals instruct us otherwise.</p>
                     <p>If you believe anyone is in physical danger, please notify appropriate emergency services first by calling 911. If you are unsure what service or agency is appropriate to contact, include this in your report and we will attempt to notify them.</p>
                     <p>In your report please include:</p>
