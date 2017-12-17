@@ -27,10 +27,6 @@
         <router-view></router-view>
     </div>
 
-    <footer>
-        <p class="text-center">Copyright 2017 SoutheastPHP - <a href="https://twitter.com/southeastphp"><i class="fa fa-twitter"> @southeastphp</i></a></p>
-    </footer>
-
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
