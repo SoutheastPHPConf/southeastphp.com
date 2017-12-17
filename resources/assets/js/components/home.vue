@@ -136,14 +136,14 @@
       </div>
     </div>
 
-    <footer></footer>
+    <se-footer></se-footer>
   </div>
 </template>
 <script>
   import axios from 'axios';
   import moment from 'moment';
   import SeNav from './navbar.vue';
-  import Footer from './footer.vue';
+  import SeFooter from './footer.vue';
   export default {
 
     data() {
@@ -192,7 +192,7 @@
 
     components: {
       SeNav,
-      Footer,
+      SeFooter,
     },
   };
 </script>
