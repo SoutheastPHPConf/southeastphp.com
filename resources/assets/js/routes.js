@@ -43,7 +43,7 @@ const routes = [
     name: 'CodeOfConduct',
   },
   {
-    path: '/code-of-conduct/report',
+    path: '/report',
     component: CocReport,
     name: 'CocReport',
   },
