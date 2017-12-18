@@ -5,11 +5,12 @@
 </style>
 <template>
     <div>
+        <se-nav></se-nav>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Code of Conduct</h1>
-                    <p>To read our reporting guidelines, please click <a href="/#/code-of-conduct/report">here</a></p>
+                    <p>To read our reporting guidelines, please click <a href="/report">here</a></p>
                     <h3><b>1. Purpose</b></h3>
                     <hr>
                     <p>A primary goal of Southeast PHP Conference is to be inclusive to the largest number of participants, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).</p>
@@ -100,12 +101,19 @@
                 </div>
             </div>
         </div>
+        <se-footer></se-footer>
     </div>
 </template>
 <script>
   import axios from 'axios';
+  import SeNav from './navbar.vue';
+  import SeFooter from './footer.vue';
 
   export default {
 
+    components: {
+      SeNav,
+      SeFooter,
+    },
   };
 </script>

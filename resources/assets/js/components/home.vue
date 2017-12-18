@@ -40,7 +40,7 @@
         <p class="text-center">Southeast PHP was formed by the organizers of the Nashville PHP Meetup who wanted to provide a conference for PHP developers in the South Eastern United States and abroad. Currently, the Southeast does not host a regional PHP conference, even though there are lots of PHP developers. Southeast PHP was born to serve this community and to help connect it with the worldwide PHP community by giving regional developers a chance to connect with each other and the broader PHP community.</p>
         <p class="text-center">We plan on bringing the best speakers in the PHP Community and a few from the JS/Python community to give talks and tutorials in a wide variety of topics relevant to PHP and its ecosystem.</p>
         <p class="text-center">While you are here in Nashville, we hope you will take in the sights of our loved city. We  </p>
-        <p class="text-center">To read more about the organizers, check out the <a href="/#/about/organizers">Organizers</a> page!</p>
+        <p class="text-center">To read more about the organizers, check out the <a href="/about/organizers">Organizers</a> page!</p>
         <hr>
         <div class="row" v-if="today === '02-01-2017'">
           <div class="col-xs-12">
@@ -87,7 +87,7 @@
                 <h4 class="text-center">Code of Conduct</h4>
                 <p><b>We take inclusion, safety, and diversity seriously.</b><br><br> We set up a Code of Conduct to make sure that every attendee feels safe and welcome at Southeast PHP Conference. </p>
                 <p class="bottom-coc">Before buying a ticket to Southeast PHP, we ask that you take a look and understand our Code of Conduct. While it is not different from any other conference, we do want everyone to be made aware of it.</p>
-                <a href="/#/code-of-conduct"><button class="btn btn-success">Code of Conduct</button></a>
+                <a href="/code-of-conduct"><button class="btn btn-success">Code of Conduct</button></a>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@
                 <p>As the organizers of NashvillePHP, we felt it was right for us to put on a community conference here in our city. The last time a conference was here in 2002, the landscape for PHP was completely different.</p>
                 <p>We hope to follow in the footsteps of some of our favorite conferences and not just give you a great conference, but also a fun time in our city. We have even started a list of things to do while you are here!</p>
                 <p>Something, something hot chicken.</p>
-                <a href="/#/nashville"><button class="btn btn-success">Nashville</button></a>
+                <a href="/nashville"><button class="btn btn-success">Nashville</button></a>
               </div>
             </div>
           </div>

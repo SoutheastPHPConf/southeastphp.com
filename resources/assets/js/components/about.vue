@@ -1,35 +1,102 @@
 <style lang='scss' scoped>
-    div.container {
+    .container {
         padding-top: 7rem;
+    }
+
+    .ramsey {
+        height: 10rem;
+    }
+
+    a.twitter {
+        color: #00aced;
     }
 </style>
 <template>
     <div>
+        <se-nav></se-nav>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>Background</h3>
-                    <p>Southeast PHP was formed by the organizers of the Nashville PHP Meetup who wanted to provide a conference for PHP developers in the South Eastern United States and abroad. Currently, the Southeast does not host a regional PHP conference, even though there are lots of PHP developers. Southeast PHP was born to serve this community and to help connect it with the worldwide PHP community by giving regional developers a chance to connect with each other and the broader PHP community.</p>
-
-                    <h3>What Is Southeast PHP?</h3>
-                    <p>Southeast PHP is a multi-track PHP conference providing developers at any stage in their careers a chance to learn something new. 2018 will focus on tools and technologies the Modern PHP developer needs to have in his or her tell-belt. Sessions will be organized into tracks and will include the following topics, security, frameworks, libraries, new PHP features, Javascript, design patterns, databases, and everything else the Modern PHP Developer should know.</p>
-                    <h3>When & Where</h3>
-                    <p>The first Southeast PHP will happen in August of 2018 at <a href="http://www.hotelpreston.com/">Hotel Preston</a> in Nashville, TN. <a href="http://www.hotelpreston.com/">Hotel Preston</a> is between the airport and downtown. Nashville is a great ciy to visit and the venue provides easy access to attractions. For a list of things to do, you can vist the <a href="/#/nashville">Nashville</a> page.</p>
-
-                    <h3>Why Attend?</h3>
-                    <p>The main goal of Southeast PHP is to celebrate the Modern PHP Developer. If you work with or alongside PHP developers, come learn about modern tools and techniques that can help you every day.</p>
-
-                    <p>You’ll get to learn from and alongside a diverse group of developers from all over the world and of all skill levels. Junior and senior developers alike will have an opportunity to learn along side their peers. While at Southeast PHP, you'll have direct access to experts in the forefront of modern PHP.</p>
-
-                    <h3>Who are the organizers</h3>
-                    <p>Southeast PHP is being organized by: Ben Ramsey, Matt Trask, and Marcus Fulbright who also run the Nashville PHP Meetup group. You can read more about them at the <a href="/#/about/organizers">organizers page</a>.</p>
+                    <h1 class="">About Southeast PHP Conf <br><small>{{ tagline }}</small></h1>
+                </div>
+                <div class="col-xs-12">
+                    <h2>The organizers</h2>
+                </div>
+                <div class="col-xs-12 col-md-4" v-for="organizer in organizers.data">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <img :src="organizer.image" class="img-responsive img-rounded ramsey">
+                        </div>
+                        <div class="col-xs-12 col-md-8">
+                            <h2>{{ organizer.name }}</h2>
+                            <a class="twitter" :href="organizer.twitterLink"><i class="fa fa-twitter"></i> @{{ organizer.twitter }}</a>
+                            <p><i class="fa fa-envelope"> {{ organizer.email }}</i></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <p v-html="organizer.about"></p>
+                            <p class="small" v-if="organizer.name === 'Ben Ramsey'">Photo credit to <a href="https://twitter.com/afilina">Anna Filina</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <se-footer></se-footer>
     </div>
 </template>
 <script>
   import axios from 'axios';
+  import { sample } from 'lodash';
+  import SeNav from './navbar.vue';
+  import SeFooter from './footer.vue';
 
-  export default {};
+  export default {
+    data() {
+      return {
+        title: 'About the SoutheastPHP Conference Organizers',
+        about: {
+          'whySouthEastPHP': '',
+        },
+        taglines: [
+          'A Conference for the PHP Community',
+          'Cause we\'ve all heard Matt rave about Hot Chicken',
+          'We love music',
+          'We didn\'t have enough stuff to do already',
+          'We just wanted to see our friends',
+          'Cause why not?',
+          'Tired of going without hot chicken at other conferences',
+          'We wanna show off our sweet traffic problems',
+          'It\'s the only way we can get people to spend time with us',
+          'The more we get together,the more we Unexpected T_PAAMAYIM_NEKUDOTAYIM',
+        ],
+        organizers: [],
+      }
+    },
+
+    created() {
+      this.getOrganizers();
+    },
+
+    computed: {
+      tagline() {
+        return sample(this.taglines);
+      },
+    },
+
+    methods: {
+      getOrganizers() {
+        axios.get('/api/organizers').then(response => {
+          this.organizers = response.data;
+        }).catch(error => {
+          console.error(error);
+        });
+      },
+    },
+
+    components: {
+      SeNav,
+      SeFooter,
+    }
+  };
 </script>

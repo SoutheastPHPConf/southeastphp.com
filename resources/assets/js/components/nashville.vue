@@ -13,6 +13,7 @@
 </style>
 <template>
     <div>
+        <se-nav></se-nav>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -36,10 +37,13 @@
                 </div>
             </div>
         </div>
+        <se-footer></se-footer>
     </div>
 </template>
 <script>
   import axios from 'axios';
+  import SeNav from './navbar.vue';
+  import SeFooter from './footer.vue';
 
   export default {
     data() {
@@ -57,7 +61,12 @@
         axios.get('/api/nashville').then(response => {
           this.attractions = response.data;
         })
-      }
+      },
+    },
+
+    components:{
+      SeNav,
+      SeFooter,
     }
   };
 </script>
