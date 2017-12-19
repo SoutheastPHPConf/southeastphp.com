@@ -17,7 +17,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="/about">About</a></li>
                         <li><a href="/nashville">Nashville</a></li>
-                        <li><a href="/sponsors">Sponsors</a></li>
+                        <li v-if="sponsors.length > 0"><a href="/sponsors">Sponsors</a></li>
                         <li><a href="/code-of-conduct">Code of Conduct</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -37,7 +37,7 @@
         schedule: false,
         speakers: false,
         venue: false,
-        sponsors: false,
+        sponsors: [],
       };
     },
 
@@ -55,7 +55,11 @@
       },
 
       getSponsors() {
-
+        axios.get('api/sponsors').then(response => {
+          this.sponsors = response.data;
+        }).catch(error => {
+          console.error(error);
+        })
       },
     },
   };
