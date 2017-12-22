@@ -18,6 +18,7 @@
   .panel {
     min-height: 51rem;
     max-height: 51rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   }
 
   .bottom-coc {
