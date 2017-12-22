@@ -23,6 +23,10 @@
   .bottom-coc {
     padding-bottom: 1rem;
   }
+  
+  .logo {
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+  }
 </style>
 
 <template>
@@ -32,7 +36,7 @@
     <div class="container">
 
       <div class="col-xs-12 info">
-        <img class="img-responsive center-block" src="../../../../public/img/sephp-lg.png">
+        <img class="img-responsive center-block logo" src="../../../../public/img/sephp-lg.png">
         <h2 class="text-center">Nashville, TN</h2>
         <h3 class="text-center"><small>August, 2018</small></h3>
         <hr>
