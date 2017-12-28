@@ -1,9 +1,9 @@
 <?php
 
-namespace SoutheastPhp\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use SoutheastPhp\User;
+use App\User;
 
 class SocialAccount extends Model
 {
@@ -16,6 +16,7 @@ class SocialAccount extends Model
         'secret',
         'facebook_id',
         'google_id',
+        'github_id',
         'twitter_id',
     ];
 

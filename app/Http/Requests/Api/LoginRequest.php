@@ -4,7 +4,7 @@ namespace App\Http\Requests\Api;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class EmailRequest extends FormRequest
+class LoginRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -21,6 +21,16 @@ class EmailRequest extends FormRequest
         return $this->get('email');
     }
 
+    public function getPassword()
+    {
+        return $this->get('password');
+    }
+
+    public function getRememberMe()
+    {
+        return $this->get('rememberMe');
+    }
+
     /**
      * Get the validation rules that apply to the request.
      *
@@ -29,7 +39,9 @@ class EmailRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required|string'
+            'email' => 'required|email',
+            'password' => 'required|string',
+            'rememberMe' => 'required|'
         ];
     }
 }

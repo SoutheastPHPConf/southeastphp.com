@@ -1,12 +1,12 @@
 <?php
 
-namespace SoutheastPhp\Http\Controllers\Api;
+namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use SoutheastPhp\Http\Controllers\Controller;
-use SoutheastPhp\Models\Nashville;
-use SoutheastPhp\Transformers\Api\NashvilleTransformer;
+use App\Http\Controllers\Controller;
+use App\Models\Nashville;
+use App\Transformers\Api\NashvilleTransformer;
 
 class NashvilleController extends Controller
 {

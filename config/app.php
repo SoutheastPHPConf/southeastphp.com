@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        SoutheastPhp\Providers\AppServiceProvider::class,
-        SoutheastPhp\Providers\AuthServiceProvider::class,
-        // SoutheastPhp\Providers\BroadcastServiceProvider::class,
-        SoutheastPhp\Providers\EventServiceProvider::class,
-        SoutheastPhp\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
         Spatie\Fractal\FractalServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,

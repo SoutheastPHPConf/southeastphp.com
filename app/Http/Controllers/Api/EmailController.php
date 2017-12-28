@@ -1,12 +1,12 @@
 <?php
 
-namespace SoutheastPhp\Http\Controllers\Api;
+namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Response;
-use SoutheastPhp\Api\EmailTransformer;
-use SoutheastPhp\Http\Controllers\Controller;
-use SoutheastPhp\Http\Requests\Api\EmailRequest;
-use SoutheastPhp\Models\Email;
+use App\Api\EmailTransformer;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\Api\EmailRequest;
+use App\Models\Email;
 use Spatie\Fractal\Fractal;
 
 class EmailController extends Controller

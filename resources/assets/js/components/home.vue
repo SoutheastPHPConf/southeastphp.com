@@ -32,7 +32,7 @@
 
 <template>
   <div>
-    <se-nav></se-nav>
+    <se-nav :user="user"></se-nav>
 
     <div class="container">
 
@@ -146,9 +146,11 @@
 </template>
 <script>
   import axios from 'axios';
+  import auth from '../auth.js';
   import moment from 'moment';
   import SeNav from './navbar.vue';
   import SeFooter from './footer.vue';
+
   export default {
 
     data() {
@@ -157,6 +159,8 @@
         flashSuccessBanner: false,
         flashErrorBanner: false,
         sponsors: [],
+        auth: auth,
+        user: auth.user || null,
       };
     },
 
@@ -164,6 +168,10 @@
       today() {
         return moment().format('MM-DD-YYYY');
       },
+    },
+
+    created() {
+      return auth.check();
     },
 
     methods: {

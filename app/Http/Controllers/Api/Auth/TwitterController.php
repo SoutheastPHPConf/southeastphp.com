@@ -1,9 +1,9 @@
 <?php
 
-namespace SoutheastPhp\Http\Controllers\Api\Auth;
+namespace App\Http\Controllers\Api\Auth;
 
 use Illuminate\Http\Request;
-use SoutheastPhp\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 
 class TwitterController extends Controller
 {

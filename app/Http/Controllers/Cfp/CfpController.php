@@ -1,9 +1,9 @@
 <?php
 
-namespace SoutheastPhp\Http\Controllers\Cfp;
+namespace App\Http\Controllers\Cfp;
 
 use Illuminate\Http\Request;
-use SoutheastPhp\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 
 class CfpController extends Controller
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace SoutheastPhp\Http\Controllers\Api;
+namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Response;
-use SoutheastPhp\Http\Controllers\Controller;
-use SoutheastPhp\Models\SponsorLevel;
-use SoutheastPhp\Transformers\Api\SponsorLevelTransformer;
+use App\Http\Controllers\Controller;
+use App\Models\SponsorLevel;
+use App\Transformers\Api\SponsorLevelTransformer;
 
 class SponsorLevelsController extends Controller
 {

@@ -12,7 +12,7 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(SoutheastPhp\User::class, function (Faker\Generator $faker) {
+$factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
 
     $firstName = $faker->firstName();
@@ -36,7 +36,7 @@ $factory->define(SoutheastPhp\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(SoutheastPhp\Models\Nashville::class, function (Faker\Generator $faker) {
+$factory->define(App\Models\Nashville::class, function (Faker\Generator $faker) {
     $topics = ['Food & Drink', 'Music & History', 'Outdoors', 'Cycling', 'Beer', 'Sports'];
 
     return [
@@ -49,7 +49,7 @@ $factory->define(SoutheastPhp\Models\Nashville::class, function (Faker\Generator
     ];
 });
 
-$factory->define(SoutheastPhp\Models\Sponsor::class, function (Faker\Generator $faker) {
+$factory->define(App\Models\Sponsor::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->company,
         'website' => $faker->url,
@@ -57,7 +57,7 @@ $factory->define(SoutheastPhp\Models\Sponsor::class, function (Faker\Generator $
     ];
 });
 
-$factory->define(SoutheastPhp\Models\SponsorLevel::class, function (Faker\Generator $faker) {
+$factory->define(App\Models\SponsorLevel::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->word,
         'remaining' => $faker->numberBetween(1, 50),

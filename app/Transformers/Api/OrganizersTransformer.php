@@ -1,9 +1,9 @@
 <?php
 
-namespace SoutheastPhp\Transformers\Api;
+namespace App\Transformers\Api;
 
 use League\Fractal\TransformerAbstract;
-use SoutheastPhp\Models\Organizer;
+use App\Models\Organizer;
 
 class OrganizersTransformer extends TransformerAbstract
 {

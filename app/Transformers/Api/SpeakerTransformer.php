@@ -1,9 +1,9 @@
 <?php
 
-namespace SoutheastPhp\Transformers\Api;
+namespace App\Transformers\Api;
 
 use League\Fractal\TransformerAbstract;
-use SoutheastPhp\Models\Speaker;
+use App\Models\Speaker;
 
 class SpeakerTransformer extends TransformerAbstract
 {

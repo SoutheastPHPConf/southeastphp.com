@@ -3,6 +3,10 @@
         padding-top: 7rem;
     }
 
+    .panel {
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+
     .facebook {
         color: #fff;
         background-color: #3b5998;
@@ -21,6 +25,7 @@
 </style>
 <template>
     <div>
+        <se-nav :user="user"></se-nav>
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-xs-offset-3">
@@ -37,7 +42,7 @@
                                     <input type="password" class="form-control" id="inputPassword" placeholder="Password" v-model="password">
                                 </div>
                                 <div class="checkbox">
-                                    <label><input type="checkbox"> Remember me</label>
+                                    <label><input type="checkbox" v-model="rememberMe"> Remember me</label>
                                 </div>
                                 <button type="submit" class="btn btn-success btn-lg">Login</button>
                             </form>
@@ -54,30 +59,52 @@
                 <h3 slot="header">Login to Facebook</h3>
                 <p slot="body">In order to connect with Facebook, we need your permission to connect! You know the drill.</p>
                 <div slot="footer">
+                    <a href="#" @click.prevent="showFacebookLogin = false"><button class="btn btn-danger">Cancel</button></a>
                     <a :href="link"><button class="facebook btn">Connect With Facebook</button></a>
                 </div>
             </modal>
 
+            <modal v-if="showGithubLogin">
+                <h3 slot="header">Login to Github</h3>
+                <p slot="body">In order to connect with Github, we need your permission to connect! You know the drill.</p>
+                <div slot="footer">
+                    <a href="#" @click.prevent="showGithubLogin = false"><button class="btn btn-danger">Cancel</button></a>
+                    <a :href="link"><button class="facebook btn">Connect With Github</button></a>
+                </div>
+            </modal>
+
         </div>
+        <se-footer></se-footer>
     </div>
 </template>
 <script>
   import axios from 'axios';
+  import auth from '../../auth.js';
   import modal from '../modal.vue';
+  import SeNav from '../navbar.vue';
+  import SeFooter from '../footer.vue';
 
   export default {
     data() {
       return {
         email: '',
         password: '',
+        rememberMe: false,
         link: '',
         showFacebookLogin: false,
+        showGithubLogin: false,
+        auth: auth,
+        user: auth.user,
       };
+    },
+
+    created() {
+      return auth.check();
     },
 
     methods: {
       submitLoginForm() {
-        axios.post('/api/auth/login', {email: this.email, password: this.password}).then(response => {
+        axios.post('/api/auth/login', {email: this.email, password: this.password, rememberMe: this.rememberMe}).then(response => {
             console.log('hello world');
         }).catch(error => {
           console.error(error);
@@ -86,8 +113,15 @@
 
       facebookLogin() {
         axios.get('/api/login/facebook').then(response => {
-            this.link = response.data.data.link;
-            this.showFacebookLogin = true;
+          this.link = response.data.data.link;
+          this.showFacebookLogin = true;
+          console.log(response);
+          localStorage.setItem('id_token', response.data.token);
+          window.axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('id_token');
+
+          this.user.authenticated = true;
+          this.user.profile = response.data.user;
+          this.user.posts = response.data.posts;
         }).catch(error => {
           console.error(error);
         })
@@ -98,12 +132,23 @@
       },
 
       githubLogin() {
+        axios.get('/api/login/github').then(response => {
+          this.link = response.data.data.link;
+          this.showGithubLogin = true;
+        }).catch(error => {
+          console.error(error);
+        })
+      },
+
+      googleLogin() {
 
       },
     },
 
     components: {
       modal,
+      SeNav,
+      SeFooter,
     }
   };
 </script>

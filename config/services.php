@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => SoutheastPhp\User::class,
+        'model' => App\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
@@ -45,8 +45,8 @@ return [
         'redirect' => env(''),
     ],
     'github' => [
-        'client_id' => env(''),
-        'client_secret' => env(''),
-        'redirect' => env(''),
+        'client_id' => env('GITHUB_APP_ID'),
+        'client_secret' => env('GITHUB_APP_SECRET'),
+        'redirect' => env('APP_URL') . env('GITHUB_APP_CALLBACK'),
     ],
 ];

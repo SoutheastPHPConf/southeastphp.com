@@ -27,10 +27,21 @@ Route::get('speakers', ['uses' => 'Api\SpeakerController@index']);
  */
 Route::get('organizers', ['uses' => 'Api\OrganizersController@index']);
 
+Route::post('login', ['uses' => 'Api\Auth\LoginController@login']);
+
 Route::get('login/facebook', ['uses' => 'Api\Auth\FacebookController@facebookLogin']);
 Route::get('login/facebook/callback', ['uses' => 'Api\Auth\FacebookController@handleFacebookCallback']);
+
+Route::get('login/github', ['uses' => 'Api\Auth\GithubController@githubLogin']);
+Route::get('login/github/callback', ['uses' => 'Api\Auth\GithubController@handleGithubCallback']);
 /**
  * Sponsor Routes
  */
 Route::get('sponsors', ['uses' => 'Api\SponsorsController@index']);
 Route::get('sponsors/levels', ['uses' => 'Api\SponsorLevelsController@index']);
+
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::get('profile', ['uses' => 'Api\UserController@fetch']);
+    Route::post('profile', ['uses' => 'Api\UserController@create']);
+});
+

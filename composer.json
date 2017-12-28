@@ -30,7 +30,7 @@
             "database"
         ],
         "psr-4": {
-            "SoutheastPhp\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {

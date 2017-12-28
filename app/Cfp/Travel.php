@@ -1,9 +1,9 @@
 <?php
 
-namespace SoutheastPhp\Cfp;
+namespace App\Cfp;
 
 use Illuminate\Database\Eloquent\Model;
-use SoutheastPhp\User;
+use App\User;
 
 class Travel extends Model
 {

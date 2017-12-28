@@ -1,30 +1,24 @@
 <?php
 
-namespace SoutheastPhp\Http\Controllers\Api\Auth;
+namespace App\Http\Controllers\Api\Auth;
 
-use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
-use SoutheastPhp\Http\Controllers\Controller;
-use SoutheastPhp\Models\SocialAccount;
-use SoutheastPhp\Transformers\Api\SocialAuthLink;
-use SoutheastPhp\User;
+use App\Http\Controllers\Controller;
+use App\Models\SocialAccount;
+use App\Transformers\Api\SocialAuthLink;
+use App\User;
 
 class FacebookController extends Controller
 {
-    /**
-     * @var Response
-     */
-    private $response;
-
     /**
      * @var SocialAuthLink
      */
     private $transformer;
 
-    public function __construct(Response $response, SocialAuthLink $transformer)
+    public function __construct(SocialAuthLink $transformer)
     {
-        $this->response = $response;
         $this->transformer = $transformer;
     }
 
@@ -32,7 +26,7 @@ class FacebookController extends Controller
     {
         $link = Socialite::driver('facebook')->stateless()->redirect()->getTargetUrl();
 
-        return $this->response->setContent(fractal($link)->transformWith($this->transformer)->toArray());
+        return response(fractal($link)->transformWith($this->transformer)->toArray());
     }
 
     public function handleFacebookCallback()
@@ -60,14 +54,18 @@ class FacebookController extends Controller
                 'secret' => null,
                 'facebook_id' => $facebook->getId(),
                 'google_id' => null,
+                'github_id' => null,
                 'twitter_id' => null,
             ]));
         }
 
         Auth::login($user, 'true');
 
-        $user->createToken('SoutheastPHP')->accessToken;
+        $token = $user->createToken('SoutheastPHP')->accessToken;
 
-        return response()->redirectTo('/');
+        return response()->json([
+            'token' => $token,
+            'user' => $user,
+        ]);
     }
 }

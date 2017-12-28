@@ -1,6 +1,6 @@
 <?php
 
-namespace SoutheastPhp\Cfp;
+namespace App\Cfp;
 
 use Illuminate\Database\Eloquent\Model;
 

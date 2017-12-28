@@ -1,9 +1,9 @@
 <?php
 
-namespace SoutheastPhp\Transformers\Api;
+namespace App\Transformers\Api;
 
 use League\Fractal\TransformerAbstract;
-use SoutheastPhp\Models\Nashville;
+use App\Models\Nashville;
 
 class NashvilleTransformer extends TransformerAbstract
 {

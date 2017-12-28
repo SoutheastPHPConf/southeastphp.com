@@ -1,11 +1,11 @@
 <?php
 
-namespace SoutheastPhp;
+namespace App;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use SoutheastPhp\Models\SocialAccount;
+use App\Models\SocialAccount;
 use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable

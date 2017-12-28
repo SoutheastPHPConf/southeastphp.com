@@ -6,11 +6,11 @@
  * Time: 9:06 PM
  */
 
-namespace SoutheastPhp\Transformers\Api;
+namespace App\Transformers\Api;
 
 use League\Fractal\TransformerAbstract;
 use Carbon\Carbon;
-use SoutheastPhp\Models\Email;
+use App\Models\Email;
 
 class EmailTransformer extends TransformerAbstract
 {

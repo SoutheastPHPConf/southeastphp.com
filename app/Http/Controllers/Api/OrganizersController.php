@@ -1,11 +1,11 @@
 <?php
 
-namespace SoutheastPhp\Http\Controllers\Api;
+namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Response;
-use SoutheastPhp\Http\Controllers\Controller;
-use SoutheastPhp\Models\Organizer;
-use SoutheastPhp\Transformers\Api\OrganizersTransformer;
+use App\Http\Controllers\Controller;
+use App\Models\Organizer;
+use App\Transformers\Api\OrganizersTransformer;
 
 class OrganizersController extends Controller
 {

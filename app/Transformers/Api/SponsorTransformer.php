@@ -1,9 +1,9 @@
 <?php
 
-namespace SoutheastPhp\Transformers\Api;
+namespace App\Transformers\Api;
 
 use League\Fractal\TransformerAbstract;
-use SoutheastPhp\Models\Sponsor;
+use App\Models\Sponsor;
 
 class SponsorTransformer extends TransformerAbstract
 {

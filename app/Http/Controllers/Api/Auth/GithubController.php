@@ -10,7 +10,7 @@ use App\Models\SocialAccount;
 use App\Transformers\Api\SocialAuthLink;
 use App\User;
 
-class GoogleController extends Controller
+class GithubController extends Controller
 {
     /**
      * @var Response
@@ -28,46 +28,50 @@ class GoogleController extends Controller
         $this->transformer = $transformer;
     }
 
-    public function googleLogin()
+    public function githubLogin()
     {
-        $link = Socialite::driver('google')->stateless()->redirect()->getTargetUrl();
+        $link = Socialite::driver('github')->stateless()->redirect()->getTargetUrl();
 
         return $this->response->setContent(fractal($link)->transformWith($this->transformer)->toArray());
     }
 
-    public function handleGoogleCallback()
+    public function handleGithubCallback()
     {
-        $google = Socialite::driver('google')->stateless()->user();
+        $github = Socialite::driver('github')->stateless()->user();
 
-        $user = User::findByEmail($google->getEmail());
+        $user = User::findByEmail($github->getEmail());
 
         if (is_null($user)) {
             unset($user);
 
             $user = new User();
-            $user->name = $google->getEmail();
-            $user->email = $google->getEmail();
-            $user->first_name = preg_split("/[\s]+/", $google->getName())[0];
-            $user->last_name = preg_split("/[\s]+/", $google->getName())[1];
-            $user->image_link = $google->getAvatar();
+            $user->name = $github->getEmail();
+            $user->email = $github->getEmail();
+            $user->first_name = preg_split("/[\s]+/", $github->getName())[0];
+            $user->last_name = preg_split("/[\s]+/", $github->getName())[1];
+            $user->image_link = $github->getAvatar();
 
             $user->save();
 
             $user->socialAccount()->save(new SocialAccount([
-                'token' => $google->token,
-                'refresh_token' => $google->refreshToken,
-                'token_ttl' => $google->expiresIn,
+                'token' => $github->token,
+                'refresh_token' => $github->refreshToken,
+                'token_ttl' => $github->expiresIn,
                 'secret' => null,
-                'facebook_id' => $google->getId(),
+                'facebook_id' => null,
                 'google_id' => null,
+                'github_id' => $github->getId(),
                 'twitter_id' => null,
             ]));
         }
 
         Auth::login($user, 'true');
 
-        $user->createToken('SoutheastPHP')->accessToken;
+        $token = $user->createToken('SoutheastPHP')->accessToken;
 
-        return response()->redirectTo('/');
+        return response([
+            'token' => $token,
+            'user' => $user,
+        ])->redirectTo('/');
     }
 }

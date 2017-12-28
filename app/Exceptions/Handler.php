@@ -1,6 +1,6 @@
 <?php
 
-namespace SoutheastPhp\Exceptions;
+namespace App\Exceptions;
 
 use Exception;
 use HttpException;

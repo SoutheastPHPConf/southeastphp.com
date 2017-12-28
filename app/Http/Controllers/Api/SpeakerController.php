@@ -1,12 +1,12 @@
 <?php
 
-namespace SoutheastPhp\Http\Controllers\Api;
+namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use SoutheastPhp\Http\Controllers\Controller;
-use SoutheastPhp\Models\Speaker;
-use SoutheastPhp\Transformers\Api\SpeakerTransformer;
+use App\Http\Controllers\Controller;
+use App\Models\Speaker;
+use App\Transformers\Api\SpeakerTransformer;
 
 class SpeakerController extends Controller
 {
