@@ -1,5 +1,5 @@
 <?php
-namespace App\Services;
+namespace SoutheastPhp\Services;
 
 use League\CommonMark\DocParser;
 use League\CommonMark\Environment;
