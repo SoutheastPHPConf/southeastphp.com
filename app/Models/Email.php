@@ -12,5 +12,4 @@ class Email extends Model
         'email',
         'active'
     ];
-
 }
