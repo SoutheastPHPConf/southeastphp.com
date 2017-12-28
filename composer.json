@@ -1,15 +1,18 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.6.4",
+        "php": ">=7.0.0",
         "aws/aws-sdk-php": "^3.26",
         "doctrine/dbal": "^2.5",
         "guzzlehttp/guzzle": "^6.2",
-        "laravel/framework": "5.4.*",
+        "laravel/framework": "5.5.*",
         "laravel/homestead": "^5.2",
         "laravel/passport": "^4.0",
         "laravel/socialite": "^3.0",
@@ -18,12 +21,14 @@
         "league/csv": "^8.2",
         "sentry/sentry-laravel": "^0.8.0",
         "spatie/laravel-fractal": "^4.0",
-        "spatie/laravel-sitemap": "^2.4"
+        "spatie/laravel-sitemap": "^2.4",
+        "fideloper/proxy": "~3.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.7"
+        "phpunit/phpunit": "~6.0",
+        "filp/whoops": "~2.0"
     },
     "autoload": {
         "classmap": [
@@ -45,18 +50,19 @@
         "post-create-project-cmd": [
             "php artisan key:generate"
         ],
-        "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
-        ],
-        "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
         ]
     },
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
     }
 }
