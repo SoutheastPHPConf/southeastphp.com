@@ -44,4 +44,3 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::get('profile', ['uses' => 'Api\UserController@fetch']);
     Route::post('profile', ['uses' => 'Api\UserController@create']);
 });
-
