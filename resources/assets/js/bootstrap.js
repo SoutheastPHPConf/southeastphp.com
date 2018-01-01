@@ -8,12 +8,18 @@ try {
 } catch (e) {}
 
 import Vue from 'vue';
+import Vuex from 'vuex';
 import VueRouter from 'vue-router';
+import VueResource from 'vue-resource';
 import Axios from 'axios';
+import wysiwyg from "vue-wysiwyg";
+
 
 window.Vue = Vue;
 Vue.use(VueRouter);
-
+Vue.use(VueResource);
+Vue.use(Vuex);
+Vue.use(wysiwyg, {}); // config is optional. more below
 
 window.axios = Axios;
 

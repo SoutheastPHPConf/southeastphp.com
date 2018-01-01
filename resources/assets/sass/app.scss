@@ -3,6 +3,7 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~vue-wysiwyg/dist/vueWysiwyg.css";
 
 div.container {
   padding-top: 0;
@@ -27,4 +28,8 @@ h1, h2, h3, h4, h5, h6, a {
 p, span, li {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
+}
+
+div.editr--content {
+  background-color: #fff;
 }

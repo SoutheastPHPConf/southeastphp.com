@@ -58,4 +58,39 @@ class Sponsor extends Model
     {
         return $this->facebook;
     }
+
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
+
+    public function setAbout(string $about)
+    {
+        $this->about = $about;
+    }
+
+    public function setLevel(string $level)
+    {
+        $this->sponsor_level = $level;
+    }
+
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    public function setTwitter(string $twitter)
+    {
+        $this->twitter = $twitter;
+    }
+
+    public function setFacebook(string $facebook)
+    {
+        $this->facebook = $facebook;
+    }
+
+    public function setWebsite(string $website)
+    {
+        $this->website = $website;
+    }
 }
