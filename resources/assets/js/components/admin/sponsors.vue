@@ -1,10 +1,15 @@
 <style lang='scss' scoped>
+    .container {
+        padding-top: 7rem;
+    }
+
     div.editr--content {
         background-color: #fff;
     }
 </style>
 <template>
     <div>
+        <se-navbar :user="user"></se-navbar>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -50,15 +55,15 @@
                         </div>
 
                         <div class="form-group">
-                            <img :src="sponsorImage" class="img-circle img-responsive">
                             <vue-core-image-upload
                                     :class="['btn', 'btn-primary']"
                                     :crop="false"
                                     @imageuploaded="imageuploaded"
                                     :data="data"
                                     :max-file-size="5242880"
-                                    url="/api/sponsors/image" >
+                                    url="/api/admin/sponsors/image" >
                             </vue-core-image-upload>
+                            <img v-if="sponsorImage !== ''" :src="sponsorImage" class="img-responsive">
                         </div>
 
                         <button type="submit" class="btn btn-primary" @click.prevent="saveSponsor">Submit</button>
@@ -66,13 +71,22 @@
                 </div>
             </div>
         </div>
+        <br>
+        <se-footer></se-footer>
     </div>
 </template>
 <script>
   import axios from 'axios';
+  import auth from '../../auth.js';
   import VueCoreImageUpload  from 'vue-core-image-upload';
+  import SeNavbar from '../navbar.vue';
+  import SeFooter from '../footer.vue';
 
   export default {
+    created() {
+      return auth.check();
+    },
+
     data() {
       return {
         name: '',
@@ -83,6 +97,8 @@
         facebook: '',
         sponsorImage: '',
         showSuccess: false,
+        auth: auth,
+        user: auth.user || null,
       };
     },
 
@@ -95,7 +111,7 @@
           website: this.website,
           sponsorImage: this.sponsorImage,
           facebook: this.facebook,
-          twitter: this.twitter,
+          twitter: `https://twitter.com/${this.twitter}`,
         }).then(response => {
           this.showSuccess = true;
 
@@ -106,14 +122,14 @@
       },
 
       imageuploaded(res) {
-        if (res.errcode === 0) {
-          console.log(res);
-        }
+        this.sponsorImage = `https://s3.amazonaws.com/southeastphp/sponsors/${res}`;
       },
     },
 
     components: {
-      VueCoreImageUpload
+      VueCoreImageUpload,
+      SeFooter,
+      SeNavbar,
     }
   };
 </script>3

@@ -58,8 +58,9 @@
         <div class="row">
           <div class="col-xs-12">
             <h3 class="text-center">Sponsors</h3>
-            <p class="text-center" v-if="sponsors.length = 0">We would love to talk to you about becoming a sponsor! We have sponsorship levels that fit every budget and we can even take some time to come up with the perfect sponsorship opportunity.</p>
-            <p class="text-center" v-if="sponsors.length = 0">If you are interested in sponsoring Southeast PHP, you can download our sponsor prospectus <a download href="/docs/southeastphp-sponsor-prospectus.pdf">here</a></p>
+            <p class="text-center">We would love to talk to you about becoming a sponsor! We have sponsorship levels that fit every budget and we can even take some time to come up with the perfect sponsorship opportunity.</p>
+            <p class="text-center">If you are interested in sponsoring Southeast PHP, you can download our sponsor prospectus <a download href="/docs/southeastphp-sponsor-prospectus.pdf">here</a></p>
+            <p class="text-center">To see who is sponsoring Southeast PHP, head over to our <a href="/sponsors">Sponsors</a> page!</p>
           </div>
         </div>
         <hr>

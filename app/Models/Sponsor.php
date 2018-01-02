@@ -54,7 +54,7 @@ class Sponsor extends Model
     /**
      * @return string
      */
-    public function getFacebook(): string
+    public function getFacebook()
     {
         return $this->facebook;
     }
@@ -84,7 +84,7 @@ class Sponsor extends Model
         $this->twitter = $twitter;
     }
 
-    public function setFacebook(string $facebook)
+    public function setFacebook($facebook)
     {
         $this->facebook = $facebook;
     }

@@ -34,6 +34,10 @@ class SponsorsController extends Controller
     {
         $sponsors = Sponsor::all();
 
-        return $this->response->setStatusCode(200)->setContent(fractal($sponsors, $this->transformer)->toArray());
+        return $this->response->setStatusCode(200)
+            ->setContent(fractal($sponsors)
+                ->transformWith($this->transformer)
+                ->toArray()
+            );
     }
 }
