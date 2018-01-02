@@ -40,6 +40,9 @@ Route::get('login/github/callback', ['uses' => 'Api\Auth\GithubController@handle
 Route::get('sponsors', ['uses' => 'Api\SponsorsController@index']);
 Route::get('sponsors/levels', ['uses' => 'Api\SponsorLevelsController@index']);
 
+Route::post('admin/sponsors/image', ['uses' => 'Api\Admin\SponsorsImageController@create']);
+Route::post('admin/sponsors', ['uses' => 'Api\Admin\SponsorsController@create']);
+
 Route::group(['middleware' => 'auth:api'], function () {
     Route::get('profile', ['uses' => 'Api\UserController@fetch']);
     Route::post('profile', ['uses' => 'Api\UserController@create']);

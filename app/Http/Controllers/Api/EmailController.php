@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Transformers\Api\EmailTransformer;
 use Illuminate\Http\Response;
-use App\Api\EmailTransformer;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\EmailRequest;
 use App\Models\Email;
-use Spatie\Fractal\Fractal;
 
 class EmailController extends Controller
 {
