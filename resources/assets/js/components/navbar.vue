@@ -21,8 +21,6 @@
                         <li><a href="/code-of-conduct">Code of Conduct</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li v-if="user.profile === null"><a href="/login">Login</a></li>
-                        <li v-else><a href="/profile">{{ user.profile.name }}</a></li>
                         <li><a href="https://twitter.com/southeastphp"><i class="fa fa-twitter"></i> @southeastphp</a></li>
                     </ul>
                 </div>
