@@ -77,6 +77,7 @@
                     <thead>
                     <tr>
                         <th>Sponsor Level</th>
+                        <th>Cost</th>
                         <th>Spots Remaining</th>
                         <th>Information</th>
                     </tr>
@@ -84,6 +85,7 @@
                     <tbody>
                     <tr v-for="sponsorLevel in sponsorLevels.data">
                         <td>{{sponsorLevel.name}}</td>
+                        <td>${{ sponsorLevel.cost }}</td>
                         <td>{{sponsorLevel.remaining}}</td>
                         <td>{{sponsorLevel.information}}</td>
                     </tr>

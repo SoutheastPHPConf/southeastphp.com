@@ -11,6 +11,7 @@ class SponsorLevelTransformer extends TransformerAbstract
     {
         return [
             'name' => $sponsorLevel->getName(),
+            'cost' => $sponsorLevel->getCost(),
             'information' => $sponsorLevel->getInformation(),
             'remaining' => $sponsorLevel->getRemaining()
         ];

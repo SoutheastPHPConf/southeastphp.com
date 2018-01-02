@@ -20,7 +20,7 @@ class SponsorLevel extends Model
         return $this->name;
     }
 
-    public function getPrice(): int
+    public function getCost(): int
     {
         return $this->cost;
     }
