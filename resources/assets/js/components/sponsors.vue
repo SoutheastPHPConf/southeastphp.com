@@ -27,6 +27,7 @@
     p.sponsor-metadata {
         text-align:center;
     }
+
 </style>
 <template>
     <div>
@@ -42,7 +43,7 @@
                 <div v-for="sponsorLevel in sponsorList">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2>{{sponsorLevel.name}}</h2>
+                            <h2 class="sponsor">{{sponsorLevel.name}}</h2>
                         </div>
                     </div>
                     <div v-if="sponsorsByLevel(sponsorLevel.name).length > 0">
