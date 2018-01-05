@@ -67,11 +67,17 @@ const routes = [
     path: '/admin/emails',
     component: EmailSignups,
     name: 'EmailSignups',
+    meta: {
+      requireAuth: true,
+    }
   },
   {
     path: '/admin/sponsors',
     component: AdminSponsors,
     name: 'AdminSponsors',
+    meta: {
+      requireAuth: true,
+    }
   },
 ];
 
