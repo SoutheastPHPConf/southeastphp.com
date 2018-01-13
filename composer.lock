@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "085b446078004f45a66ba842dae6cc12",
-    "content-hash": "dd9fd8f30949c960b3bb8a82108a1443",
+    "hash": "e134f2d4a5c37fe694b930ebc3214ee8",
+    "content-hash": "5ba4656884669f7ee862fa4dc4c1a952",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1996,7 +1996,7 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "time": "2017-06-30T06:29:25+00:00"
+            "time": "2017-06-30 06:29:25"
         },
         {
             "name": "league/fractal",
