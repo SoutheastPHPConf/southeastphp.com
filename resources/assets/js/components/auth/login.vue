@@ -1,6 +1,24 @@
 <style lang='scss' scoped>
-    .container {
-        padding-top: 7rem;
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select.form-control {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #000000;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    select.form-control:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-bottom: 1px solid #BF2127;
+
     }
 
     .panel {
@@ -46,33 +64,10 @@
                                 </div>
                                 <button type="submit" class="btn btn-success btn-lg">Login</button>
                             </form>
-                            <br>
-                            <button type="button" @click.prevent="facebookLogin" class="facebook btn"><i class="fa fa-facebook"></i> Login With Facebook</button>
-                            <button type="button" @click.prevent="twitterLogin" class="twitter btn"><i class="fa fa-twitter"></i> Login With Twitter</button>
-                            <button type="button" @click.prevent="githubLogin" class="github btn"><i class="fa fa-github"></i> Login With Github</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <modal v-if="showFacebookLogin">
-                <h3 slot="header">Login to Facebook</h3>
-                <p slot="body">In order to connect with Facebook, we need your permission to connect! You know the drill.</p>
-                <div slot="footer">
-                    <a href="#" @click.prevent="showFacebookLogin = false"><button class="btn btn-danger">Cancel</button></a>
-                    <a :href="link"><button class="facebook btn">Connect With Facebook</button></a>
-                </div>
-            </modal>
-
-            <modal v-if="showGithubLogin">
-                <h3 slot="header">Login to Github</h3>
-                <p slot="body">In order to connect with Github, we need your permission to connect! You know the drill.</p>
-                <div slot="footer">
-                    <a href="#" @click.prevent="showGithubLogin = false"><button class="btn btn-danger">Cancel</button></a>
-                    <a :href="link"><button class="facebook btn">Connect With Github</button></a>
-                </div>
-            </modal>
-
         </div>
         <se-footer></se-footer>
     </div>
@@ -91,8 +86,6 @@
         password: '',
         rememberMe: false,
         link: '',
-        showFacebookLogin: false,
-        showGithubLogin: false,
         auth: auth,
         user: auth.user,
       };
@@ -104,44 +97,7 @@
 
     methods: {
       submitLoginForm() {
-        axios.post('/api/auth/login', {email: this.email, password: this.password, rememberMe: this.rememberMe}).then(response => {
-            console.log('hello world');
-        }).catch(error => {
-          console.error(error);
-        });
-      },
-
-      facebookLogin() {
-        axios.get('/api/login/facebook').then(response => {
-          this.link = response.data.data.link;
-          this.showFacebookLogin = true;
-          console.log(response);
-          localStorage.setItem('id_token', response.data.token);
-          window.axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('id_token');
-
-          this.user.authenticated = true;
-          this.user.profile = response.data.user;
-          this.user.posts = response.data.posts;
-        }).catch(error => {
-          console.error(error);
-        })
-      },
-
-      twitterLogin() {
-
-      },
-
-      githubLogin() {
-        axios.get('/api/login/github').then(response => {
-          this.link = response.data.data.link;
-          this.showGithubLogin = true;
-        }).catch(error => {
-          console.error(error);
-        })
-      },
-
-      googleLogin() {
-
+        auth.signin(this, this.email, this.password, this.rememberMe);
       },
     },
 

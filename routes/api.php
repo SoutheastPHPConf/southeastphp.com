@@ -42,6 +42,9 @@ Route::get('sponsors/levels', ['uses' => 'Api\SponsorLevelsController@index']);
 
 Route::post('admin/sponsors/image', ['uses' => 'Api\Admin\SponsorsImageController@create']);
 Route::post('admin/sponsors', ['uses' => 'Api\Admin\SponsorsController@create']);
+Route::post('register', ['uses' => 'Api\Auth\RegisterController@create']);
+
+Route::post('register', ['uses' => 'Auth\RegisterController@create']);
 
 Route::group(['middleware' => 'auth:api'], function () {
     Route::get('profile', ['uses' => 'Api\UserController@fetch']);

@@ -148,7 +148,7 @@
 <script>
   import axios from 'axios';
   import auth from '../auth.js';
-  import moment from 'moment';
+  import moment from 'moment-countdown';
   import SeNav from './navbar.vue';
   import SeFooter from './footer.vue';
 
@@ -167,7 +167,7 @@
 
     computed: {
       today() {
-        return moment().format('MM-DD-YYYY');
+        //return moment("2018-08-16").countdown().toString();
       },
     },
 
