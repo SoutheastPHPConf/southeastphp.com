@@ -19,6 +19,7 @@
         "laravel/tinker": "~1.0",
         "league/commonmark": "^0.15.7",
         "league/csv": "^8.2",
+        "league/flysystem-aws-s3-v3": "~1.0",
         "sentry/sentry-laravel": "^0.8.0",
         "spatie/laravel-fractal": "^5.0",
         "spatie/laravel-sitemap": "^3.0",

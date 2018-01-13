@@ -38,8 +38,8 @@
 
       <div class="col-xs-12 info">
         <img class="img-responsive center-block logo" src="../../../../public/img/sephp-lg.png">
-        <h2 class="text-center">Nashville, TN</h2>
-        <h3 class="text-center"><small>August, 2018</small></h3>
+        <h3 class="text-center">Nashville, TN</h3>
+        <h2 class="text-center dates">August, 16th - 17th, 2018</h2>
         <hr>
         <h4 class="text-center">The Modern PHP Toolkit</h4>
         <p class="text-center">Southeast PHP was formed by the organizers of the Nashville PHP Meetup who wanted to provide a conference for PHP developers in the South Eastern United States and abroad. Currently, the Southeast does not host a regional PHP conference, even though there are lots of PHP developers. Southeast PHP was born to serve this community and to help connect it with the worldwide PHP community by giving regional developers a chance to connect with each other and the broader PHP community.</p>
@@ -58,8 +58,9 @@
         <div class="row">
           <div class="col-xs-12">
             <h3 class="text-center">Sponsors</h3>
-            <p class="text-center" v-if="sponsors.length = 0">We would love to talk to you about becoming a sponsor! We have sponsorship levels that fit every budget and we can even take some time to come up with the perfect sponsorship opportunity.</p>
-            <p class="text-center" v-if="sponsors.length = 0">If you are interested in sponsoring Southeast PHP, you can download our sponsor prospectus <a download href="/docs/southeastphp-sponsor-prospectus.pdf">here</a></p>
+            <p class="text-center">We would love to talk to you about becoming a sponsor! We have sponsorship levels that fit every budget and we can even take some time to come up with the perfect sponsorship opportunity.</p>
+            <p class="text-center">If you are interested in sponsoring Southeast PHP, you can download our sponsor prospectus <a download href="/docs/southeastphp-sponsor-prospectus.pdf">here</a></p>
+            <p class="text-center">To see who is sponsoring Southeast PHP, head over to our <a href="/sponsors">Sponsors</a> page!</p>
           </div>
         </div>
         <hr>

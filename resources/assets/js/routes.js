@@ -10,6 +10,7 @@ import Nashville from './components/nashville.vue';
 import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
 import EmailSignups from './components/admin/signups.vue';
+import AdminSponsors from './components/admin/sponsors.vue';
 
 const routes = [
   {
@@ -66,7 +67,18 @@ const routes = [
     path: '/admin/emails',
     component: EmailSignups,
     name: 'EmailSignups',
-  }
+    meta: {
+      requireAuth: true,
+    }
+  },
+  {
+    path: '/admin/sponsors',
+    component: AdminSponsors,
+    name: 'AdminSponsors',
+    meta: {
+      requireAuth: true,
+    }
+  },
 ];
 
 const router = new VueRouter({

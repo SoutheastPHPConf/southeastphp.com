@@ -1,43 +1,45 @@
-<style lang='scss'>
+<style lang='scss' scoped>
  .container {
      padding-top: 10rem;
  }
 </style>
 
 <template>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <table class="table table-striped table-bordered">
-                    <thead>
+    <div>
+        <se-nav :user="user"></se-nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <table class="table">
+                        <thead>
                         <tr>
                             <th>Email</th>
                             <th>Signup Date</th>
-                            <th>Duplicate</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr v-for="email in emails">
                             <td> {{ email.email }}</td>
                             <td> {{ email.signupDate.date }}</td>
-                            <td>
-                                <label>
-                                    <input type="checkbox"> Duplicate
-                                </label>
-                            </td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
+        <se-footer></se-footer>
     </div>
-
 </template>
 <script>
   import axios from 'axios';
+  import auth from '../../auth.js';
+  import SeNav from '../navbar.vue';
+  import SeFooter from '../footer.vue';
 
   export default {
+    created() {
+      return auth.check();
+    },
 
     mounted() {
       this.getEmailSignups();
@@ -47,10 +49,11 @@
 
     },
 
-    data()
-    {
+    data() {
       return {
         emails: [],
+        auth: auth,
+        user: auth.user,
       };
     },
 
@@ -63,5 +66,10 @@
         });
       },
     },
+
+    components: {
+      SeNav,
+      SeFooter,
+    }
   };
 </script>

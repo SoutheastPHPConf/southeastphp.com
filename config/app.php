@@ -181,7 +181,7 @@ return [
         Laravel\Passport\PassportServiceProvider::class,
 
         Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
-
+        Spatie\Sitemap\SitemapServiceProvider::class,
     ],
 
     /*
