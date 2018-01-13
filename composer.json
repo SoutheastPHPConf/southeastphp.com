@@ -20,8 +20,8 @@
         "league/commonmark": "^0.15.7",
         "league/csv": "^8.2",
         "sentry/sentry-laravel": "^0.8.0",
-        "spatie/laravel-fractal": "^4.0",
-        "spatie/laravel-sitemap": "^2.4",
+        "spatie/laravel-fractal": "^5.0",
+        "spatie/laravel-sitemap": "^3.0",
         "fideloper/proxy": "~3.3"
     },
     "require-dev": {
