@@ -104,7 +104,12 @@
 
     methods: {
       saveSponsor() {
+        let token = localStorage.getItem('id_token');
+
         axios.post('/api/admin/sponsors', {
+          headers: {
+            'Authorization': 'Bearer ' + token
+          },
           name: this.name,
           about: this.about,
           level: this.level,
