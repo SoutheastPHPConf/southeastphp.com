@@ -1661,6 +1661,10 @@ cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
     os-homedir "^1.0.1"
     require-from-string "^1.1.0"
 
+"countdown@>= 2.3.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/countdown/-/countdown-2.6.0.tgz#677fb8e3a9d4cc4e76415901ba253b518af34177"
+
 create-ecdh@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.0.tgz#888c723596cdf7612f6498233eebd7a35301737d"
@@ -4602,6 +4606,17 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment-countdown@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/moment-countdown/-/moment-countdown-0.0.3.tgz#93100c92aa6fd884b84a83814ebdcd6b87f3388d"
+  dependencies:
+    countdown ">= 2.3.0"
+    moment ">= 2.0.0"
+
+"moment@>= 2.0.0":
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
 
 moment@^2.18.1:
   version "2.18.1"

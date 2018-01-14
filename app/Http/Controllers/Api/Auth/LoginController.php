@@ -31,6 +31,12 @@ class LoginController extends Controller
         $this->userTransformer = $userTransformer;
     }
 
+    public function register(RegisterRequest $request)
+    {
+
+    }
+
+
     public function login(LoginRequest $request)
     {
         $user = User::findByEmail($request->getEmail());

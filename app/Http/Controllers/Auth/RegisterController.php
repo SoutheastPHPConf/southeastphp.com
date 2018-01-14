@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Http\Requests\Api\Auth\RegisterRequest;
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -30,13 +32,15 @@ class RegisterController extends Controller
     protected $redirectTo = '/home';
 
     /**
-     * Create a new controller instance.
-     *
-     * @return void
+     * @var Response
      */
-    public function __construct()
+    private $response;
+
+    public function __construct(Response $response)
     {
         $this->middleware('guest');
+
+        $this->response = $response;
     }
 
     /**
@@ -54,18 +58,14 @@ class RegisterController extends Controller
         ]);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return User
-     */
-    protected function create(array $data)
+    protected function create(RegisterRequest $request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+        User::create([
+            'name' => $request->getEmail(),
+            'email' => $request->getEmail(),
+            'password' => bcrypt($request->getPassword()),
         ]);
+
+        return $this->response->setStatusCode(200)->setContent('User was created');
     }
 }

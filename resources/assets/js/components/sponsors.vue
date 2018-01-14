@@ -1,8 +1,4 @@
 <style lang='scss' scoped>
-    .container  {
-        padding-top: 7rem;
-    }
-
     .cfp {
         font-size: 5rem;
     }

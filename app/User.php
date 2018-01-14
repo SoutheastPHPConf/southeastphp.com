@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Models\SocialAccount;
@@ -33,7 +34,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public static function findByEmail(string $email)
+    public static function findByEmail(string $email) : User
     {
         return User::byEmail($email)->first();
     }
@@ -43,8 +44,13 @@ class User extends Authenticatable
         return $query->where('email', $email);
     }
 
-    public function socialAccount()
+    public function socialAccount() : HasOne
     {
         return $this->hasOne(SocialAccount::class, 'user_id', 'id');
+    }
+
+    public function getPassword() : string
+    {
+        return $this->password;
     }
 }

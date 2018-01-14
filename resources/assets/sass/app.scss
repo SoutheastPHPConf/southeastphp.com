@@ -57,7 +57,7 @@ div.editr--content {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5E5E5E;
+  color: $brand-red;
 }
 /* Link */
 .navbar-default .navbar-nav > li > a {
@@ -65,19 +65,19 @@ div.editr--content {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: $brand-red;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #E7E7E7;
+  color: $brand-red;
+  background-color: $brand-yellow;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #555;
-  background-color: #D5D5D5;
+  color: $brand-red;
+  background-color: $brand-yellow;
 }
 /* Caret */
 .navbar-default .navbar-nav > .dropdown > a .caret {
@@ -114,4 +114,26 @@ div.editr--content {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: $brand-yellow;
   }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid $brand-red;
+
 }

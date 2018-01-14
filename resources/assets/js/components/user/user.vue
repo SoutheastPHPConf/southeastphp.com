@@ -18,7 +18,7 @@
 
     methods: {
       getUser() {
-        a
+
       },
     },
   };
