@@ -42,7 +42,7 @@ export default {
     axios.post('oauth/token', {
       grant_type: 'password',
       client_id: 2,
-      client_secret: 'AILpq6vZpBVB1CcXElzteoc92RkrYMh5XGdyB4fA',
+      client_secret: '',
       username: email,
       password: password,
       rememberMe: rememberMe,
@@ -51,10 +51,10 @@ export default {
       console.log(response);
       localStorage.setItem('id_token', response.data.access_token);
       window.axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('id_token');
-      check();
+      this.check();
 
       router.push({
-        name: 'Profile'
+        name: 'Home'
       }, response => {
         context.error = true
       });
