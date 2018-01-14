@@ -12,6 +12,7 @@ import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
 import EmailSignups from './components/admin/signups.vue';
 import AdminSponsors from './components/admin/sponsors.vue';
+import auth from './auth.js';
 
 const routes = [
   {
@@ -74,7 +75,7 @@ const routes = [
     component: EmailSignups,
     name: 'EmailSignups',
     meta: {
-      requireAuth: true,
+      requiresAuth: true,
     }
   },
   {
@@ -82,7 +83,7 @@ const routes = [
     component: AdminSponsors,
     name: 'AdminSponsors',
     meta: {
-      requireAuth: true,
+      requiresAuth: true,
     }
   },
 ];
@@ -92,6 +93,16 @@ const router = new VueRouter({
   hashbang: false,
   linkActiveClass: 'active',
   mode: 'history',
+});
+
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth) && auth.user.authenticated === false) {
+    console.log('hello world');
+    next({ path: '/login', query: { redirect: to.fullPath }});
+  } else {
+    next();
+  }
 });
 
 export default router;
