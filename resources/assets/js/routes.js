@@ -7,6 +7,7 @@ import PrivacyPolicy from './components/privacy-policy.vue';
 import About from './components/about.vue';
 import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
+import Venue from './components/venue.vue';
 import Nashville from './components/nashville.vue';
 import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
@@ -54,6 +55,11 @@ const routes = [
     path: '/report',
     component: CocReport,
     name: 'CocReport',
+  },
+  {
+    path: '/venue',
+    component: Venue,
+    name: 'Venue',
   },
   {
     path: '/nashville',
