@@ -11,6 +11,7 @@ import Venue from './components/venue.vue';
 import Nashville from './components/nashville.vue';
 import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
+import Diversity from './components/diversity.vue';
 import EmailSignups from './components/admin/signups.vue';
 import AdminSponsors from './components/admin/sponsors.vue';
 import auth from './auth.js';
@@ -55,6 +56,11 @@ const routes = [
     path: '/report',
     component: CocReport,
     name: 'CocReport',
+  },
+  {
+    path: '/diversity',
+    component: Diversity,
+    name: 'Diversity',
   },
   {
     path: '/venue',

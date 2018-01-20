@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <h1>Our Sponsors</h1>
-                <p>We could not make this conference, and our community, possible without all of our sponsors!</p>
+                <p>We could not make this conference, and our community, possible without all of our sponsors! Sponsors help us keep the conference at the lowest price possible, while letting us work to bring you the best speakers our community has to offer. We encourage you to thank the sponsors via Twitter, or in person at Southeast PHP Conference!</p>
                 <p>For more information about sponsoring <a href="/docs/southeastphp-sponsor-prospectus.pdf" download>download our prospectus</a></p>
                 <div class="col-xs-12" v-if="loading == false && (sponsorLevels.data.length == 0 || sponsors.data.length == 0)">
                     <h2>No sponsors at this time, please check back later.</h2>
