@@ -11,6 +11,7 @@ import Venue from './components/venue.vue';
 import Nashville from './components/nashville.vue';
 import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
+import Sponsor from './components/sponsor.vue';
 import Diversity from './components/diversity.vue';
 import EmailSignups from './components/admin/signups.vue';
 import AdminSponsors from './components/admin/sponsors.vue';
@@ -81,6 +82,11 @@ const routes = [
       path: '/sponsors',
       component: Sponsors,
       name: 'Sponsors',
+  },
+  {
+    path: '/sponsors/:id',
+    component: Sponsor,
+    name: 'Sponsor',
   },
   {
     path: '/admin/emails',

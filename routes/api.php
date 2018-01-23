@@ -38,6 +38,7 @@ Route::get('login/github/callback', ['uses' => 'Api\Auth\GithubController@handle
  * Sponsor Routes
  */
 Route::get('sponsors', ['uses' => 'Api\SponsorsController@index']);
+Route::get('sponsors/{id}', ['uses' => 'Api\SponsorsController@fetch'])->where('id', '[0-9]+');
 Route::get('sponsors/levels', ['uses' => 'Api\SponsorLevelsController@index']);
 
 Route::post('tickets/diversity', ['uses' => 'Api\DiversityController@create']);
