@@ -15,6 +15,7 @@ import Axios from 'axios';
 import wysiwyg from "vue-wysiwyg";
 
 
+
 window.Vue = Vue;
 Vue.use(VueRouter);
 Vue.use(VueResource);

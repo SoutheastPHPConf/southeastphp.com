@@ -55,14 +55,14 @@
                         </div>
 
                         <div class="form-group">
-                            <vue-core-image-upload
-                                    :class="['btn', 'btn-primary']"
-                                    :crop="false"
-                                    @imageuploaded="imageuploaded"
-                                    :data="data"
-                                    :max-file-size="5242880"
-                                    url="/api/admin/sponsors/image" >
-                            </vue-core-image-upload>
+                            <!--<vue-core-image-upload-->
+                                    <!--:class="['btn', 'btn-primary']"-->
+                                    <!--:crop="false"-->
+                                    <!--@imageuploaded="imageuploaded"-->
+                                    <!--:data="data"-->
+                                    <!--:max-file-size="5242880"-->
+                                    <!--url="/api/admin/sponsors/image" >-->
+                            <!--</vue-core-image-upload>-->
                             <img v-if="sponsorImage !== ''" :src="sponsorImage" class="img-responsive">
                         </div>
 
@@ -78,7 +78,7 @@
 <script>
   import axios from 'axios';
   import auth from '../../auth.js';
-  import VueCoreImageUpload  from 'vue-core-image-upload';
+  //import VueCoreImageUpload  from 'vue-core-image-upload';
   import SeNavbar from '../navbar.vue';
   import SeFooter from '../footer.vue';
 
@@ -132,7 +132,7 @@
     },
 
     components: {
-      VueCoreImageUpload,
+     // VueCoreImageUpload,
       SeFooter,
       SeNavbar,
     }
