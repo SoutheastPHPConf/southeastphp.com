@@ -22,9 +22,9 @@
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav text-center">
                         <li><a href="/about">About</a></li>
-                        <li><a href="/nashville">Nashville</a></li>
-                        <li v-if="sponsors.data.length > 0"><a href="/sponsors">Sponsors</a></li>
-                        <li v-if="sessions.length > 0"><a href="/sessions">Sessions</a></li>
+                        <li><a href="/venue">Venue</a></li>
+                        <li><a href="/sponsors">Sponsors</a></li>
+                        <li><a href="/sessions">Sessions</a></li>
                         <li><a href="/code-of-conduct">Code of Conduct</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -39,44 +39,8 @@
   import axios from 'axios';
 
   export default {
-    data() {
-      return {
-        schedule: false,
-        speakers: false,
-        venue: false,
-        sponsors: [],
-        sessions: [],
-      };
-    },
-
     props: [
       'user',
     ],
-
-    created() {
-      this.getSponsors();
-    },
-
-    methods: {
-      getSchedule() {
-
-      },
-
-      getSpeakers() {
-
-      },
-
-      getVenue() {
-
-      },
-
-      getSponsors() {
-        axios.get('api/sponsors').then(response => {
-          this.sponsors = response.data;
-        }).catch(error => {
-          console.error(error);
-        })
-      },
-    },
   };
 </script>

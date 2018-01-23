@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Models\Sponsor;
@@ -36,6 +37,17 @@ class SponsorsController extends Controller
 
         return $this->response->setStatusCode(200)
             ->setContent(fractal($sponsors)
+                ->transformWith($this->transformer)
+                ->toArray()
+            );
+    }
+
+    public function fetch(Request $request)
+    {
+        $sponsor = Sponsor::find($request->id);
+
+        return $this->response->setStatusCode(200)
+            ->setContent(fractal($sponsor)
                 ->transformWith($this->transformer)
                 ->toArray()
             );

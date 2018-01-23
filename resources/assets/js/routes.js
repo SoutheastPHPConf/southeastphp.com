@@ -7,9 +7,12 @@ import PrivacyPolicy from './components/privacy-policy.vue';
 import About from './components/about.vue';
 import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
+import Venue from './components/venue.vue';
 import Nashville from './components/nashville.vue';
 import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
+import Sponsor from './components/sponsor.vue';
+import Diversity from './components/diversity.vue';
 import EmailSignups from './components/admin/signups.vue';
 import AdminSponsors from './components/admin/sponsors.vue';
 import auth from './auth.js';
@@ -56,6 +59,16 @@ const routes = [
     name: 'CocReport',
   },
   {
+    path: '/diversity',
+    component: Diversity,
+    name: 'Diversity',
+  },
+  {
+    path: '/venue',
+    component: Venue,
+    name: 'Venue',
+  },
+  {
     path: '/nashville',
     component: Nashville,
     name: 'Nashville',
@@ -69,6 +82,11 @@ const routes = [
       path: '/sponsors',
       component: Sponsors,
       name: 'Sponsors',
+  },
+  {
+    path: '/sponsors/:id',
+    component: Sponsor,
+    name: 'Sponsor',
   },
   {
     path: '/admin/emails',

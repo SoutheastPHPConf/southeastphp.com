@@ -18,7 +18,7 @@
   .panel {
     min-height: 51rem;
     max-height: 51rem;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
   }
 
   .bottom-coc {
@@ -100,13 +100,12 @@
           <div class="col-sm-12 col-md-4">
             <div class="panel panel-default">
               <div class="panel-body">
-                <p class="text-center"><i class="fa fa-music fa-2x" aria-hidden="true"></i></p>
+                <p class="text-center"><i class="fa fa-users fa-2x" aria-hidden="true"></i></p>
                 <hr>
-                <h4 class="text-center">Nashville</h4>
-                <p>As the organizers of NashvillePHP, we felt it was right for us to put on a community conference here in our city. The last time a conference was here in 2002, the landscape for PHP was completely different.</p>
-                <p>We hope to follow in the footsteps of some of our favorite conferences and not just give you a great conference, but also a fun time in our city. We have even started a list of things to do while you are here!</p>
-                <p>Something, something hot chicken.</p>
-                <a href="/nashville"><button class="btn btn-success">Nashville</button></a>
+                <h4 class="text-center">Diversity</h4>
+                <p>As the organizers of NashvillePHP, we want to make sure we make sure everyone has a chance to attend our conference, whether you live in Nashville or some place further away.</p>
+                <p>We have set up a way for companies to reach out to us and work with each other to provide tickets to those in under represented groups working with PHP and JS. If your company, or you yourself, want to sponsor some tickets, please let us know!</p>
+                <a href="/diversity"><button class="btn btn-success">Diversity</button></a>
               </div>
             </div>
           </div>
