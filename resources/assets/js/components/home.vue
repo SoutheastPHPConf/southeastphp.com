@@ -18,7 +18,7 @@
   .panel {
     min-height: 51rem;
     max-height: 51rem;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
   }
 
   .bottom-coc {
@@ -47,14 +47,6 @@
         <p class="text-center">While you are here in Nashville, we hope you will take in the sights of our loved city. We have compiled a list, and are still adding more to it, of things to check out in Nashville while you visit!</p>
         <p class="text-center">To read more about the organizers, check out the <a href="/about/organizers">Organizers</a> page!</p>
         <hr>
-        <div class="row" v-if="today === '02-01-2017'">
-          <div class="col-xs-12">
-            <h2>Our Call for Papers is open!</h2>
-            <p>We welcome everyone to submit! From first time speakers to those speakers at every conference known to us, we want them all!</p>
-            <p>If you have never spoke before, please consider checking out <a href="http://helpmeabstract.org">HelpMeAbstract</a> to get feedback on making your proposal as strong as possible.</p>
-            <p>When you are ready to submit, head over to our CfP and submit as many talks as you want!</p>
-          </div>
-        </div>
         <div class="row">
           <div class="col-xs-12">
             <h3 class="text-center">Sponsors</h3>
@@ -148,7 +140,6 @@
 <script>
   import axios from 'axios';
   import auth from '../auth.js';
-  import moment from 'moment-countdown';
   import SeNav from './navbar.vue';
   import SeFooter from './footer.vue';
 
@@ -163,12 +154,6 @@
         auth: auth,
         user: auth.user || null,
       };
-    },
-
-    computed: {
-      today() {
-        //return moment("2018-08-16").countdown().toString();
-      },
     },
 
     created() {

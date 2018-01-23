@@ -98,7 +98,6 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth) && auth.user.authenticated === false) {
-    console.log('hello world');
     next({ path: '/login', query: { redirect: to.fullPath }});
   } else {
     next();
