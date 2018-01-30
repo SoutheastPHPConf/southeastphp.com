@@ -1,6 +1,6 @@
 # SOUTHEASTPHP.COM
 
-This is a community conferencing application developed with [Laravel 5.4](laravel-54-docs) and [Vue.js](vuejs).
+This is a community conferencing application developed with [Laravel 5.5](laravel-55-docs) and [Vue.js](vuejs).
 
 ## Installation
 
