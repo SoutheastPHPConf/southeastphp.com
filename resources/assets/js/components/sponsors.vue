@@ -72,7 +72,7 @@
             <div class="row">
                 <h1>Our Sponsor Levels</h1>
 
-                <p>If you are interested in sponsoring Southeast PHP, please email us at <a href="mailto:organizers@southeastphp.com">organizers@southeastphp.com</a> and we will be more than happy to discuss potential sponsorships!3</p>
+                <p>If you are interested in sponsoring the Southeast PHP conference, please email us at <a href="mailto:organizers@southeastphp.com">organizers@southeastphp.com</a> and we will be more than happy to discuss potential sponsorships!</p>
 
                 <table class="table table-hover">
                     <thead>
@@ -103,7 +103,7 @@
                     <li>Laynard Sponsor</li>
                     <li>Swag Bag Sponsor</li>
                 </ul>
-            </div>w
+            </div>
         </div>
         <se-footer></se-footer>
     </div>
