@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Query\Builder;
 
 class Sponsor extends Model
 {
@@ -19,6 +20,11 @@ class Sponsor extends Model
         return $this->belongsTo(SponsorLevel::class, 'sponsor_level', 'id');
     }
 
+    public function sponsorLevel()
+    {
+        return $this->sponsor_level;
+    }
+
     /**
      * @return string
      */
@@ -31,7 +37,7 @@ class Sponsor extends Model
      * @return string
      */
     public function getAbout(): string
-    {
+        {
         return $this->about;
     }
 

@@ -28,6 +28,13 @@
   .logo {
     box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
   }
+
+  .well {
+    img {
+      min-width: 30rem;
+      max-width: 30rem;
+    }
+  }
 </style>
 
 <template>
@@ -50,6 +57,15 @@
         <div class="row">
           <div class="col-xs-12">
             <h3 class="text-center">Sponsors</h3>
+            <div class="row">
+              <div v-for="sponsor in sponsors.data" class="col-xs-12 col-md-4">
+                <div class="well">
+                  <h3 class="text-center">{{ sponsor.sponsorName }}</h3>
+                  <img class="img-responsive center-block" :src="sponsor.sponsorImage" alt="Sponsor Logo">
+                </div>
+              </div>
+            </div>
+
             <p class="text-center">We would love to talk to you about becoming a sponsor! We have sponsorship levels that fit every budget and we can even take some time to come up with the perfect sponsorship opportunity.</p>
             <p class="text-center">If you are interested in sponsoring Southeast PHP, you can download our sponsor prospectus <a download href="/docs/southeastphp-sponsor-prospectus.pdf">here</a></p>
             <p class="text-center">To see who is sponsoring Southeast PHP, head over to our <a href="/sponsors">Sponsors</a> page!</p>
@@ -157,7 +173,8 @@
     },
 
     created() {
-      return auth.check();
+      auth.check();
+      this.getSponsors();
     },
 
     methods: {
