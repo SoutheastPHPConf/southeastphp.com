@@ -18,12 +18,17 @@
         margin: 10px auto;
         border-radius: 6px;
         max-width: 33rem;
+        max-height: 12rem;
     }
 
     p.sponsor-metadata {
         text-align:center;
     }
 
+    .fa {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 </style>
 <template>
     <div>
@@ -50,14 +55,13 @@
                         <div class="col-xs-12 col-md-4" v-for="sponsor in sponsorsByLevel(sponsorLevel.name)">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <img :src="sponsor.image" class="sponsor-image" :alt="sponsor.name">
+                                    <a :href="sponsor.website"><img :src="sponsor.image" class="sponsor-image" :alt="sponsor.name"></a>
                                 </div>
                                 <div class="panel-body">
-                                    <div v-html="sponsor.about"></div>
                                     <p class="sponsor-metadata">
-                                        <a :href="sponsor.twitter"><i class="fa fa-twitter fa-2x" v-if="sponsor.twitter" area-hidden="true"></i></a>
-                                        <a :href="sponsor.facebook"><i class="fa fa-facebook fa-2x" v-if="sponsor.facebook" area-hidden="true"></i></a>
-                                        <a :href="sponsor.website"><i class="fa fa-id-card fa-2x" v-if="sponsor.website" area-hidden="true"></i></a>
+                                        <a :href="sponsor.twitter"><i class="fa fa-twitter" v-if="sponsor.twitter" area-hidden="true"></i></a>
+                                        <a :href="sponsor.facebook"><i class="fa fa-facebook" v-if="sponsor.facebook" area-hidden="true"></i></a>
+                                        <a :href="sponsor.website"><i class="fa fa-id-card" v-if="sponsor.website" area-hidden="true"></i></a>
                                     </p>
                                 </div>
                             </div>
