@@ -28,6 +28,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
         $schedule->command('sephp:sitemap-generate')->daily();
+        $schedule->command('backup:run')->weekends();
     }
 
     /**
