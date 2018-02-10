@@ -11,6 +11,7 @@
         "php": ">=7.0.0",
         "aws/aws-sdk-php": "^3.26",
         "doctrine/dbal": "^2.5",
+        "fideloper/proxy": "~3.3",
         "guzzlehttp/guzzle": "^6.2",
         "laravel/framework": "5.5.*",
         "laravel/homestead": "^5.2",
@@ -21,9 +22,9 @@
         "league/csv": "^8.2",
         "league/flysystem-aws-s3-v3": "~1.0",
         "sentry/sentry-laravel": "^0.8.0",
+        "spatie/laravel-backup": "^3.0.0",
         "spatie/laravel-fractal": "^5.0",
-        "spatie/laravel-sitemap": "^3.0",
-        "fideloper/proxy": "~3.3"
+        "spatie/laravel-sitemap": "^3.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -53,7 +54,7 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
+            "php artisan package:discover"
         ]
     },
     "config": {
