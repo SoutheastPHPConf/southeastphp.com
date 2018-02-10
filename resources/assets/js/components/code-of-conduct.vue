@@ -13,7 +13,7 @@
                     <p>To read our reporting guidelines, please click <a href="/report">here</a></p>
                     <h3><b>1. Purpose</b></h3>
                     <hr>
-                    <p>A primary goal of Southeast PHP Conference is to be inclusive to the largest number of participants, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).</p>
+                    <p>A primary goal of the Southeast PHP Conference is to be inclusive to the largest number of participants, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).</p>
                     <p>This Code of Conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.</p>
                     <p>We invite all those who participate in Southeast PHP Conference activities to help us create safe and positive experiences for everyone.</p>
                 </div>
@@ -22,7 +22,7 @@
                     <hr>
                     <p>A supplemental goal of this Code of Conduct is to increase open source and open culture citizenship by encouraging participants to recognize and strengthen the relationships between our actions and their effects on our community.</p>
                     <p>Communities mirror the societies in which they exist and positive action is essential to counteract the many forms of inequality and abuses of power that exist in society.</p>
-                    <p>If you see someone who is making an extra effort to ensure our community is welcoming, friendly, and encourages all participants to contribute to the fullest extent, please recognize their efforts.</p>
+                    <p>If you see someone who is making an extra effort to ensure our community is welcoming and friendly, and encourages all participants to contribute to the fullest extent, please recognize their efforts.</p>
                 </div>
                 <div class="col-xs-12">
                     <h3><b>3. Expected Behavior</b></h3>
@@ -49,8 +49,8 @@
                         <li>Personal insults, particularly those related to gender, sexual orientation, race, religion, or disability.</li>
                         <li>Inappropriate photography or recording.</li>
                         <li>Inappropriate physical contact. You should have someone's consent before touching them.</li>
-                        <li>Unwelcome sexual attention. This includes, sexualized comments or jokes; inappropriate touching, groping, and unwelcomed sexual advances.</li>
-                        <li>Deliberate intimidation, stalking or following (online or in person).</li>
+                        <li>Unwelcome sexual attention. This includes sexualized comments or jokes, inappropriate touching, groping, and unwelcomed sexual advances.</li>
+                        <li>Deliberate intimidation, stalking, or following (online or in person).</li>
                         <li>Advocating for, or encouraging, any of the above behavior.</li>
                         <li>Sustained disruption of community events, including talks and presentations.</li>
                     </ul>
