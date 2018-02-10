@@ -49,7 +49,7 @@
         <h2 class="text-center dates">August, 16th - 17th, 2018</h2>
         <hr>
         <h4 class="text-center">The Modern PHP Toolkit</h4>
-        <p class="text-center">The Southeast PHP conference was formed by the organizers of the Nashville PHP Meetup who wanted to provide a conference for PHP developers in the Southeastern United States and abroad. Currently, the Southeast does not host a regional PHP conference, even though there are lots of PHP developers. The Southeast PHP conference was born to serve this community and to help connect it with the worldwide PHP community by giving regional developers a chance to connect with each other and the broader PHP community.</p>
+        <p class="text-center">The Southeast PHP Conference was formed by the organizers of the Nashville PHP Meetup who wanted to provide a conference for PHP developers in the Southeastern United States and abroad. Currently, the Southeast does not host a regional PHP conference, even though there are lots of PHP developers. The Southeast PHP Conference was born to serve this community and to help connect it with the worldwide PHP community by giving regional developers a chance to connect with each other and the broader PHP community.</p>
         <p class="text-center">We plan on bringing the best speakers in the PHP Community and a few from the JS/Python community to give talks and tutorials in a wide variety of topics relevant to PHP and its ecosystem.</p>
         <p class="text-center">While you are here in Nashville, we hope you will take in the sights of our beloved city. We have compiled a list of things to check out in Nashville while you visit (and are still adding more)!</p>
         <p class="text-center">To read more about the organizers, check out the <a href="/about/">Organizers</a> page!</p>
@@ -68,7 +68,7 @@
 
             <p class="text-center">We would love to talk to you about becoming a sponsor! We have sponsorship levels that fit every budget and we can work with you to come up with the perfect sponsorship opportunity.</p>
             <p class="text-center">If you are interested in sponsoring Southeast PHP, you can download our sponsor prospectus <a download href="/docs/southeastphp-sponsor-prospectus.pdf">here</a></p>
-            <p class="text-center">To see who is sponsoring the Southeast PHP conference, head over to our <a href="/sponsors">Sponsors</a> page!</p>
+            <p class="text-center">To see who is sponsoring the Southeast PHP Conference, head over to our <a href="/sponsors">Sponsors</a> page!</p>
           </div>
         </div>
         <hr>

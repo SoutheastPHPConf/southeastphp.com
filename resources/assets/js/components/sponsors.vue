@@ -39,8 +39,8 @@
                 <p>We could not make this conference, and our community, possible without all of our sponsors! Sponsors help us keep the conference at the lowest price possible, while letting us work to bring you the best speakers our community has to offer. We encourage you to thank the sponsors via Twitter, or in person at the conference!</p>
                 <p>For more information about sponsoring <a href="/docs/southeastphp-sponsor-prospectus.pdf" download>download our prospectus</a></p>
 
-                <h4>Interested in shaping the diversity of the Southeast PHP conference?</h4>
-                <p>We set up a <a href="/diversity">page</a> to detail some of our efforts and ideas to help make the Southeast PHP conference as diverse as possible. If you or your company would like to help us, please let us know!</p>
+                <h4>Interested in shaping the diversity of the Southeast PHP Conference?</h4>
+                <p>We set up a <a href="/diversity">page</a> to detail some of our efforts and ideas to help make the Southeast PHP Conference as diverse as possible. If you or your company would like to help us, please let us know!</p>
 
                 <div class="col-xs-12" v-if="loading == false && (sponsorLevels.data.length == 0 || sponsors.data.length == 0)">
                     <h2>No sponsors at this time, please check back later.</h2>
@@ -76,7 +76,7 @@
             <div class="row">
                 <h1>Our Sponsor Levels</h1>
 
-                <p>If you are interested in sponsoring the Southeast PHP conference, please email us at <a href="mailto:organizers@southeastphp.com">organizers@southeastphp.com</a> and we will be more than happy to discuss potential sponsorships!</p>
+                <p>If you are interested in sponsoring the Southeast PHP Conference, please email us at <a href="mailto:organizers@southeastphp.com">organizers@southeastphp.com</a> and we will be more than happy to discuss potential sponsorships!</p>
 
                 <table class="table table-hover">
                     <thead>
