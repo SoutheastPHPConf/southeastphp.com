@@ -50,6 +50,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->

@@ -12,10 +12,10 @@ import Nashville from './components/nashville.vue';
 import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
 import Sponsor from './components/sponsor.vue';
+import Tickets from './components/tickets.vue';
 import Diversity from './components/diversity.vue';
 import EmailSignups from './components/admin/signups.vue';
 import AdminSponsors from './components/admin/sponsors.vue';
-import auth from './auth.js';
 
 const routes = [
   {
@@ -79,9 +79,14 @@ const routes = [
     name: 'Speakers',
   },
   {
-      path: '/sponsors',
-      component: Sponsors,
-      name: 'Sponsors',
+    path: '/sponsors',
+    component: Sponsors,
+    name: 'Sponsors',
+  },
+  {
+    path: '/tickets',
+    component: Tickets,
+    name: 'Tickets',
   },
   {
     path: '/sponsors/:id',
@@ -111,15 +116,6 @@ const router = new VueRouter({
   hashbang: false,
   linkActiveClass: 'active',
   mode: 'history',
-});
-
-
-router.beforeEach((to, from, next) => {
-  if (to.matched.some(record => record.meta.requiresAuth) && auth.user.authenticated === false) {
-    next({ path: '/login', query: { redirect: to.fullPath }});
-  } else {
-    next();
-  }
 });
 
 export default router;
