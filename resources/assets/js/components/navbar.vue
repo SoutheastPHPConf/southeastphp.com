@@ -23,6 +23,7 @@
                     <ul class="nav navbar-nav text-center">
                         <li><a href="/about">About</a></li>
                         <li><a href="/venue">Venue</a></li>
+                        <li><a href="/tickets">Tickets</a></li>
                         <li><a href="/sponsors">Sponsors</a></li>
                         <li><a href="/sessions">Sessions</a></li>
                         <li><a href="/code-of-conduct">Code of Conduct</a></li>
