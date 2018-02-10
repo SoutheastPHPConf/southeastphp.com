@@ -45,7 +45,7 @@
         <p class="text-center">Southeast PHP was formed by the organizers of the Nashville PHP Meetup who wanted to provide a conference for PHP developers in the South Eastern United States and abroad. Currently, the Southeast does not host a regional PHP conference, even though there are lots of PHP developers. Southeast PHP was born to serve this community and to help connect it with the worldwide PHP community by giving regional developers a chance to connect with each other and the broader PHP community.</p>
         <p class="text-center">We plan on bringing the best speakers in the PHP Community and a few from the JS/Python community to give talks and tutorials in a wide variety of topics relevant to PHP and its ecosystem.</p>
         <p class="text-center">While you are here in Nashville, we hope you will take in the sights of our loved city. We have compiled a list, and are still adding more to it, of things to check out in Nashville while you visit!</p>
-        <p class="text-center">To read more about the organizers, check out the <a href="/about/organizers">Organizers</a> page!</p>
+        <p class="text-center">To read more about the organizers, check out the <a href="/about/">Organizers</a> page!</p>
         <hr>
         <div class="row">
           <div class="col-xs-12">
