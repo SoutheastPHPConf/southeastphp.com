@@ -52,6 +52,22 @@
         <p class="text-center">We plan on bringing the best speakers in the PHP Community and a few from the JS/Python community to give talks and tutorials in a wide variety of topics relevant to PHP and its ecosystem.</p>
         <p class="text-center">While you are here in Nashville, we hope you will take in the sights of our beloved city. We have compiled a list of things to check out in Nashville while you visit (and are still adding more)!</p>
         <p class="text-center">To read more about the organizers, check out the <a href="/about/">Organizers</a> page!</p>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h3 class="text-center">Call For Papers!</h3>
+            <div class="row">
+              <p class="text-center">Our CfP is now open! We want everyone who has ever thought of speaking at a conference to submit a talk or three!</p>
+              <p class="text-center">You can submit talks to our CfP site <a href="https://cfp.southeastphp.com">here!</a></p>
+              <h4 class="text-center">Our CfP closes on April 15th, 2018!</h4>
+            </div>
+
+            <p class="text-center">We would love to talk to you about becoming a sponsor! We have sponsorship levels that fit every budget and we can work with you to come up with the perfect sponsorship opportunity.</p>
+            <p class="text-center">If you are interested in sponsoring Southeast PHP, you can download our sponsor prospectus <a download href="/docs/southeastphp-sponsor-prospectus.pdf">here</a></p>
+            <p class="text-center">To see who is sponsoring the Southeast PHP Conference, head over to our <a href="/sponsors">Sponsors</a> page!</p>
+          </div>
+        </div>
+
         <hr>
         <div class="row">
           <div class="col-xs-12">
