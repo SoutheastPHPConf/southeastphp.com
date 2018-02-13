@@ -61,11 +61,6 @@
               <p class="text-center">You can submit talks to our CfP site <a href="https://cfp.southeastphp.com">here!</a></p>
               <h4 class="text-center">Our CfP closes on April 15th, 2018!</h4>
             </div>
-
-            <p class="text-center">We would love to talk to you about becoming a sponsor! We have sponsorship levels that fit every budget and we can work with you to come up with the perfect sponsorship opportunity.</p>
-            <p class="text-center">If you are interested in sponsoring Southeast PHP, you can download our sponsor prospectus <a download href="/docs/southeastphp-sponsor-prospectus.pdf">here</a></p>
-            <p class="text-center">To see who is sponsoring the Southeast PHP Conference, head over to our <a href="/sponsors">Sponsors</a> page!</p>
-          </div>
         </div>
 
         <hr>
