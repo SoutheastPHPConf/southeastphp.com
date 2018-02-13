@@ -118,6 +118,7 @@ div.editr--content {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+textarea.form-control,
 select.form-control {
   background: transparent;
   border: none;
@@ -130,6 +131,7 @@ select.form-control {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
+textarea.form-control:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;

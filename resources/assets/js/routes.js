@@ -2,6 +2,7 @@ import VueRouter from 'vue-router';
 import Home from './components/home.vue';
 import Login from './components/auth/login.vue';
 import Register from './components/auth/register.vue';
+import Contact from './components/contact.vue';
 import TermsOfService from './components/terms-of-service.vue';
 import PrivacyPolicy from './components/privacy-policy.vue';
 import About from './components/about.vue';
@@ -32,6 +33,11 @@ const routes = [
     path: '/register',
     component: Register,
     name: 'Register',
+  },
+  {
+    path: '/contact',
+    component: Contact,
+    name: 'Contact',
   },
   {
     path: '/terms-of-service',

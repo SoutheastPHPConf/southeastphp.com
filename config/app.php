@@ -182,7 +182,6 @@ return [
 
         Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
-        Spatie\Backup\BackupServiceProvider::class,
     ],
 
     /*
