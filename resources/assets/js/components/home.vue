@@ -154,8 +154,9 @@
             </form>
 
             <h2>Call For Papers <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i> </h2>
-            <p>Our Call For Papers will open in February.</p>
-            <p>Until then, check out our <a href="#">Talk Submission</a> page for talk submission tips to help make your proposal stronger.</p>
+            <p>Our Call For Papers is Open!</p>
+            <p>You can submit papers at <a href="https://cfp.southeastphp.com">our CfP site</a> till April 15th, 2018!</p>
+            <p>Check out our <a href="#">Talk Submission</a> page for talk submission tips to help make your proposal stronger.</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4">
             <a class="twitter-timeline" data-width="400" data-height="500" href="https://twitter.com/SoutheastPHP?ref_src=twsrc%5Etfw">Tweets by SoutheastPHP</a>
