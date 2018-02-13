@@ -59,6 +59,7 @@
             <div class="row">
               <p class="text-center">Our CfP is now open! We want everyone who has ever thought of speaking at a conference to submit a talk or three!</p>
               <p class="text-center">You can submit talks to our CfP site <a href="https://cfp.southeastphp.com">here!</a></p>
+              <p class="text-center">If you need help forming your abstract, check out <a href="http://helpmeabstract.com">Help Me Abstract</a>.</p>
               <h4 class="text-center">Our CfP closes on April 15th, 2018!</h4>
             </div>
         </div>
@@ -151,7 +152,7 @@
             <h2>Call For Papers <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i> </h2>
             <p>Our Call For Papers is Open!</p>
             <p>You can submit papers at <a href="https://cfp.southeastphp.com">our CfP site</a> till April 15th, 2018!</p>
-            <p>Check out our <a href="#">Talk Submission</a> page for talk submission tips to help make your proposal stronger.</p>
+            <!--<p>Check out our <a href="#">Talk Submission</a> page for talk submission tips to help make your proposal stronger.</p>-->
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4">
             <a class="twitter-timeline" data-width="400" data-height="500" href="https://twitter.com/SoutheastPHP?ref_src=twsrc%5Etfw">Tweets by SoutheastPHP</a>
