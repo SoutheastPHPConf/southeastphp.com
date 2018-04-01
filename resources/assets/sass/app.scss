@@ -21,12 +21,14 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Bitter', serif;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 p, span, li {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
+  letter-spacing: 0.05em;
 }
 
 div.editr--content {
@@ -118,6 +120,7 @@ div.editr--content {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+textarea.form-control,
 select.form-control {
   background: transparent;
   border: none;
@@ -130,6 +133,7 @@ select.form-control {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
+textarea.form-control:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;

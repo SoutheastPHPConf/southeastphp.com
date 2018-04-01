@@ -34,6 +34,9 @@ Route::get('login/facebook/callback', ['uses' => 'Api\Auth\FacebookController@ha
 
 Route::get('login/github', ['uses' => 'Api\Auth\GithubController@githubLogin']);
 Route::get('login/github/callback', ['uses' => 'Api\Auth\GithubController@handleGithubCallback']);
+
+Route::post('contact', ['uses' => 'Api\ContactController@create']);
+
 /**
  * Sponsor Routes
  */
