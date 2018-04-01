@@ -21,12 +21,14 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Bitter', serif;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 p, span, li {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
+  letter-spacing: 0.05em;
 }
 
 div.editr--content {

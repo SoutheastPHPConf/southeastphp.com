@@ -3,11 +3,10 @@
 
 <a href="{{ env('APP_URL') }}/img/sephp.png" alt="Southeast PHP Logo"></a>
 
-The body of your message.
+There was a new message sent from {{ $contact->first_name }} {{ $contact->last_name }}
 
-@component('mail::button', ['url' => 'login'])
-Button Text
-@endcomponent
+* Email: {{ $contact->email }}
+* Message: {{ $contact->message }}
 
 Thanks,<br>
 {{ config('app.name') }}

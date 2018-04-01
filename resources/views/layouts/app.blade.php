@@ -14,7 +14,7 @@
     <title>{{ config('app.name', 'Southeast PHP') }}</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <script src="//use.fontawesome.com/8213b5e9ce.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
