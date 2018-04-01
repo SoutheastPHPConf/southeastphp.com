@@ -162,6 +162,7 @@
     </div>
 
     <se-footer></se-footer>
+    </div>
   </div>
 </template>
 <script>
