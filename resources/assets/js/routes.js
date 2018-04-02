@@ -10,6 +10,7 @@ import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
 import Venue from './components/venue.vue';
 import Nashville from './components/nashville.vue';
+import Sessions from './components/sessions.vue';
 import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
 import Sponsor from './components/sponsor.vue';
@@ -78,6 +79,11 @@ const routes = [
     path: '/nashville',
     component: Nashville,
     name: 'Nashville',
+  },
+  {
+    path: '/sessions',
+    component: Sessions,
+    name: 'Sessions',
   },
   {
     path: '/speakers',
