@@ -8,7 +8,6 @@ import PrivacyPolicy from './components/privacy-policy.vue';
 import About from './components/about.vue';
 import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
-import Venue from './components/venue.vue';
 import Nashville from './components/nashville.vue';
 import Sessions from './components/sessions.vue';
 import Speakers from './components/speakers.vue';
@@ -16,8 +15,10 @@ import Sponsors from './components/sponsors.vue';
 import Sponsor from './components/sponsor.vue';
 import Tickets from './components/tickets.vue';
 import Diversity from './components/diversity.vue';
+import Venue from './components/venue.vue';
 import EmailSignups from './components/admin/signups.vue';
 import AdminSponsors from './components/admin/sponsors.vue';
+import NotFound from './components/not-found.vue';
 
 const routes = [
   {
@@ -106,6 +107,11 @@ const routes = [
     name: 'Sponsor',
   },
   {
+    path: '/venue',
+    component: Venue,
+    name: 'Venue',
+  },
+  {
     path: '/admin/emails',
     component: EmailSignups,
     name: 'EmailSignups',
@@ -121,6 +127,11 @@ const routes = [
       requiresAuth: true,
     }
   },
+  {
+    path: '*',
+    component: NotFound,
+    name: 'NotFound',
+  }
 ];
 
 const router = new VueRouter({
