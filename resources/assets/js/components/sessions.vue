@@ -1,4 +1,4 @@
-<style lang='scss' scoped>
+<style lang='scss'>
 
 </style>
 <template>
@@ -7,8 +7,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <p>You still have a few days! Our Cfp is still going on, till April 15th, 11:59pm/23:59!</p>
-                    <p>Go to <a href="https://cfp.southeastphp.com">our cfp site</a> and submit as many talks as you want!i</p>
+                    <h1>Check back soon!</h1>
+                    <p>Our Cfp is still going on, once that is done and we select our speakers, we will update this page with all the relevant information.</p>
                 </div>
             </div>
         </div>
@@ -17,14 +17,13 @@
 </template>
 <script>
   import axios from 'axios';
-  import moment from 'moment';
   import SeNavbar from './navbar.vue';
   import SeFooter from './footer.vue';
 
   export default {
     components: {
       SeNavbar,
-      SeFooter
+      SeFooter,
     }
-  }
+  };
 </script>
