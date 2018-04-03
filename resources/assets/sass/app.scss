@@ -47,6 +47,14 @@ div.editr--content {
   }
 }
 
+.button-red {
+  background-color: $brand-red;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
 /* navbar */
 .navbar-default {
   background-color: $brand-yellow;
@@ -139,4 +147,8 @@ select.form-control:focus {
   box-shadow: none;
   border-bottom: 1px solid $brand-red;
 
+}
+
+.padding-top {
+  padding-top: 2rem;
 }
