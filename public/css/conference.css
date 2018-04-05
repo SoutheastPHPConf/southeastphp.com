@@ -1,0 +1,58 @@
+body {
+  background-color: #fde8be;
+}
+
+/* changing button colors to match Southeast PHP logo */
+
+.btn-success {
+  color: #fff;
+  background-color: #f07230;
+  border-color: #C03727;
+  text-align: center; /*////////////////*/
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #C03727;
+  border-color: #f07230;
+}
+
+.btn-success:active,
+.btn-success.active,
+.open > .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #C03727;
+  border-color: #f07230;
+}
+
+
+hr {
+/*  color: #c03727; */
+  border-top: 1px solid #C03727;
+}
+
+/* Sponsors logo box */
+.well {
+  background-color: #fff;
+  border: 1px solid #f07230;
+}
+
+
+a {
+  color: #f07230;
+}
+
+a:hover, a:active {
+  color: #C03727;
+}
+
+/*email input */
+input {
+    border: 6px solid #f07230;
+}
+
+/* coloring font awesome icons */
+
+.fa {
+  color: #f07230;
+}
