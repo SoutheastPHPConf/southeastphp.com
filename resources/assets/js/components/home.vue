@@ -47,21 +47,26 @@
   <div>
     <se-nav :user="user"></se-nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 info">
-          <div class="row">
-            <div class="col-lg-6">
-              <img class="img-responsive center-block logo" src="../../../../public/img/sephp-lg.png">
-            </div>
-            <div class="col-lg-6">
-              <h3 class="text-center tracking-wide font-serif">Nashville, TN</h3>
-              <h2 class="text-center dates tracking-wide font-serif">August 16th - 17th, 2018</h2>
-              <button class="btn btn-lg btn-red center-block w-80"><a class="font-white font-sans font-2xl tracking-wide" href="/tickets">Buy Tickets</a></button>
-              <p class="font-serif tracking-wide font-3xl padding-top-2 pitch">Music City invites you to spend a few days talking code, networking and making new friends with us!</p>
-            </div>
-          </div>
+    <div class="section home-intro bg-orange">
+      <div class="section-inner">
+        <div class="col-lg-2 col col-40">
+          <img style="max-width:290px;" class="img-responsive center-block logo" src="../../../../public/img/sephp-lg.png">
         </div>
+        <div class="col-lg-2 col col-40">
+          <span class="small-header yellow">Southeast PHP Conference</span>
+          <div class="hero-text white">
+            August 16th - 17th, 2018<br/>
+            Nashville, TN<br/>
+            Hotel Preston<br/>
+          </div>
+          <a href="/tickets" class="button">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+    <div class="section home-tagline bg-red">
+      <div class="section-inner">
+        <h2>The Modern PHP Toolkit</h2>
+        Come over to Nashville and connect with the best speakers in the PHP community sharing their knowledge and tutorials in a wide variety of topics relevant to PHP and its ecosystem.
       </div>
     </div>
     <se-footer></se-footer>
