@@ -1,25 +1,30 @@
 <style lang="scss" scoped>
     .navbar {
-        border-bottom: 2px solid #636b6f;
+        background-color: #BF2127;
+        border-bottom: 2px solid #DAE1E7;
+        color: #fff;
     }
 
     .dropdown-menu {
-
-        background-color: #FFE8BE;
-        a:hover {
-            background-color: #FFE8BE;
+        background-color: #BF2127;
+        a {
+            color: #fff;
+            background-color: #BF2127;
+            &:hover {
+                background-color: #BF2127;
+            }
         }
     }
 
     a.hover {
-        border-bottom: 2px solid #FFE8BE;
+        border-bottom: 2px solid #BF2127;
         &:hover {
-            color: #BF2127;
-            border-bottom: 2px solid #BF2127;
+            color: #fff;
+            border-bottom: 2px solid #FFE8BE;
         }
         &:active {
-            color: #BF2127;
-            border-bottom: 2px solid #BF2127;
+            color: #fff;
+            border-bottom: 2px solid #FFE8BE;
         }
     }
 
@@ -37,27 +42,26 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/" class="navbar-brand">Southeast PHP Conference</a>
                 </div>
                 <!-- Collection of nav links and other content for toggling -->
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav text-center">
-                        <li><a class="hover" href="/about">About</a></li>
-                        <li><a class="hover" href="/venue">Venue</a></li>
-                        <li><a class="hover" href="/tickets">Tickets</a></li>
-                        <li><a class="hover" href="/sponsors">Sponsors</a></li>
+                        <li><a class="hover font-sans tracking-wide font-2x" href="/venue">Venue</a></li>
+                        <li><a class="hover font-sans tracking-wide font-2x" href="/sponsors">Sponsors</a></li>
+                        <li class="hidden-lg"><a class="hover font-sans tracking-wide font-2xl" href="/tickets">Tickets</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sessions<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle font-sans tracking-wide font-2xl hover" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Schedule<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="hover" href="/speakers">Speakers</a></li>
-                                <li><a class="hover" href="/sessions">Sessions</a></li>
+                                <li><a class="hover font-sans tracking-wide font-2xl" href="/speakers">Speakers</a></li>
+                                <li><a class="hover font-sans tracking-wide font-2xl" href="/sessions">Sessions</a></li>
+                                <li><a class="hover font-sans tracking-wide font-2xl" href="/keynotes">Keynotes</a></li>
                             </ul>
                         </li>
 
-                        <li><a class="hover" href="/code-of-conduct">Code of Conduct</a></li>
+                        <li><a class="hover font-sans tracking-wide font-2xl" href="/code-of-conduct">Code of Conduct</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden-sm hidden-xs"><a href="https://twitter.com/southeastphp"><i class="fa fa-twitter"></i> @southeastphp</a></li>
+                        <li class="hidden-sm hidden-xs"><a class="hover font-sans tracking-wide font-2xl" href="/tickets">Buy Tickets</a></li>
                     </ul>
                 </div>
             </div>
