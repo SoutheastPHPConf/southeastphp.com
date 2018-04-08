@@ -14,7 +14,7 @@
     <title>{{ config('app.name', 'Southeast PHP') }}</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Bitter|Raleway:300,700" rel="stylesheet">
     <script src="//use.fontawesome.com/8213b5e9ce.js"></script>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
