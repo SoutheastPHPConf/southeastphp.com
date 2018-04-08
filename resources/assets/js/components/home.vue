@@ -46,7 +46,7 @@
     <div class="section home-intro bg-orange">
       <div class="section-inner">
         <div class="col-lg-2 col col-40">
-          <img style="max-width:290px;" class="img-responsive alignright logo" src="../../../../public/img/sephp-lg.png">
+          <img style="max-width:290px;" class="logo" src="../../../../public/img/sephp-lg.png">
         </div>
         <div class="col-lg-2 col col-50">
           <span class="small-header yellow">Southeast PHP Conference</span>
@@ -88,7 +88,11 @@
          </div>
      </div>
     </div>
-
+    <!-- <div class="section home-tagline bg-white center">
+      <div class="section-inner w-80">
+        <h2 class="section-heading gray">Sponsors</h2>
+      </div>
+    </div> -->
 
 
     <se-footer></se-footer>
