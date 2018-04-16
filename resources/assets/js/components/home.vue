@@ -122,7 +122,7 @@
                 <p class="text-center"><i class="fa fa-users fa-2x" aria-hidden="true"></i></p>
                 <hr>
                 <h4 class="text-center">Diversity</h4>
-                <p>As the organizers of NashvillePHP, we want to make sure we make sure everyone has a chance to attend our conference, whether you live in Nashville or some place further away.</p>
+                <p>As the organizers of NashvillePHP, we want to make sure everyone has a chance to attend our conference, whether you live in Nashville or some place further away.</p>
                 <p>We have set up a way for companies to reach out and work with us to provide tickets to those in under-represented groups working with PHP and JS. If your company, or you as an individual, want to sponsor some tickets, please let us know!</p>
                 <a href="/diversity"><button class="btn btn-success">Diversity</button></a>
               </div>
