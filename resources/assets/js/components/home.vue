@@ -55,7 +55,7 @@
               <img class="img-responsive center-block logo" src="../../../../public/img/sephp-lg.png">
             </div>
             <div class="col-lg-6">
-              <h3 class="text-center tracking-wide font-serif">Nashville, TN</h3>
+              <h3 class="text-center tracking-wide font-serif text-grey-light">Nashville, TN</h3>
               <h2 class="text-center dates tracking-wide font-serif">August 16th - 17th, 2018</h2>
               <button class="btn btn-lg btn-red center-block w-80"><a class="font-white font-sans font-2xl tracking-wide" href="/tickets">Buy Tickets</a></button>
               <p class="font-serif tracking-wide font-3xl padding-top-2 pitch">Music City invites you to spend a few days talking code, networking and making new friends with us!</p>
