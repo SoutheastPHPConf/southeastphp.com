@@ -2,7 +2,10 @@
 
 namespace App\Console;
 
+use App\Console\Commands\AcceptEmailSendCommand;
+use App\Console\Commands\DeclinedEmailSendCommand;
 use App\Console\Commands\SitemapCommand;
+use App\Mail\AcceptanceMail;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -15,6 +18,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         SitemapCommand::class,
+        AcceptEmailSendCommand::class,
+        DeclinedEmailSendCommand::class,
     ];
 
     /**
