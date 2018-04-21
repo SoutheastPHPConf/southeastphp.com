@@ -34,6 +34,8 @@ class DeclineEmail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('email.decline-email');
+        return $this->from('organizers@southeastphp.com')
+            ->subject('Southeast PHP Conference Talk Submission')
+            ->markdown('email.decline-email');
     }
 }
