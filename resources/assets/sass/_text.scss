@@ -1,0 +1,93 @@
+html body, .font-serif {
+	font-family: $font-family-serif;
+}
+h1, h2, h3, h4 {
+	font-family: $font-family-sans;
+	font-weight: bold;
+}
+
+.font-sans {
+  font-family: $font-family-sans;
+}
+
+.font-sans-narrow {
+  font-family: $font-family-sans-narrow;
+}
+
+.tracking-wide {
+  letter-spacing: 0.1em;
+}
+
+.space {
+  line-height: 1.5rem;
+}
+
+.line-height-xl {
+  line-height: 1.5rem;
+}
+
+.font-1xl {
+  font-size: .8rem;
+}
+
+.font-2xl {
+  font-size: 1.6rem;
+}
+
+.font-3xl {
+  font-size: 2.4rem;
+}
+
+.font-4xl {
+  font-size: 3.6rem;
+}
+
+.text-grey-dark {
+  color: #3D4852;
+}
+
+.text-grey {
+  color: #B8C2CC;
+}
+
+.text-grey-light {
+  color: #F8FAFC;
+}
+
+
+.hero-text {
+	font-family: $font-family-sans;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.small-header {
+	font-family: $font-family-serif;
+	font-size: 1.3rem;
+	color: $brand-yellow;
+	text-transform: uppercase;
+}
+
+.section-heading {
+	text-transform: uppercase;
+	font-size: 2.8rem;
+	margin-top:1rem;
+}
+
+.feature-text {
+	font-size: 1.65rem;
+	line-height: 1.35;
+	width:$feature-text-width;
+	max-width: 100%;
+}
+
+.image-label {
+	font-family: $font-family-sans;
+	color:$brand-red;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	display: block;
+	font-weight: bold;
+}

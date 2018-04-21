@@ -2,6 +2,10 @@
 // Body
 $body-bg: #f5f8fa;
 
+//Layout
+$max-text-width: 80rem;
+$feature-text-width: 50rem;
+
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
 $list-group-border: $laravel-border-color;
@@ -22,10 +26,13 @@ $brand-yellow: #FFE8BE;
 
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans: "Raleway", sans-serif;
+$font-family-sans-narrow: "PT Sans Narrow", sans-serif;
+$font-family-serif: "Bitter", serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
 $text-color: #636b6f;
+
 
 // Navbar
 $navbar-default-bg: #fff;
@@ -40,3 +47,18 @@ $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
 $panel-default-heading-bg: #fff;
+
+/*********************
+TRANSITION
+USAGE: @include transition(all, 0.2s, ease-in-out);
+*********************/
+
+@mixin transition($what: all, $time: 0.2s, $transition: ease-in-out) {
+	// defining prefixes so we can use them in mixins below
+	$prefixes:      ("-webkit", "-moz", "-ms", "-o",  "");
+  @each $prefix in $prefixes {
+    #{$prefix}-transition: $what $time $transition;
+  }
+
+  transition: $what $time $transition;
+}
