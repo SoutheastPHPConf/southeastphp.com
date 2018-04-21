@@ -37,7 +37,7 @@
             <div class="row">
                 <h1>Our Sponsors</h1>
                 <p>We could not make this conference, and our community, possible without all of our sponsors! Sponsors help us keep the conference at the lowest price possible, while letting us work to bring you the best speakers our community has to offer. We encourage you to thank the sponsors via Twitter, or in person at the conference!</p>
-                <p>For more information about sponsoring <a href="/docs/southeastphp-sponsor-prospectus.pdf" download>download our prospectus</a></p>
+                <p>For more information about sponsoring <a href="/docs/southeastphp-sponsor-prospectus.pdf" download>download our prospectus</a>.</p>
 
                 <h4>Interested in shaping the diversity of the Southeast PHP Conference?</h4>
                 <p>We set up a <a href="/diversity">page</a> to detail some of our efforts and ideas to help make the Southeast PHP Conference as diverse as possible. If you or your company would like to help us, please let us know!</p>
@@ -104,7 +104,7 @@
                     <li>Speaker Dinner Sponsor</li>
                     <li>T-shirt Sponsor</li>
                     <li>Coffee/Snack Sponsor - Price to be determined</li>
-                    <li>Laynard Sponsor</li>
+                    <li>Lanyard Sponsor</li>
                     <li>Swag Bag Sponsor</li>
                 </ul>
             </div>

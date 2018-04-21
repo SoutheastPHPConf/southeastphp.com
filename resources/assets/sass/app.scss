@@ -229,6 +229,15 @@ select.form-control:focus {
   }
 }
 
+.button-red {
+  background-color: $brand-red;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+/* navbar */
 .navbar-default {
   background-color: $brand-red;
   border-color: $brand-red;
@@ -326,7 +335,10 @@ select.form-control:focus {
 //
 // SOCIAL
 //
-
 .fa.fa-twitter {
   color: #1dcaff;
+}
+
+.padding-top {
+  padding-top: 2rem;
 }
