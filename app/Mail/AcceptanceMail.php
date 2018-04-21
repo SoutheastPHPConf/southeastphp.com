@@ -34,6 +34,8 @@ class AcceptanceMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('email.acceptance-email');
+        return $this->from('organizers@southeastphp.com')
+            ->subject('Southeast PHP Conference Talk Submission Acceptance!')
+            ->markdown('email.acceptance-email');
     }
 }
