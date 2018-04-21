@@ -2,7 +2,11 @@
 
 namespace App\Console\Commands;
 
+use App\Mail\DeclineEmail;
+use App\Models\DeclinedSpeaker;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class DeclinedEmailSendCommand extends Command
 {
@@ -11,24 +15,14 @@ class DeclinedEmailSendCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'speakers:decline';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
-
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
+    protected $description = 'Send decline emails :(';
 
     /**
      * Execute the console command.
@@ -37,6 +31,11 @@ class DeclinedEmailSendCommand extends Command
      */
     public function handle()
     {
-        //
+        $speakers = DeclinedSpeaker::all();
+
+        return $speakers->each(function ($speaker) {
+            Log::info('decline email sent to ' . $speaker->email);
+            return Mail::to($speaker->email)->send(new DeclineEmail($speaker));
+        });
     }
 }

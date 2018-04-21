@@ -3,11 +3,11 @@
 
 ### Modern PHP Toolbox
 
-<img src="https://s3.amazonaws.com/southeastphp/logos/SouthEastPHPLogo.png">
-
+<img src="https://southeastphp.com/img/sephp-lg.png">
+<br>
 Dear {{ $speaker->name }}, 
 
-Congratulations! As we reviewed all the submissions we received, we came upon {{ $speaker->talk }} and knew there was no way we could pass by it!
+Congratulations! As we reviewed all the submissions we received, we came upon <b>"{{ $speaker->session_name }}"</b> and knew there was no way we could pass by it!
 
 We ask two quick things: 
 
@@ -21,7 +21,7 @@ you mark any dietary preferences you may have.
 We are so excited to welcome you to Nashville, and we can't wait for August!
 
 @component('mail::button', ['url' => 'https://www.eventbrite.com/e/southeast-php-tickets-43007986044?aff=eac2'])
-Ticket
+Tickets
 @endcomponent
 
 Thanks,<br>

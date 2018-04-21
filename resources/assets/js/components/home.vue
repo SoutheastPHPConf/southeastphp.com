@@ -26,10 +26,6 @@
     padding-bottom: 1rem;
   }
 
-  .logo {
-    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
-  }
-
   .well {
     img {
       min-width: 30rem;
@@ -47,23 +43,58 @@
   <div>
     <se-nav :user="user"></se-nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 info">
-          <div class="row">
-            <div class="col-lg-6">
-              <img class="img-responsive center-block logo" src="../../../../public/img/sephp-lg.png">
-            </div>
-            <div class="col-lg-6">
-              <h3 class="text-center tracking-wide font-serif text-grey-light">Nashville, TN</h3>
-              <h2 class="text-center dates tracking-wide font-serif">August 16th - 17th, 2018</h2>
-              <button class="btn btn-lg btn-red center-block w-80"><a class="font-white font-sans font-2xl tracking-wide" href="/tickets">Buy Tickets</a></button>
-              <p class="font-serif tracking-wide font-3xl padding-top-2 pitch">Music City invites you to spend a few days talking code, networking and making new friends with us!</p>
-            </div>
+    <div class="section home-intro bg-orange">
+      <div class="section-inner">
+        <div class="col-lg-2 col col-40">
+          <img style="max-width:290px;" class="logo" src="../../../../public/img/sephp-lg.png">
+        </div>
+        <div class="col-lg-2 col col-50">
+          <span class="small-header yellow">Southeast PHP Conference</span>
+          <div class="hero-text white">
+            August 16th & 17th, 2018<br/>
+            Nashville, TN<br/>
+            Hotel Preston<br/>
           </div>
+          <a href="/tickets" class="button">Buy Tickets</a>
         </div>
       </div>
     </div>
+    <div class="section home-tagline bg-red center">
+      <div class="section-inner w-80">
+        <h2 class="section-heading">The Modern PHP Toolkit</h2>
+        <p class="feature-text center">Come over to Nashville and connect with the best speakers in the PHP community as they share knowledge and tutorials in a wide variety of topics relevant to the modern PHP ecosystem.
+        </p>
+      </div>
+    </div>
+    <div class="section home-tagline bg-yellow center">
+      <div class="section-inner w-80">
+         <h2 class="section-heading red">Keynote Speakers</h2>
+         <div class="keynote-grid flex-grid flex-1-3-5">
+           <div class="grid-item">
+            <img src="../../../../public/images/keynotes/cal-evans.jpg"/><span class="image-label">Cal Evans</span>
+          </div>
+           <div class="grid-item">
+             <img src="../../../../public/images/keynotes/josh-holmes.jpg"/><span class="image-label">Josh Holmes</span>
+           </div>
+           <div class="grid-item">
+              <img src="../../../../public/images/keynotes/adrienne-lowe.jpg"/><span class="image-label">Adrienne Lowe</span>
+            </div>
+           <div class="grid-item">
+              <img src="../../../../public/images/keynotes/jenna-quindica.jpg"/><span class="image-label">Jenna Quindica</span>
+            </div>
+           <div class="grid-item">
+              <img src="../../../../public/images/keynotes/samantha-graham.jpg"/><span class="image-label">Samantha Quinones & Graham Hoefer</span>
+            </div>
+         </div>
+     </div>
+    </div>
+    <!-- <div class="section home-tagline bg-white center">
+      <div class="section-inner w-80">
+        <h2 class="section-heading gray">Sponsors</h2>
+      </div>
+    </div> -->
+
+
     <se-footer></se-footer>
   </div>
 </template>

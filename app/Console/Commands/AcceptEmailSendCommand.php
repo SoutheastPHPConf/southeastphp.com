@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Mail\AcceptanceMail;
 use App\Models\Speaker;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class AcceptEmailSendCommand extends Command
@@ -24,16 +25,6 @@ class AcceptEmailSendCommand extends Command
     protected $description = 'Send acceptance email to speakers';
 
     /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-    /**
      * Execute the console command.
      *
      * @return mixed
@@ -43,6 +34,7 @@ class AcceptEmailSendCommand extends Command
         $speakers = Speaker::all();
 
         return $speakers->each(function ($speaker) {
+            Log::info('acceptance email sent to ' . $speaker->email);
             return Mail::to($speaker->email)->send(new AcceptanceMail($speaker));
         });
     }
