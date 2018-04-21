@@ -14,7 +14,7 @@
         "fideloper/proxy": "~3.3",
         "guzzlehttp/guzzle": "^6.2",
         "laravel/framework": "5.5.*",
-        "laravel/homestead": "^5.2",
+        "laravel/homestead": "^6.0",
         "laravel/passport": "^4.0",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",

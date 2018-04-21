@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Speaker extends Model
 {
-    protected $table = 'speaker';
+    protected $table = 'speakers';
 
     public function getName()
     {
