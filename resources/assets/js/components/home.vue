@@ -23,14 +23,7 @@
   }
 
   .bottom-coc {
-    padding-bottom: 1rem;
-  }
-
-  .well {
-    img {
-      min-width: 30rem;
-      max-width: 30rem;
-    }
+      padding-bottom: 1rem;
   }
 
   .pitch {
@@ -70,21 +63,9 @@
       <div class="section-inner w-80">
          <h2 class="section-heading red">Keynote Speakers</h2>
          <div class="keynote-grid flex-grid flex-1-3-5">
-           <div class="grid-item">
-            <img src="../../../../public/images/keynotes/cal-evans.jpg"/><span class="image-label">Cal Evans</span>
-          </div>
-           <div class="grid-item">
-             <img src="../../../../public/images/keynotes/josh-holmes.jpg"/><span class="image-label">Josh Holmes</span>
+           <div class="grid-item" v-for="speaker in shuffledKeynotes">
+             <img class="speaker" :src="speaker.image"/><span class="image-label"><div v-html="speaker.name"></div></span>
            </div>
-           <div class="grid-item">
-              <img src="../../../../public/images/keynotes/adrienne-lowe.jpg"/><span class="image-label">Adrienne Lowe</span>
-            </div>
-           <div class="grid-item">
-              <img src="../../../../public/images/keynotes/jenna-quindica.jpg"/><span class="image-label">Jenna Quindica</span>
-            </div>
-           <div class="grid-item">
-              <img src="../../../../public/images/keynotes/samantha-graham.jpg"/><span class="image-label">Samantha Quinones & Graham Hoefer</span>
-            </div>
          </div>
      </div>
     </div>
@@ -99,6 +80,7 @@
   </div>
 </template>
 <script>
+  import { shuffle } from 'lodash';
   import axios from 'axios';
   import auth from '../auth.js';
   import SeNav from './navbar.vue';
@@ -112,6 +94,7 @@
         flashSuccessBanner: false,
         flashErrorBanner: false,
         sponsors: [],
+        keynotes: [],
         auth: auth,
         user: auth.user || null,
       };
@@ -120,6 +103,13 @@
     created() {
       auth.check();
       this.getSponsors();
+      this.getKeynotes();
+    },
+
+    computed: {
+      shuffledKeynotes() {
+        return shuffle(this.keynotes);
+      },
     },
 
     methods: {
@@ -140,6 +130,14 @@
             this.flashErrorBanner = false;
           }, 5000);
         });
+      },
+
+      getKeynotes() {
+        axios.get('/api/keynotes').then(response => {
+          this.keynotes = response.data.data;
+        }).catch(error => {
+          console.log('error: ' + error);
+        })
       },
 
       getSponsors() {
