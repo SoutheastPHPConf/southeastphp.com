@@ -72,11 +72,6 @@ const routes = [
     name: 'Diversity',
   },
   {
-    path: '/venue',
-    component: Venue,
-    name: 'Venue',
-  },
-  {
     path: '/nashville',
     component: Nashville,
     name: 'Nashville',

@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Speaker extends Model
 {
-    protected $table = 'speaker';
+    protected $table = 'speakers';
 
     public function getName()
     {
@@ -36,5 +37,10 @@ class Speaker extends Model
     public function getTwitter()
     {
         return $this->twitter;
+    }
+
+    public function scopeByKeynote(Builder $query)
+    {
+        return $query->where('category', '=', 'keynote');
     }
 }
