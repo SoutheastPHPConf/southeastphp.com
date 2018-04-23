@@ -1,4 +1,4 @@
-<style lang='scss'>
+<style lang='scss' scoped>
     img {
         box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
     }

@@ -6,7 +6,7 @@
         <se-navbar></se-navbar>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-md-12">
                     <p>You still have a few days! Our Cfp is still going on, till April 15th, 11:59pm/23:59!</p>
                     <p>Go to <a href="https://cfp.southeastphp.com">our cfp site</a> and submit as many talks as you want!i</p>
                 </div>
