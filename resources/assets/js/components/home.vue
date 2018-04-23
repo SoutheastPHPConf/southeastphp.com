@@ -16,12 +16,6 @@
     background-color: #FFE8BE;
   }
 
-  .panel {
-    min-height: 51rem;
-    max-height: 51rem;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
-  }
-
   .bottom-coc {
       padding-bottom: 1rem;
   }
@@ -29,6 +23,15 @@
   .pitch {
     width: 100%;
     padding-left: 6rem;
+  }
+
+  .sponsor {
+    min-height: 15rem;
+    max-height: 15rem;
+  }
+
+  img.speaker {
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
   }
 </style>
 
@@ -68,12 +71,17 @@
            </div>
          </div>
      </div>
-    </div>
-    <!-- <div class="section home-tagline bg-white center">
-      <div class="section-inner w-80">
-        <h2 class="section-heading gray">Sponsors</h2>
+      <div class="section home-tagline bg-orange center">
+        <div class="section-inner w-80">
+          <h2 class="section-heading white">Sponsors</h2>
+          <div class="keynote-grid flex-grid flex-1-3-5">
+            <div class="grid-item" v-for="sponsor in shuffledSponsors">
+              <img class="sponsor" :src="sponsor.image"/><span class="image-label"><div v-html="sponsor.name"></div></span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div> -->
+    </div>
 
 
     <se-footer></se-footer>
@@ -110,6 +118,10 @@
       shuffledKeynotes() {
         return shuffle(this.keynotes);
       },
+
+      shuffledSponsors() {
+        return shuffle(this.sponsors);
+      }
     },
 
     methods: {
@@ -141,8 +153,8 @@
       },
 
       getSponsors() {
-        axios.get('api/sponsors/top').then(response => {
-          this.sponsors = response.data;
+        axios.get('api/sponsors').then(response => {
+          this.sponsors = response.data.data;
         }).catch(error => {
           console.error(error);
         })
