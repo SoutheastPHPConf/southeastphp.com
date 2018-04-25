@@ -33,6 +33,8 @@
   img.speaker {
     box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
   }
+
+  .hero { margin-left: 12%; }
 </style>
 
 <template>
@@ -40,7 +42,7 @@
     <se-nav :user="user"></se-nav>
 
     <div class="section home-intro bg-orange">
-      <div class="section-inner">
+      <div class="section-inner w-80 hero">
         <div class="col-lg-2 col col-40">
           <img style="max-width:290px;" class="logo" src="../../../../public/img/sephp-lg.png">
         </div>
@@ -64,26 +66,38 @@
     </div>
     <div class="section home-tagline bg-yellow center">
       <div class="section-inner w-80">
-         <h2 class="section-heading red">Keynote Speakers</h2>
-         <div class="keynote-grid flex-grid flex-1-3-5">
-           <div class="grid-item" v-for="speaker in shuffledKeynotes">
-             <img class="speaker" :src="speaker.image"/><span class="image-label"><div v-html="speaker.name"></div></span>
-           </div>
-         </div>
-     </div>
-      <div class="section home-tagline bg-orange center">
-        <div class="section-inner w-80">
-          <h2 class="section-heading white">Sponsors</h2>
-          <div class="keynote-grid flex-grid flex-1-3-5">
-            <div class="grid-item" v-for="sponsor in shuffledSponsors">
-              <img class="sponsor" :src="sponsor.image"/><span class="image-label"><div v-html="sponsor.name"></div></span>
-            </div>
+        <h2 class="section-heading red">Keynote Speakers</h2>
+        <div class="keynote-grid flex-grid flex-1-3-5">
+          <div class="grid-item" v-for="speaker in shuffledKeynotes">
+            <img class="speaker" :src="speaker.image"/><span class="image-label"><div v-html="speaker.name"></div></span>
           </div>
         </div>
       </div>
     </div>
-
-
+    <div class="section home-tagline bg-orange center">
+      <div class="section-inner w-80">
+        <h2 class="section-heading white">Sponsors</h2>
+        <div class="keynote-grid flex-grid flex-1-3-5">
+          <div class="grid-item" v-for="sponsor in shuffledSponsors">
+            <img class="sponsor" :src="sponsor.image"/><span class="image-label"><div v-html="sponsor.name"></div></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section home-intro bg-yellow center">
+      <div class="section-inner w-80">
+        <h2 class="section-heading red">Venue</h2>
+        <div class="keynote-grid flex-grid flex-1-3-5">
+          <div class="col-lg-2 col col-40">
+            <h2 class="section-heading center">Hotel Preston</h2>
+            <p class="feature-text center">Minutes from the airport and downtown Nashville, Hotel Preston is the go-to spot for Nashville business and events. We’ve got lots of extras to make you feel like a star: Provenance Signature Amenities, an art collection, complimentary airport shuttle and free Wi-Fi. Grab a bite at Café Isabella, or check out live entertainment at Pink Slip. We’ll even send up boardgames to make your stay truly memorable.</p>
+          </div>
+          <div class="col-lg-2 col col-50">
+            <img src="https://s3.amazonaws.com/southeastphp/venue/hotel-preston.png" alt="Hotel Preston">
+          </div>
+        </div>
+      </div>
+    </div>
     <se-footer></se-footer>
   </div>
 </template>
