@@ -17,9 +17,12 @@ class SpeakerTransformer extends TransformerAbstract
         return [
             'name' => $speaker->getName(),
             'image' => $speaker->getImage(),
-            'session_name' => $speaker->getSessionName(),
-            'session_info' => $speaker->getSessionInfo(),
-            'detail_link' => $speaker->getDetailLink(),
+            'sessionName' => $speaker->getSessionName(),
+            'sessionInfo' => $speaker->getSessionInfo(),
+            'bio' => $speaker->getBio(),
+            'level' => $speaker->getLevel(),
+            'category' => $speaker->getCategory(),
+            'twitterLink' => 'https://twitter.com/'  . $speaker->getTwitter(),
             'twitter' => $speaker->getTwitter(),
         ];
     }

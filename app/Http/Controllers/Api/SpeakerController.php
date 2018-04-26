@@ -28,8 +28,13 @@ class SpeakerController extends Controller
 
     public function index()
     {
-        $speakers = Speaker::all();
+        $speakers = Speaker::withImage()->withoutKeynote()->get();
 
         return $this->response->setStatusCode(200)->setContent(fractal($speakers, $this->transformer)->toArray());
+    }
+
+    public function fetch()
+    {
+        $speaker = Speaker::byId();
     }
 }
