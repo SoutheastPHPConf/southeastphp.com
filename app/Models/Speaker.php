@@ -29,9 +29,9 @@ class Speaker extends Model
         return $this->session_info;
     }
 
-    public function getDetailLink()
+    public function getBio()
     {
-        return $this->detail_link;
+        return $this->bio;
     }
 
     public function getTwitter()
@@ -39,8 +39,28 @@ class Speaker extends Model
         return $this->twitter;
     }
 
+    public function getLevel()
+    {
+        return $this->level;
+    }
+
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
     public function scopeByKeynote(Builder $query)
     {
-        return $query->where('category', '=', 'keynote');
+        return $query->where('category', '=', 'Keynote');
+    }
+
+    public function scopeWithImage(Builder $query)
+    {
+        return $query->where('image', '!=', '');
+    }
+
+    public function scopeWithoutKeynote(Builder $query)
+    {
+        return $query->where('category', '!=', 'Keynote');
     }
 }
