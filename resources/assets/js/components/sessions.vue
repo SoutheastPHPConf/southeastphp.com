@@ -11,30 +11,48 @@
         background-color: #BF2127;
         border-color: #ebccd1;
     }
+
+    img {
+        height: 30rem;
+        width: 35rem;
+        padding-bottom: .2rem;
+    }
 </style>
 <template>
     <div>
         <se-navbar></se-navbar>
         <div class="container">
             <div class="row">
-                <h2  class="col-xs-12 tracking-wide">Sessions</h2>
-                <div class="col-xs-12 col-md-8" v-for="speaker in orderedSpeakers">
-                    <div class="panel panel-danger">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">{{ speaker.sessionName }}</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-8">
-                                    <div class="tracking-wide" v-html="speaker.sessionInfo"></div>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4">
-                                    <p class="tracking-wide">{{ speaker.name }}</p>
-                                    <p class="labels"><i class="fa fa-twitter"></i> <a :href="speaker.twitterLinkr">@{{speaker.twitter}}</a></p>
-                                    <p class="labels"><span class="label label-success">{{ speaker.level }}</span> | <span class="label label-success">{{ speaker.category }}</span></p>
+                <div class="col-xs-12 col-md-8">
+                    <h2  class="tracking-wide">Sessions</h2>
+                    <div v-for="speaker in orderedSpeakers">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">{{ speaker.sessionName }}</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-8">
+                                        <div class="tracking-wide" v-html="speaker.sessionInfo"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-4">
+                                        <p class="tracking-wide">{{ speaker.name }}</p>
+                                        <p class="labels"><i class="fa fa-twitter"></i> <a :href="speaker.twitterLinkr">@{{speaker.twitter}}</a></p>
+                                        <p class="labels"><span class="label label-success">{{ speaker.level }}</span> | <span class="label label-success">{{ speaker.category }}</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>Sponsors</h2>
+                    <div class="panel panel-default" v-for="sponsor in shuffledSponsors">
+                        <div class="panel-body">
+                            <a :href="sponsor.website"><img class="img-responsive img-thumbnail" :src="sponsor.image" :alt="sponsor.name"></a>
+                            <p class="tracking-wide text-center font-2xl sponsors">{{ sponsor.name }}</p>
+                            <p class="tracking-wide text-center font-2xl sponsors">{{ sponsor.sponsorLevel }}</p>
+                          </div>
                     </div>
                 </div>
             </div>
