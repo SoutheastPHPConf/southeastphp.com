@@ -30,7 +30,12 @@ class SpeakerController extends Controller
     {
         $speakers = Speaker::withImage()->withoutKeynote()->get();
 
-        return $this->response->setStatusCode(200)->setContent(fractal($speakers, $this->transformer)->toArray());
+        return $this->response
+            ->setClientTtl(900)
+            ->setStatusCode(200)
+            ->setContent(fractal($speakers, $this->transformer)
+                ->toArray()
+            );
     }
 
     public function fetch()
