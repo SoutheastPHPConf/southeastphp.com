@@ -1,5 +1,4 @@
 const { mix } = require('laravel-mix');
-require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -20,6 +19,4 @@ mix
     imgLoaderOptions: {
       enabled: false,
     }
-  })
-  .purgeCss()
-  .version();
+  }).version();
