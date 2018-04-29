@@ -12,7 +12,7 @@ class SpeakerTransformer extends TransformerAbstract
      *
      * @return array
      */
-    public function transform(Speaker $speaker)
+    public function transform(Speaker $speaker) : array
     {
         return [
             'name' => $speaker->getName(),
@@ -22,8 +22,11 @@ class SpeakerTransformer extends TransformerAbstract
             'bio' => $speaker->getBio(),
             'level' => $speaker->getLevel(),
             'category' => $speaker->getCategory(),
-            'twitterLink' => 'https://twitter.com/'  . $speaker->getTwitter(),
             'twitter' => $speaker->getTwitter(),
+            'links' => [
+                'twitterLink' => 'https://twitter.com/'  . $speaker->getTwitter(),
+                'sessionLink' => 'https://southeastphp.com/sessions#' . urlencode($speaker->getSessionName())
+            ],
         ];
     }
 }

@@ -12,10 +12,16 @@
         border-color: #ebccd1;
     }
 
-    img {
-        height: 30rem;
-        width: 35rem;
-        padding-bottom: .2rem;
+    .sponsors {
+        img {
+            height: 15rem;
+            width: 35rem;
+            padding-bottom: .2rem;
+        }
+    }
+
+    .labels {
+        font-size: 1.7rem;
     }
 </style>
 <template>
@@ -23,8 +29,11 @@
         <se-navbar></se-navbar>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-8">
-                    <h2  class="tracking-wide">Sessions</h2>
+                <div class="col-xs-12 col-md-10">
+                    <h2 class="tracking-wide">Sessions</h2>
+                    <p class="tracking-wide">All of these are 50 minute sessions with a few minutes (speaker pending) for questions at the end. Don't forget you can find speakers in the hallway track to
+                        follow up with questions you may have! <b>Note: You must be registered in order to attend the sessions.</b>
+                    </p>
                     <div v-for="speaker in orderedSpeakers">
                         <div class="panel panel-danger">
                             <div class="panel-heading">
@@ -34,25 +43,26 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-8">
                                         <div class="tracking-wide" v-html="speaker.sessionInfo"></div>
+                                        <p class="labels"><span class="label label-success">{{ speaker.level }}</span> | <span class="label label-success">{{ speaker.category }}</span></p>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-4">
-                                        <p class="tracking-wide">{{ speaker.name }}</p>
+                                        <h3 class="tracking-wide">{{ speaker.name }}</h3>
                                         <p class="labels"><i class="fa fa-twitter"></i> <a :href="speaker.twitterLinkr">@{{speaker.twitter}}</a></p>
-                                        <p class="labels"><span class="label label-success">{{ speaker.level }}</span> | <span class="label label-success">{{ speaker.category }}</span></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <h2>Sponsors</h2>
+                    <p>We counldn't do this conference without these amazing companies!</p>
                     <div class="panel panel-default" v-for="sponsor in shuffledSponsors">
-                        <div class="panel-body">
+                        <div class="panel-body sponsors">
                             <a :href="sponsor.website"><img class="img-responsive img-thumbnail" :src="sponsor.image" :alt="sponsor.name"></a>
                             <p class="tracking-wide text-center font-2xl sponsors">{{ sponsor.name }}</p>
                             <p class="tracking-wide text-center font-2xl sponsors">{{ sponsor.sponsorLevel }}</p>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
