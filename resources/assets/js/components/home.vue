@@ -74,6 +74,16 @@
         </div>
       </div>
     </div>
+    <div class="section home-tagline bg-red center">
+      <div class="section-inner w-80">
+        <h2 class="section-heading white">Session Speakers</h2>
+        <div class="keynote-grid flex-grid flex-1-3-5">
+          <div class="grid-item" v-for="speaker in limitedSpeakers">
+            <img class="speaker" :src="speaker.image"/><span class="image-label"><div class="white" v-html="speaker.name"></div></span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section home-tagline bg-orange center">
       <div class="section-inner w-80">
         <h2 class="section-heading white">Sponsors</h2>
@@ -86,7 +96,7 @@
     </div>
     <div class="section home-intro bg-yellow center">
       <div class="section-inner w-80">
-        <h2 class="section-heading red">Venue</h2>
+        <h2 class="section-heading red">The Venue</h2>
         <div class="keynote-grid flex-grid flex-1-3-5">
           <div class="col-lg-2 col col-40">
             <h2 class="section-heading center">Hotel Preston</h2>
@@ -102,7 +112,7 @@
   </div>
 </template>
 <script>
-  import { shuffle } from 'lodash';
+  import { shuffle, sampleSize } from 'lodash';
   import axios from 'axios';
   import auth from '../auth.js';
   import SeNav from './navbar.vue';
@@ -117,6 +127,7 @@
         flashErrorBanner: false,
         sponsors: [],
         keynotes: [],
+        speakers: [],
         auth: auth,
         user: auth.user || null,
       };
@@ -126,6 +137,7 @@
       auth.check();
       this.getSponsors();
       this.getKeynotes();
+      this.getSpeakers();
     },
 
     computed: {
@@ -135,6 +147,10 @@
 
       shuffledSponsors() {
         return shuffle(this.sponsors);
+      },
+
+      limitedSpeakers() {
+        return sampleSize(this.speakers, 6);
       }
     },
 
@@ -164,6 +180,14 @@
         }).catch(error => {
           console.log('error: ' + error);
         })
+      },
+
+      getSpeakers() {
+        axios.get('/api/speakers').then(response => {
+          this.speakers = response.data.data;
+        }).catch(error => {
+          console.log('error: ' + error);
+        });
       },
 
       getSponsors() {
