@@ -28,7 +28,7 @@ class SpeakerController extends Controller
 
     public function index()
     {
-        $speakers = Speaker::withImage()->withoutKeynote()->get();
+        $speakers = Speaker::withImage()->get();
 
         return $this->response
             ->setClientTtl(900)
