@@ -15,6 +15,7 @@
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Bitter|Raleway:300,700" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
     <script src="//use.fontawesome.com/8213b5e9ce.js"></script>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
@@ -50,6 +51,7 @@
 
     <!-- Scripts -->
     <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
     <script src="{{ mix('js/app.js') }}"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -61,6 +63,7 @@
 
       gtag('config', 'UA-111272893-1');
     </script>
+
 
 </body>
 </html>
