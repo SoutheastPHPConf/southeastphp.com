@@ -13,19 +13,12 @@ import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
 import Axios from 'axios';
 import wysiwyg from "vue-wysiwyg";
-import * as VueGoogleMaps from 'vue2-google-maps';
 
 window.Vue = Vue;
 Vue.use(VueRouter);
 Vue.use(VueResource);
 Vue.use(Vuex);
 Vue.use(wysiwyg, {}); // config is optional. more below
-Vue.use(VueGoogleMaps, {
-  load: {
-    key: 'AIzaSyBsRdwc93RxCjIgPH2VmiPk3vMbumUY8Js',
-    libraries: 'places',
-  }
-});
 
 window.axios = Axios;
 

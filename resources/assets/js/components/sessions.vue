@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-4">
                                         <h3 class="tracking-wide">{{ speaker.name }}</h3>
-                                        <p class="labels"><i class="fa fa-twitter"></i> <a :href="speaker.twitterLinkr">@{{speaker.twitter}}</a></p>
+                                        <p class="labels"><i class="fa fa-twitter"></i> <a :href="speaker.twitterLink">@{{speaker.twitter}}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -87,10 +87,6 @@
       orderedSpeakers() {
         return orderBy(this.speakers, 'name');
       },
-
-      shuffledSponsors() {
-        return shuffle(this.sponsors);
-      }
     },
 
     data() {
