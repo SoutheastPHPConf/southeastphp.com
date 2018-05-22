@@ -23,7 +23,7 @@
                     <a href="/tickets"><button class="btn btn-default bg-orange">But Ticket!</button></a>
                     <br>
                     <p class="pt-4">Three rooms spread out in the hotel to give people time to admire the local art photography exhibit as well as learn something new! We aimed to have the sessions compliment each other and hope you see tracks that make you
-                        want to dive deep on various topics! There will also be plenty of time and space to catch up with friends and make new ones!
+                        want to dive deep on various topics. There will also be plenty of time and space to catch up with friends and make new ones.
                     </p>
                     <table class="table table-striped" v-if="showThursday === true">
                         <thead>
