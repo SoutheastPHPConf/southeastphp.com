@@ -8,6 +8,7 @@ import PrivacyPolicy from './components/privacy-policy.vue';
 import About from './components/about.vue';
 import CodeOfConduct from './components/code-of-conduct.vue';
 import CocReport from './components/report.vue';
+import Schedule from './components/schedule.vue';
 import Sessions from './components/sessions.vue';
 import Speakers from './components/speakers.vue';
 import Sponsors from './components/sponsors.vue';
@@ -69,6 +70,11 @@ const routes = [
     path: '/diversity',
     component: Diversity,
     name: 'Diversity',
+  },
+  {
+    path: '/schedule',
+    component: Schedule,
+    name: 'Schedule',
   },
   {
     path: '/sessions',
