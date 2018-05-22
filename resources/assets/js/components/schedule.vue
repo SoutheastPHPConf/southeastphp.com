@@ -105,6 +105,8 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="col-xs-12">
                     <table class="table table-striped" v-if="showFriday === true">
                         <thead>
                         <tr>
