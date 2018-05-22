@@ -5,7 +5,7 @@
     <div>
         <div class="col-md-2">
             <h2>Sponsors</h2>
-            <p>We counldn't do this conference without these amazing companies!</p>
+            <p>We couldn't do this conference without these amazing companies!</p>
             <div class="panel panel-default" v-for="sponsor in shuffledSponsors">
                 <div class="panel-body sponsors">
                     <a :href="sponsor.website"><img class="img-responsive img-thumbnail" :src="sponsor.image" :alt="sponsor.name"></a>
