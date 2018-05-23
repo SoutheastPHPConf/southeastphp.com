@@ -52,7 +52,7 @@
                                         <h4 class="tracking-wide" >About</h4>
                                         <div class="tracking-wide"  v-html="speaker.bio"></div>
                                         <h4 class="tracking-wide" >Session</h4>
-                                        <p>Session: <a :href="speaker.sessionLink">{{ speaker.sessionName }}</a></p>
+                                        <p>Session: <a :href="speaker.links.sessionLink">{{ speaker.sessionName }}</a></p>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-3">
                                         <img class="img-responsive" :src="speaker.image" :alt="speaker.name">

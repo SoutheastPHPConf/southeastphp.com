@@ -26,7 +26,7 @@ class SpeakerTransformer extends TransformerAbstract
             'twitter' => $speaker->getTwitter(),
             'links' => [
                 'twitterLink' => 'https://twitter.com/'  . $speaker->getTwitter(),
-                'sessionLink' => 'https://southeastphp.com/sessions#' . urlencode($speaker->getSessionName())
+                'sessionLink' => 'https://southeastphp.com/sessions#' . $speaker->getSessionId()
             ],
         ];
     }
