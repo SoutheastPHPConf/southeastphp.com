@@ -17,6 +17,7 @@ class SpeakerTransformer extends TransformerAbstract
         return [
             'name' => $speaker->getName(),
             'image' => $speaker->getImage(),
+            'sessionId' => $speaker->getSessionId(),
             'sessionName' => $speaker->getSessionName(),
             'sessionInfo' => $speaker->getSessionInfo(),
             'bio' => $speaker->getBio(),
