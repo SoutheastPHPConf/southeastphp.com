@@ -66,8 +66,8 @@
                                 <td>1:00pm/13:00</td>
                                 <td colspan="3" class="text-center">
                                     Lunch Keynote - Ballroom<br>
-                                    Ijeoma Ezeonyebuchi <br>
-                                    <a href="/sessions#35">Becoming an everyday advocate for diversity and inclusion, small steps to impactful changes </a>
+                                    Adrienne Lowe <br>
+                                    <a href="/sessions#33">From support to engineering to management: What you take with you, what you leave behind</a>
                                 </td>
                             </tr>
                             <tr>
@@ -92,8 +92,8 @@
                                 <td>5:00pm/17:00</td>
                                 <td colspan="3" class="text-center">
                                     Afternoon Keynote - Ballroom<br>
-                                    Adrienna Lowe <br>
-                                    <a href="/sessions#33">From support to engineering to management: What you take with you, what you leave behind</a>
+                                    Ijeoma Ezeonyebuchi <br>
+                                    <a href="/sessions#35">Becoming an everyday advocate for diversity and inclusion, small steps to impactful changes </a>
                                 </td>
                             </tr>
                             <tr>

@@ -55,7 +55,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="hover tracking-wide font-2xl" href="/speakers">Speakers</a></li>
                                 <li><a class="hover tracking-wide font-2xl" href="/sessions">Sessions</a></li>
-                                <!--<li><a class="hover tracking-wide font-2xl" href="/schedule">Schedule</a></li>-->
+                                <li><a class="hover tracking-wide font-2xl" href="/schedule">Schedule</a></li>
                             </ul>
                         </li>
                         <li><a class="hover tracking-wide font-2xl" href="/code-of-conduct">Code of Conduct</a></li>
