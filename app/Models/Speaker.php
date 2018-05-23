@@ -49,6 +49,11 @@ class Speaker extends Model
         return $this->category;
     }
 
+    public function getSessionId() : int
+    {
+        return $this->id;
+    }
+
     public function scopeByKeynote(Builder $query)
     {
         return $query->where('category', '=', 'Keynote');

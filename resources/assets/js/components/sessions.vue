@@ -35,7 +35,7 @@
                         follow up with questions you may have! <b>Note: You must be registered in order to attend the sessions.</b>
                     </p>
                     <div v-for="speaker in orderedSpeakers">
-                        <div class="panel panel-danger">
+                        <div class="panel panel-danger" :id="speaker.sessionId">
                             <div class="panel-heading">
                                 <h3 class="panel-title">{{ speaker.sessionName }}</h3>
                             </div>
