@@ -74,7 +74,7 @@
                                 <td>2:00pm/14:00</td>
                                 <td class="text-center">Omni Adams <br> <a href="/sessions#7">The Dark Corners of the SPL</a></td>
                                 <td class="text-center">Larry Garfield <br> <a href="/sessions#10">Software Management Lessons from the 1960s</a></td>
-                                <td class="text-center">Jessica Maurhauen <br> <a href="/sessions#29">Double Loop: TDD & BDD Done Right</a></td>
+                                <td class="text-center">Jessica Mauerhan <br> <a href="/sessions#29">Double Loop: TDD & BDD Done Right</a></td>
                             </tr>
                             <tr>
                                 <td>3:00pm/15:00</td>
@@ -84,7 +84,7 @@
                             </tr>
                             <tr>
                                 <td>4:00pm/16:00</td>
-                                <td class="text-center">David Stanely <br> <a href="/sessions#4">Getting ready for scale: Load testing your API with Gatling</a></td>
+                                <td class="text-center">David Stanley <br> <a href="/sessions#4">Getting ready for scale: Load testing your API with Gatling</a></td>
                                 <td class="text-center">Jonathon Wage <br> <a href="/sessions#15">Doctrine for Beginners</a></td>
                                 <td class="text-center">Mike Willbanks <br> <a href="/sessions#25">Queue It!</a></td>
                             </tr>
