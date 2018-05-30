@@ -43,20 +43,20 @@
                                 <td colspan="3" class="text-center">
                                     Opening Keynote - Ballroom<br>
                                     Cal Evans <br>
-                                    <a href="/sessions#31">Apple, Butter, Darmok: A communications primer for Developers</a>
+                                    <a href="https://southeastphp.com/sessions#31">Apple, Butter, Darmok: A communications primer for Developers</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>10:00am</td>
-                                <td class="text-center">Jose Diaz-Gonzalez <br> <a href="/sessions#30">12 Factor PHP Applications - The Remix</a></td>
-                                <td class="text-center">James Titcumb <br> <a href="/sessions#9">Climbing the AST</a></td>
-                                <td class="text-center">Steven Wade Jr <br> <a href="/sessions#24">Assemble Your Code in Stages: Leveling Up With Pipelines</a></td>
+                                <td class="text-center">Jose Diaz-Gonzalez <br> <a href="https://southeastphp.com/sessions#30">12 Factor PHP Applications - The Remix</a></td>
+                                <td class="text-center">James Titcumb <br> <a href="https://southeastphp.com/sessions#9">Climbing the AST</a></td>
+                                <td class="text-center">Steven Wade Jr <br> <a href="https://southeastphp.com/sessions#24">Assemble Your Code in Stages: Leveling Up With Pipelines</a></td>
                             </tr>
                             <tr>
                                 <td>11:00am</td>
-                                <td class="text-center">Adam Culp <br> <a href="/sessions#23">Practical PHP Deployment with Jenkins</a></td>
-                                <td class="text-center">Sara Goleman <br> <a href="/sessions#13">How PHP Ticks</a></td>
-                                <td class="text-center">Ashley Hutson <br> <a href="/sessions#21">Win Big, Cache Out</a></td>
+                                <td class="text-center">Adam Culp <br> <a href="https://southeastphp.com/sessions#23">Practical PHP Deployment with Jenkins</a></td>
+                                <td class="text-center">Sara Goleman <br> <a href="https://southeastphp.com/sessions#13">How PHP Ticks</a></td>
+                                <td class="text-center">Ashley Hutson <br> <a href="https://southeastphp.com/sessions#21">Win Big, Cache Out</a></td>
                             </tr>
                             <tr>
                                 <td>12:00pm</td>
@@ -67,33 +67,33 @@
                                 <td colspan="3" class="text-center">
                                     Lunch Keynote - Ballroom<br>
                                     Adrienne Lowe <br>
-                                    <a href="/sessions#33">From support to engineering to management: What you take with you, what you leave behind</a>
+                                    <a href="https://southeastphp.com/sessions#33">From support to engineering to management: What you take with you, what you leave behind</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>2:00pm/14:00</td>
-                                <td class="text-center">Omni Adams <br> <a href="/sessions#7">The Dark Corners of the SPL</a></td>
-                                <td class="text-center">Larry Garfield <br> <a href="/sessions#10">Software Management Lessons from the 1960s</a></td>
-                                <td class="text-center">Jessica Mauerhan <br> <a href="/sessions#29">Double Loop: TDD & BDD Done Right</a></td>
+                                <td class="text-center">Omni Adams <br> <a href="https://southeastphp.com/sessions#7">The Dark Corners of the SPL</a></td>
+                                <td class="text-center">Larry Garfield <br> <a href="https://southeastphp.com/sessions#10">Software Management Lessons from the 1960s</a></td>
+                                <td class="text-center">Jessica Mauerhan <br> <a href="https://southeastphp.com/sessions#29">Double Loop: TDD & BDD Done Right</a></td>
                             </tr>
                             <tr>
                                 <td>3:00pm/15:00</td>
-                                <td class="text-center">Olivia Liddell <br> <a href="/sessions#14">Overcoming your fear of failure</a></td>
-                                <td class="text-center">Amanda Folson <br> <a href="/sessions#19">Zero to API with Lumen</a></td>
-                                <td class="text-center">Korvin Szanto <br> <a href="/sessions#26">How to use generators to beat memory bloat</a></td>
+                                <td class="text-center">Olivia Liddell <br> <a href="https://southeastphp.com/sessions#14">Overcoming your fear of failure</a></td>
+                                <td class="text-center">Amanda Folson <br> <a href="https://southeastphp.com/sessions#19">Zero to API with Lumen</a></td>
+                                <td class="text-center">Korvin Szanto <br> <a href="https://southeastphp.com/sessions#26">How to use generators to beat memory bloat</a></td>
                             </tr>
                             <tr>
                                 <td>4:00pm/16:00</td>
-                                <td class="text-center">David Stanley <br> <a href="/sessions#4">Getting ready for scale: Load testing your API with Gatling</a></td>
-                                <td class="text-center">Jonathon Wage <br> <a href="/sessions#15">Doctrine for Beginners</a></td>
-                                <td class="text-center">Mike Willbanks <br> <a href="/sessions#25">Queue It!</a></td>
+                                <td class="text-center">David Stanley <br> <a href="https://southeastphp.com/sessions#4">Getting ready for scale: Load testing your API with Gatling</a></td>
+                                <td class="text-center">Jonathon Wage <br> <a href="https://southeastphp.com/sessions#15">Doctrine for Beginners</a></td>
+                                <td class="text-center">Mike Willbanks <br> <a href="https://southeastphp.com/sessions#25">Queue It!</a></td>
                             </tr>
                             <tr>
                                 <td>5:00pm/17:00</td>
                                 <td colspan="3" class="text-center">
                                     Afternoon Keynote - Ballroom<br>
                                     Ijeoma Ezeonyebuchi <br>
-                                    <a href="/sessions#35">Becoming an everyday advocate for diversity and inclusion, small steps to impactful changes </a>
+                                    <a href="https://southeastphp.com/sessions#35">Becoming an everyday advocate for diversity and inclusion, small steps to impactful changes </a>
                                 </td>
                             </tr>
                             <tr>
@@ -130,15 +130,15 @@
                         </tr>
                         <tr>
                             <td>10:00am</td>
-                            <td class="text-center">Amrita Jain <br> <a href="/sessions#18">New frontiers in voyage of APIs from REST to Reactive using MicroServices+GraphQL</a></td>
-                            <td class="text-center">Joe Ferguson <br> <a href="/sessions#2">Maintaining Homestead</a></td>
-                            <td class="text-center">David Hayes <br> <a href="/sessions#17">Banishing Loops with Functional Programming</a></td>
+                            <td class="text-center">Amrita Jain <br> <a href="https://southeastphp.com/sessions#18">New frontiers in voyage of APIs from REST to Reactive using MicroServices+GraphQL</a></td>
+                            <td class="text-center">Joe Ferguson <br> <a href="https://southeastphp.com/sessions#2">Maintaining Homestead</a></td>
+                            <td class="text-center">David Hayes <br> <a href="https://southeastphp.com/sessions#17">Banishing Loops with Functional Programming</a></td>
                         </tr>
                         <tr>
                             <td>11:00am</td>
-                            <td class="text-center">Ben Edmunds <br> <a href="/sessions#5">Modern and Secure PHP</a></td>
-                            <td class="text-center">Emily Stamey <br> <a href="/sessions#20">Hey Boss, Event Sourcing Could Fix That!</a></td>
-                            <td class="text-center">Tanner Plauché <br> <a href="/sessions#22">ES6 and Beyond for PHP Developers</a></td>
+                            <td class="text-center">Ben Edmunds <br> <a href="https://southeastphp.com/sessions#5">Modern and Secure PHP</a></td>
+                            <td class="text-center">Emily Stamey <br> <a href="https://southeastphp.com/sessions#20">Hey Boss, Event Sourcing Could Fix That!</a></td>
+                            <td class="text-center">Tanner Plauché <br> <a href="https://southeastphp.com/sessions#22">ES6 and Beyond for PHP Developers</a></td>
                         </tr>
                         <tr>
                             <td>12:00pm</td>
@@ -154,28 +154,28 @@
                         </tr>
                         <tr>
                             <td>2:00pm/14:00</td>
-                            <td class="text-center">Terrence Ryan <br> <a href="/sessions#8">Virtual Machine. Container, or Serverless</a></td>
-                            <td class="text-center">Kevin Smith <br> <a href="/sessions#16">Peeling Back the Magic: Modern PHP Without a Framework</a></td>
-                            <td class="text-center">Steve Brownlee <br> <a href="/sessions#29">Pysch!</a></td>
+                            <td class="text-center">Terrence Ryan <br> <a href="https://southeastphp.com/sessions#8">Virtual Machine. Container, or Serverless</a></td>
+                            <td class="text-center">Kevin Smith <br> <a href="https://southeastphp.com/sessions#16">Peeling Back the Magic: Modern PHP Without a Framework</a></td>
+                            <td class="text-center">Steve Brownlee <br> <a href="https://southeastphp.com/sessions#29">Pysch!</a></td>
                         </tr>
                         <tr>
                             <td>3:00pm/15:00</td>
-                            <td class="text-center">Steve Grunwell<br> <a href="/sessions#28">Building for the PHP Command Line Interface</a></td>
-                            <td class="text-center">Jason McCreary <br> <a href="/sessions#6">Building a modern PHP application</a></td>
-                            <td class="text-center">TBD <br> <a href="/sessions">TBD</a></td>
+                            <td class="text-center">Steve Grunwell<br> <a href="https://southeastphp.com/sessions#28">Building for the PHP Command Line Interface</a></td>
+                            <td class="text-center">Jason McCreary <br> <a href="https://southeastphp.com/sessions#6">Building a modern PHP application</a></td>
+                            <td class="text-center">TBD <br> <a href="https://southeastphp.com/sessions">TBD</a></td>
                         </tr>
                         <tr>
                             <td>4:00pm/16:00</td>
-                            <td class="text-center">Dee Wilcox <br> <a href="/sessions">TBD</a></td>
-                            <td class="text-center">Margaret Staples <br> <a href="/sessions#3">Philosophy in Code: I Kant Even</a></td>
-                            <td class="text-center">Ed Barnard <br> <a href="/sessions#27">Big Iron: PHP Lessons from Cold War Supercomputing</a></td>
+                            <td class="text-center">Dee Wilcox <br> <a href="https://southeastphp.com/sessions">TBD</a></td>
+                            <td class="text-center">Margaret Staples <br> <a href="https://southeastphp.com/sessions#3">Philosophy in Code: I Kant Even</a></td>
+                            <td class="text-center">Ed Barnard <br> <a href="https://southeastphp.com/sessions#27">Big Iron: PHP Lessons from Cold War Supercomputing</a></td>
                         </tr>
                         <tr>
                             <td>5:00pm/17:00</td>
                             <td colspan="3" class="text-center">
                                 Lunch Keynote - Ballroom<br>
                                 Josh Holmes <br>
-                                <a href="/sessions#34">Building World Class Developer Organizations</a>
+                                <a href="https://southeastphp.com/sessions#34">Building World Class Developer Organizations</a>
                             </td>
                         </tr>
                         <tr>
