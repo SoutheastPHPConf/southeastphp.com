@@ -20,7 +20,7 @@
                     <h2 class="tracking-wide">Southeast PHP Schedule</h2>
                     <button class="btn btn-default bg-orange" @click.prevent="hideThursday">Hide Thursday</button>
                     <button class="btn btn-default bg-orange" @click.prevent="hideFriday">Hide Friday</button>
-                    <a href="/tickets"><button class="btn btn-default bg-orange">But Ticket!</button></a>
+                    <a href="/tickets"><button class="btn btn-default bg-orange">Buy Ticket!</button></a>
                     <br>
                     <p class="pt-4">Three rooms spread out in the hotel to give people time to admire the local art photography exhibit as well as learn something new! We aimed to have the sessions compliment each other and hope you see tracks that make you
                         want to dive deep on various topics. There will also be plenty of time and space to catch up with friends and make new ones.
@@ -55,7 +55,7 @@
                             <tr>
                                 <td>11:00am</td>
                                 <td class="text-center">Adam Culp <br> <a href="https://southeastphp.com/sessions#23">Practical PHP Deployment with Jenkins</a></td>
-                                <td class="text-center">Sara Goleman <br> <a href="https://southeastphp.com/sessions#13">How PHP Ticks</a></td>
+                                <td class="text-center">Sara Golemon <br> <a href="https://southeastphp.com/sessions#13">How PHP Ticks</a></td>
                                 <td class="text-center">Ashley Hutson <br> <a href="https://southeastphp.com/sessions#21">Win Big, Cache Out</a></td>
                             </tr>
                             <tr>
