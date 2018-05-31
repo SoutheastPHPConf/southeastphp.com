@@ -50,7 +50,7 @@
                                 <td>10:00am</td>
                                 <td class="text-center">Jose Diaz-Gonzalez <br> <a href="https://southeastphp.com/sessions#30">12 Factor PHP Applications - The Remix</a></td>
                                 <td class="text-center">James Titcumb <br> <a href="https://southeastphp.com/sessions#9">Climbing the AST</a></td>
-                                <td class="text-center">Steven Wade Jr <br> <a href="https://southeastphp.com/sessions#24">Assemble Your Code in Stages: Leveling Up With Pipelines</a></td>
+                                <td class="text-center">Steven Wade <br> <a href="https://southeastphp.com/sessions#24">Assemble Your Code in Stages: Leveling Up With Pipelines</a></td>
                             </tr>
                             <tr>
                                 <td>11:00am</td>
