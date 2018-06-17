@@ -30,8 +30,12 @@
     max-height: 15rem;
   }
 
-  img.speaker, img.sponsor {
+  img.speaker, img.sponsor, img.venue {
     box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  .pb-4 {
+    padding-bottom: 4rem;
   }
 
   .hero { margin-left: 12%; }
@@ -88,7 +92,7 @@
       <div class="section-inner w-80">
         <h2 class="section-heading white">Sponsors</h2>
         <div class="keynote-grid flex-grid flex-1-3-5">
-          <div class="grid-item" v-for="sponsor in shuffledSponsors">
+          <div class="grid-item pb-4" v-for="sponsor in shuffledSponsors">
             <img class="sponsor img-thumbnail" :src="sponsor.image"/><span class="image-label"><div v-html="sponsor.name"></div></span>
           </div>
         </div>
@@ -103,7 +107,7 @@
             <p class="feature-text center">Minutes from the airport and downtown Nashville, Hotel Preston is the go-to spot for Nashville business and events. We’ve got lots of extras to make you feel like a star: Provenance Signature Amenities, an art collection, complimentary airport shuttle and free Wi-Fi. Grab a bite at Café Isabella, or check out live entertainment at Pink Slip. We’ll even send up boardgames to make your stay truly memorable.</p>
           </div>
           <div class="col-lg-2 col col-50">
-            <img src="https://s3.amazonaws.com/southeastphp/venue/hotel-preston.png" alt="Hotel Preston">
+            <img class="venue" src="https://s3.amazonaws.com/southeastphp/venue/hotel-preston.png" alt="Hotel Preston">
           </div>
         </div>
       </div>
