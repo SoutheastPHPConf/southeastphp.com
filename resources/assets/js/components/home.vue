@@ -30,7 +30,7 @@
     max-height: 15rem;
   }
 
-  img.speaker {
+  img.speaker, img.sponsor {
     box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
   }
 
@@ -89,7 +89,7 @@
         <h2 class="section-heading white">Sponsors</h2>
         <div class="keynote-grid flex-grid flex-1-3-5">
           <div class="grid-item" v-for="sponsor in shuffledSponsors">
-            <img class="sponsor" :src="sponsor.image"/><span class="image-label"><div v-html="sponsor.name"></div></span>
+            <img class="sponsor img-thumbnail" :src="sponsor.image"/><span class="image-label"><div v-html="sponsor.name"></div></span>
           </div>
         </div>
       </div>
