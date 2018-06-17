@@ -106,7 +106,7 @@
             <img src="https://s3.amazonaws.com/southeastphp/venue/hotel-preston.png" alt="Hotel Preston">
           </div>
         </div>
-      </div>v
+      </div>
     </div>
     <se-footer></se-footer>
   </div>
