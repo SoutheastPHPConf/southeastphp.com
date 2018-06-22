@@ -42,7 +42,7 @@
                     <h2 class="tracking-wide">Session Speakers</h2>
                     <p>We aimed to pick the very best talk submitted. Our team had a lot of tough work laid out in front of us and we think we came up with the best talks out of more then 250 submitted talks!</p>
                     <div v-for="speaker in orderedSpeakers">
-                        <div class="panel panel-danger">
+                        <div class="panel panel-danger" id="speaker.id">
                             <div class="panel-heading">
                                 <h3 class="panel-title">{{ speaker.name }}</h3>
                             </div>

@@ -28,7 +28,7 @@
                             <p class="tracking-wide">Some of the things you can do while at the Hotel Preston:</p>
                             <ul>
                                 <li class="tracking-wide">24 hour gym</li>
-                                <li>Listen to live music in their lounge</li>
+                                <li class="tracking-wide">Listen to live music in their lounge</li>
                                 <li class="tracking-wide">Be 20 minutes away from downtown and 10 minutes away from the airport</li>
                             </ul>
                             <p class="tracking-wide">In order to help our attendees out, we have got a nice little deal with the hotel to get a discount on a room! The best part about this code is that it does not expire. Use it today, tomorrow or the day before the conference (rooms permitting of course).</p>
