@@ -46,7 +46,7 @@
                                         <p class="labels"><span class="label label-success">{{ speaker.level }}</span> | <span class="label label-success">{{ speaker.category }}</span></p>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-4">
-                                        <h3 class="tracking-wide">{{ speaker.name }}</h3>
+                                        <h3 class="tracking-wide"><a :href="speaker.links.speakerLink">{{ speaker.name }}</a></h3>
                                         <p class="labels"><i class="fa fa-twitter"></i> <a :href="speaker.twitterLink">@{{speaker.twitter}}</a></p>
                                     </div>
                                 </div>

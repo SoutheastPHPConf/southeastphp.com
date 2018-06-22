@@ -15,6 +15,7 @@ class SpeakerTransformer extends TransformerAbstract
     public function transform(Speaker $speaker) : array
     {
         return [
+            'id' => $speaker->getId(),
             'name' => $speaker->getName(),
             'image' => $speaker->getImage(),
             'sessionId' => $speaker->getSessionId(),
@@ -26,7 +27,8 @@ class SpeakerTransformer extends TransformerAbstract
             'twitter' => $speaker->getTwitter(),
             'links' => [
                 'twitterLink' => 'https://twitter.com/'  . $speaker->getTwitter(),
-                'sessionLink' => 'https://southeastphp.com/sessions#' . $speaker->getSessionId()
+                'sessionLink' => 'https://southeastphp.com/sessions#' . $speaker->getSessionId(),
+                'speakerLink' => 'https://southeastphp.com/speakers#' . $speaker->getId(),
             ],
         ];
     }
