@@ -42,9 +42,9 @@ Route::post('contact', ['uses' => 'Api\ContactController@create']);
  * Sponsor Routes
  */
 Route::get('sponsors', ['uses' => 'Api\SponsorsController@index']);
-Route::get('sponsors/{id}', ['uses' => 'Api\SponsorsController@fetch'])->where('id', '[0-9]+');
 Route::get('sponsors/levels', ['uses' => 'Api\SponsorLevelsController@index']);
 Route::get('sponsors/top', ['uses' => 'Api\Sponsors\TopSponsorsController@index']);
+Route::get('sponsors/front-page', ['uses' => 'Api\SponsorsController@fetch']);
 
 Route::post('tickets/diversity', ['uses' => 'Api\DiversityController@create']);
 

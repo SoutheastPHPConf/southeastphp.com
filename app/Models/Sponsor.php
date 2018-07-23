@@ -99,4 +99,19 @@ class Sponsor extends Model
     {
         $this->website = $website;
     }
+
+    public function getFrontPage() : int
+    {
+        return $this->front_page;
+    }
+
+    public function setFrontPage(int $frontPage)
+    {
+        $this->front_page = $frontPage;
+    }
+
+    public function scopeByFrontPage(Builder $query)
+    {
+        return $query->where('front_page', '=', 1);
+    }
 }
