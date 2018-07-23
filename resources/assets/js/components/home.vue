@@ -195,7 +195,7 @@
       },
 
       getSponsors() {
-        axios.get('api/sponsors').then(response => {
+        axios.get('api/sponsors/front-page').then(response => {
           this.sponsors = response.data.data;
         }).catch(error => {
           console.error(error);

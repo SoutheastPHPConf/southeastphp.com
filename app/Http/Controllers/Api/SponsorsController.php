@@ -44,7 +44,7 @@ class SponsorsController extends Controller
 
     public function fetch(Request $request)
     {
-        $sponsor = Sponsor::find($request->id);
+        $sponsor = Sponsor::byFrontPage()->get();
 
         return $this->response->setStatusCode(200)
             ->setContent(fractal($sponsor)
