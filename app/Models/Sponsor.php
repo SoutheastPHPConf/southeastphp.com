@@ -114,4 +114,9 @@ class Sponsor extends Model
     {
         return $query->where('front_page', '=', 1);
     }
+
+    public function scopeBySpnsorPage(Builder $query)
+    {
+        return $query->where('sponsor_page', '=', 1);
+    }
 }
