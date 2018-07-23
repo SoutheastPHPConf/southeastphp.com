@@ -110,12 +110,12 @@ class Sponsor extends Model
         $this->front_page = $frontPage;
     }
 
-    public function scopeByFrontPage(Builder $query)
+    public function scopeByFrontPage($query)
     {
         return $query->where('front_page', '=', 1);
     }
 
-    public function scopeBySpnsorPage(Builder $query)
+    public function scopeBySponsorPage($query)
     {
         return $query->where('sponsor_page', '=', 1);
     }
