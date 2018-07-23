@@ -149,7 +149,7 @@
                             <td colspan="3" class="text-center">
                                 Lunch Keynote - Ballroom<br>
                                 Graham Hoefer &amp; Samantha Quiñones <br>
-                                <a href="/sessions#32">Becoming an everyday advocate for diversity and inclusion, small steps to impactful changes </a>
+                                <a href="/sessions#32">The Myth of the Career Ladder </a>
                             </td>
                         </tr>
                         <tr>
@@ -173,7 +173,7 @@
                         <tr>
                             <td>5:00pm/17:00</td>
                             <td colspan="3" class="text-center">
-                                Lunch Keynote - Ballroom<br>
+                                Afternoon Keynote - Ballroom<br>
                                 Josh Holmes <br>
                                 <a href="https://southeastphp.com/sessions#34">Building World Class Developer Organizations</a>
                             </td>
