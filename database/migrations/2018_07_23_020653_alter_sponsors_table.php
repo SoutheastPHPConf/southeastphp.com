@@ -24,7 +24,7 @@ class AlterSponsorsTable extends Migration
             return;
         }
 
-        $sponsor->setFrontPage = 0;
+        $sponsor->setFrontPage(0);
         $sponsor->save();
     }
 
