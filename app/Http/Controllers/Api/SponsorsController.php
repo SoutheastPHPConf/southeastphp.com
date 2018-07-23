@@ -33,7 +33,7 @@ class SponsorsController extends Controller
 
     public function index()
     {
-        $sponsors = Sponsor::all();
+        $sponsors = Sponsor::bySponsorPage()->get();
 
         return $this->response->setStatusCode(200)
             ->setContent(fractal($sponsors)
