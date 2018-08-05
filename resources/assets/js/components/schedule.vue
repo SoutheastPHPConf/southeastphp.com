@@ -100,7 +100,7 @@
                                 <td>Evening</td>
                                 <td colspan="3" class="text-center">
                                     Panel Discussion - Games - Food <br>
-                                    If your company wants to sponsor an after party, let us know!
+                                    Evening Sponsor: Concrete5!
                                 </td>
                             </tr>
                         </tbody>
@@ -149,7 +149,7 @@
                             <td colspan="3" class="text-center">
                                 Lunch Keynote - Ballroom<br>
                                 Graham Hoefer &amp; Samantha Quiñones <br>
-                                <a href="/sessions#32">The Myth of the Career Ladder </a>
+                                <a href="https://southeastphp.com/sessions#32">The Myth of the Career Ladder </a>
                             </td>
                         </tr>
                         <tr>
@@ -162,11 +162,11 @@
                             <td>3:00pm/15:00</td>
                             <td class="text-center">Steve Grunwell<br> <a href="https://southeastphp.com/sessions#28">Building for the PHP Command Line Interface</a></td>
                             <td class="text-center">Jason McCreary <br> <a href="https://southeastphp.com/sessions#6">Building a modern PHP application</a></td>
-                            <td class="text-center">TBD <br> <a href="https://southeastphp.com/sessions">TBD</a></td>
+                            <td class="text-center">Aimee Knight<br> <a href="https://southeastphp.com/sessions">TBD</a></td>
                         </tr>
                         <tr>
                             <td>4:00pm/16:00</td>
-                            <td class="text-center">Dee Wilcox <br> <a href="https://southeastphp.com/sessions">TBD</a></td>
+                            <td class="text-center">Dee Wilcox <br> <a href="https://southeastphp.com/sessions">Accelerate Everyone: Managing Transition and Leveraging the Speed of Trust to Build High Performance Teams</a></td>
                             <td class="text-center">Margaret Staples <br> <a href="https://southeastphp.com/sessions#3">Philosophy in Code: I Kant Even</a></td>
                             <td class="text-center">Ed Barnard <br> <a href="https://southeastphp.com/sessions#27">Big Iron: PHP Lessons from Cold War Supercomputing</a></td>
                         </tr>
@@ -182,7 +182,7 @@
                             <td>Evening</td>
                             <td colspan="3" class="text-center">
                                 Hackathon - Games - Food <br>
-                                If your company wants to sponsor an after party, let us know!
+                                Evening Sponsor: Twilio!
                             </td>
                         </tr>
                         </tbody>
