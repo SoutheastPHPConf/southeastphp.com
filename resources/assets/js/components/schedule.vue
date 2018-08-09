@@ -85,7 +85,7 @@
                             <tr>
                                 <td>4:00pm/16:00</td>
                                 <td class="text-center">David Stanley <br> <a href="https://southeastphp.com/sessions#4">Getting ready for scale: Load testing your API with Gatling</a></td>
-                                <td class="text-center">Jonathon Wage <br> <a href="https://southeastphp.com/sessions#15">Doctrine for Beginners</a></td>
+                                <td class="text-center">Jonathan Wage <br> <a href="https://southeastphp.com/sessions#15">Doctrine for Beginners</a></td>
                                 <td class="text-center">Mike Willbanks <br> <a href="https://southeastphp.com/sessions#25">Queue It!</a></td>
                             </tr>
                             <tr>
