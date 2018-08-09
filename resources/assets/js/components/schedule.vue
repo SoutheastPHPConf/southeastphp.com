@@ -162,7 +162,7 @@
                             <td>3:00pm/15:00</td>
                             <td class="text-center">Steve Grunwell<br> <a href="https://southeastphp.com/sessions#28">Building for the PHP Command Line Interface</a></td>
                             <td class="text-center">Jason McCreary <br> <a href="https://southeastphp.com/sessions#6">Building a modern PHP application</a></td>
-                            <td class="text-center">Aimee Knight<br> <a href="https://southeastphp.com/sessions">TBD</a></td>
+                            <td class="text-center">Aimee Knight<br> <a href="https://southeastphp.com/sessions#38">It's Not Dark Magic - Pulling Back the Curtains From Your Stylesheets</a></td>
                         </tr>
                         <tr>
                             <td>4:00pm/16:00</td>
