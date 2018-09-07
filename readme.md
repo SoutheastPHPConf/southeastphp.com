@@ -63,7 +63,7 @@ _This guide assumes you have already installed Homestead and skipped the "Config
     - See that the `sites` section `to:` path points to the correct `public` folder
         - It should be along the lines of `/home/vagrant/dev/southeastphp.co/public`  if your `folders` mappings are `map: [parent dir of your git clone]` and `to: /home/vagrant/dev` 
 5. Add the domain to `/etc/hosts` with sudo access
-    - `192.168.10.10  southeastphp.co.app` as in Homestead.yml `ip` and the domain
+    - `192.168.10.10  southeastphp.co.test` as in Homestead.yml `ip` and the domain
     - Or use [cogitatio/vagrant-hostsupdater](laravel-hostsupdater) or similar to automate this
 6. In another terminal window change to project directory and run `vagrant up`  to start the Vagrant Homestead instance
     - If the box is already running, run provisioning to apply your changes:
